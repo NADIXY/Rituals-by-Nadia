@@ -1,4 +1,4 @@
-# Name der App
+# Rituals App
 
 **(Optional) Füge hier einen kurzen, knackigen Slogan ein, um deine App zu bewerben.**
 
