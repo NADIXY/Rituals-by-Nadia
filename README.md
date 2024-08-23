@@ -1,11 +1,37 @@
-# Rituals App
+# Rituals
 
-**(Optional) Füge hier einen kurzen, knackigen Slogan ein, um deine App zu bewerben.**
+**Slogan:** "Finde deine Balance – jeden Tag aufs Neue!"
 
-Beschreibe hier in ein paar Sätzen, was deine App bietet.
+## Beschreibung
 
-Für wen ist sie geeignet? Welches Problem löst sie? Was macht deine App anders / besser als andere Apps?
-Vermeide es, hier allzusehr in technische Details zu gehen.
+Rituals ist eine innovative App, die dir hilft, tägliche Rituale zu entwickeln und zu pflegen, um dein Wohlbefinden zu steigern. Egal, ob du Stress abbauen, deine Produktivität steigern oder einfach nur mehr Achtsamkeit in deinen Alltag integrieren möchtest – Rituals bietet dir die Werkzeuge und Inspiration, die du dafür benötigst.
+
+## Für wen ist sie geeignet?
+
+Die App richtet sich an alle, die ein erfüllteres Leben führen möchten, sei es im hektischen Berufsalltag oder im privaten Bereich. Sie löst das Problem der Überforderung und des Zeitmangels, indem sie dir einfache und effektive Rituale vorschlägt, die leicht in deinen Alltag integriert werden können.
+
+## Was macht Rituals anders?
+
+Was Rituals von anderen Apps unterscheidet, ist der personalisierte Ansatz: Die App lernt aus deinen Vorlieben und Gewohnheiten und passt die Vorschläge entsprechend an. Zudem bieten wir eine Community-Funktion, die es dir ermöglicht, dich mit Gleichgesinnten auszutauschen und gegenseitig zu motivieren.
+
+## Funktionen
+
+- **Personalisierte Rituale:** Anpassung der Vorschläge basierend auf deinen Vorlieben.
+- **Community-Funktion:** Austausch mit anderen Nutzern zur gegenseitigen Motivation.
+- **Einfache Integration:** Leicht umsetzbare Rituale für jeden Tag.
+
+## Mitwirken
+
+Wir freuen uns über Beiträge! Bitte schau dir unsere [Contributing Guidelines](CONTRIBUTING.md) an.
+
+## Lizenz
+
+Dieses Projekt steht unter der MIT-Lizenz - siehe die [LICENSE](LICENSE) Datei für Details.
+
+---
+
+Entdecke mit Rituals den Weg zu einem harmonischeren Leben!
+
 
 ## Geplantes Design
 Füge hier einige repräsentative Designs deiner App ein (z.B. aus Figma)
