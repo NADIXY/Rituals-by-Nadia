@@ -20,18 +20,7 @@ Was Rituals von anderen Apps unterscheidet, ist der personalisierte Ansatz: Die 
 - **Community-Funktion:** Austausch mit anderen Nutzern zur gegenseitigen Motivation.
 - **Einfache Integration:** Leicht umsetzbare Rituale für jeden Tag.
 
-## Mitwirken
-
-Wir freuen uns über Beiträge! Bitte schau dir unsere [Contributing Guidelines](CONTRIBUTING.md) an.
-
-## Lizenz
-
-Dieses Projekt steht unter der MIT-Lizenz - siehe die [LICENSE](LICENSE) Datei für Details.
-
----
-
 Entdecke mit Rituals den Weg zu einem harmonischeren Leben!
-
 
 ## Geplantes Design
 Füge hier einige repräsentative Designs deiner App ein (z.B. aus Figma)
