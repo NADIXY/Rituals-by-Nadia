@@ -1,58 +1,77 @@
-# Rituals
+# Rituals App
 
-**Slogan:** "Finde deine Balance – jeden Tag aufs Neue!"
+**Unlock the Power of Rituals - Dive into the World of Magic!**
 
-## Beschreibung
+<img width="972" alt="Bildschirmfoto 2024-08-26 um 03 14 33" src="https://github.com/user-attachments/assets/676c9ab5-88ec-435d-ac01-d14606e14bc7">
 
-Rituals ist eine innovative App, die dir hilft, tägliche Rituale zu entwickeln und zu pflegen, um dein Wohlbefinden zu steigern. Egal, ob du Stress abbauen, deine Produktivität steigern oder einfach nur mehr Achtsamkeit in deinen Alltag integrieren möchtest – Rituals bietet dir die Werkzeuge und Inspiration, die du dafür benötigst.
+## Überblick
 
-## Für wen ist sie geeignet?
-
-Die App richtet sich an alle, die ein erfüllteres Leben führen möchten, sei es im hektischen Berufsalltag oder im privaten Bereich. Sie löst das Problem der Überforderung und des Zeitmangels, indem sie dir einfache und effektive Rituale vorschlägt, die leicht in deinen Alltag integriert werden können.
-
-## Was macht Rituals anders?
-
-Was Rituals von anderen Apps unterscheidet, ist der personalisierte Ansatz: Die App lernt aus deinen Vorlieben und Gewohnheiten und passt die Vorschläge entsprechend an. Zudem bieten wir eine Community-Funktion, die es dir ermöglicht, dich mit Gleichgesinnten auszutauschen und gegenseitig zu motivieren.
+Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der Magie einzutauchen. Entdecke sorgfältig kuratierte Rituale, die vom Gründer der App erstellt wurden, und erstelle deine eigenen magischen Praktiken. Ob du auf der Suche nach spiritueller Erleuchtung, Schutzritualen oder einfach nur Neugier bist – die Rituals App hat für jeden etwas zu bieten.
 
 ## Funktionen
 
-- **Personalisierte Rituale:** Anpassung der Vorschläge basierend auf deinen Vorlieben.
-- **Community-Funktion:** Austausch mit anderen Nutzern zur gegenseitigen Motivation.
-- **Einfache Integration:** Leicht umsetzbare Rituale für jeden Tag.
-
-Entdecke mit Rituals den Weg zu einem harmonischeren Leben!
+- **Entdecke Rituale:** Stöbere durch eine umfangreiche Liste von Ritualen, die mit Bild, Titel und Beschreibung versehen sind.
+- **Favorisiere deine Lieblingsrituale:** Speichere deine favorisierten Rituale auf einem eigenen Bildschirm, um schnell darauf zugreifen zu können. Diese werden sicher in Firebase Firestore gespeichert.
+- **Erstelle deine eigenen Rituale:** Erschaffe und personalisiere deine eigenen Rituale mit Titel, Beschreibung und Datum. Du kannst deine Rituale jederzeit bearbeiten oder löschen.
+- **Synchronisation mit Firebase:** Alle Daten werden sicher in Firebase Firestore gespeichert und können von überall aus abgerufen werden.
+- **Benutzerfreundliches Interface:** Ein klar strukturiertes Design mit einfacher Navigation ermöglicht es dir, dich voll und ganz auf die Magie zu konzentrieren.
 
 ## Geplantes Design
-Füge hier einige repräsentative Designs deiner App ein (z.B. aus Figma)
-<p>
-  <img src="./img/app_design_1.png" width="200">
-  <img src="./img/app_design_2.png" width="200">
-  <img src="./img/app_design_3.png" width="200">
-</p>
+
+Hier sind einige repräsentative Designs Beispiele für die App:
+
+<img width="1664" alt="Bildschirmfoto 2024-08-26 um 04 09 28" src="https://github.com/user-attachments/assets/7a9faa8e-87fc-4ab6-9adc-ba4f38046e4f">
 
 ## Features
-Hier kommen alle geplanten Features der App rein mit dem Status, ob es bereits umgesetzt wurde.
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] ...
-
+- [x] Liste von Ritualen anzeigen (mit Bild, Titel, Beschreibung)
+- [x] Detailansicht eines Rituals
+- [x] Favorisieren und Speichern von Ritualen
+- [x] Erstellen, Bearbeiten und Löschen von eigenen Ritualen
+- [ ] Benutzerprofile mit individuellen Einstellungen
+- [ ] Push-Benachrichtigungen für neue Rituale und Updates
+- [ ] Integration weiterer magischer Inhalte und Ressourcen
 
 ## Technischer Aufbau
 
 #### Projektaufbau
-Eine kurze Beschreibung deiner Ordnerstruktur und Architektur (MVVM, Repositories?) um Außenstehenden zu helfen, sich in deinem Projekt zurecht zu finden.
+Das Projekt folgt dem MVVM-Architekturmuster, um eine klare Trennung von Logik und UI zu gewährleisten. Die Struktur umfasst folgende Hauptkomponenten:
 
-#### Datenspeicherung
-Welche Daten speicherst du? Wo und wie (Firebase, Core Data)?
+## Komponenten
 
-#### API Calls
-Welche APIs verwendest du?
+- **Models**: Datenmodelle, die die Strukturen für Rituale und Benutzerinformationen definieren.
+- **ViewModels**: Steuert die Datenlogik und bereitet die Daten für die Anzeige in den Views auf.
+- **Views**: Die Benutzeroberfläche, die die Daten aus den ViewModels darstellt.
+- **Repositories**: Zuständig für die Kommunikation mit den Datenquellen wie Firebase Firestore.
+- **Services**: Enthält alle Netzwerk- und API-Serviceklassen, die für die Kommunikation mit externen Datenquellen verantwortlich sind.
 
-#### 3rd-Party Frameworks
-Verwendest du Frameworks, die nicht von dir stammen? Bspw. Swift Packages für Firebase, fertige SwiftUI-Views o.Ä.? Gib diese hier an.
+## Datenspeicherung
 
+Die App speichert folgende Daten:
+
+- **Rituale**: Titel, Beschreibung, Benutzer-ID und Erstellungsdatum. Diese Daten werden in Firebase Firestore gespeichert.
+- **Favorisierte Rituale**: Speichert die favorisierten Rituale eines Nutzers in einer separaten Sammlung in Firestore, basierend auf der Benutzer-ID.
+
+## API Calls
+
+Für die Simulation von API-Calls wird eine Fake App User API verwendet, die mit Async Await implementiert wird. Diese API dient zum Testen und Entwickeln von Benutzerinteraktionen.
+
+## 3rd-Party Frameworks
+
+Die App nutzt folgende Frameworks und Technologien:
+
+- **Firebase**: Für Authentifizierung.
+- **MapKit**: Zur Integration von Karten, wenn zukünftige Features dies erfordern.
 
 ## Ausblick
-Beschreibe hier, wo die Reise nach deinem Praxisprojekt hin geht. Was möchtest du in Zukunft noch ergänzen? Erstelle auch hierzu Issues und verlinke sie, wie oben.
- 
+
+Die Rituals App ist ein dynamisches Projekt mit einem klaren Fokus auf kontinuierliche Verbesserung und Erweiterung. Hier sind einige der zukünftigen Pläne:
+
+- **Erweiterung des Ritual-Angebots**: Hinzufügen weiterer Rituale, insbesondere solche, die von der Community erstellt wurden.
+- **Social Features**: Möglichkeit, Rituale mit anderen Nutzern zu teilen und Feedback zu geben.
+- **Erweiterte Benutzerprofile**: Benutzer können mehr persönliche Informationen und Einstellungen speichern, die ihre magischen Präferenzen widerspiegeln.
+- **Integration von Tutorials**: Schritt-für-Schritt-Anleitungen und Videos zur Durchführung von Ritualen.
+- **Lokalisierung**: Unterstützung weiterer Sprachen, um eine breitere internationale Nutzerbasis zu erreichen.
+- **Offline-Funktionalität**: Nutzung der App ohne Internetverbindung, wobei die Synchronisation bei der nächsten Verbindung erfolgt.
+
+Alle geplanten Features und Erweiterungen werden in Form von Issues dokumentiert und in zukünftigen Releases implementiert.
