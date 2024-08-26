@@ -56,6 +56,8 @@ Die App speichert folgende Daten:
 
 Für die Simulation von API-Calls wird eine Fake App User API verwendet, die mit Async Await implementiert wird. Diese API dient zum Testen und Entwickeln von Benutzerinteraktionen.
 
+URL: "https://jsonplaceholder.typicode.com/"
+
 ## 3rd-Party Frameworks
 
 Die App nutzt folgende Frameworks und Technologien:
