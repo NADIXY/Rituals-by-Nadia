@@ -18,7 +18,7 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
 
 ## Geplantes Design
 
-Hier sind einige repräsentative Designs Beispiele für die App:
+Hier sind einige repräsentative Beispiele Designs für die App:
 
 <img width="1664" alt="Bildschirmfoto 2024-08-26 um 04 09 28" src="https://github.com/user-attachments/assets/7a9faa8e-87fc-4ab6-9adc-ba4f38046e4f">
 
