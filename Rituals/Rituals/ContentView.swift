@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Rituals
 //
-//  Created by Nadia Marina Gaspar Baptista on 23.08.24.
+//  Created by Nadia on 23.08.24.
 //
 
 import SwiftUI
@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "star")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
