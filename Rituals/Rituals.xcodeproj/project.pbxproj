@@ -134,7 +134,6 @@
 		A958BBE22C78C0A500A8FE0C = {
 			isa = PBXGroup;
 			children = (
-				A951202B2C7D886900CA0759 /* GoogleService-Info.plist */,
 				A958BBED2C78C0A500A8FE0C /* Rituals */,
 				A958BBEC2C78C0A500A8FE0C /* Products */,
 			);
@@ -157,6 +156,7 @@
 				A958BBEE2C78C0A500A8FE0C /* RitualsApp.swift */,
 				A958BBF02C78C0A500A8FE0C /* ContentView.swift */,
 				A958BBF22C78C0A700A8FE0C /* Assets.xcassets */,
+				A951202B2C7D886900CA0759 /* GoogleService-Info.plist */,
 				A958BBF42C78C0A700A8FE0C /* Preview Content */,
 				A9643F242C7CB7420076902E /* Test.swift */,
 			);
