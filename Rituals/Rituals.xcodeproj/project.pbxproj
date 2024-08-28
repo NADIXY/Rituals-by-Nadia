@@ -19,7 +19,6 @@
 		A958BBF12C78C0A500A8FE0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958BBF02C78C0A500A8FE0C /* ContentView.swift */; };
 		A958BBF32C78C0A700A8FE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF22C78C0A700A8FE0C /* Assets.xcassets */; };
 		A958BBF62C78C0A700A8FE0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */; };
-		A9643F252C7CB7420076902E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9643F242C7CB7420076902E /* Test.swift */; };
 		A9F110402C7EE1E5005E1A31 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A9F1103F2C7EE1E5005E1A31 /* FirebaseAuth */; };
 		A9F110422C7EE1E5005E1A31 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A9F110412C7EE1E5005E1A31 /* FirebaseDatabase */; };
 		A9F110442C7EE1E5005E1A31 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A9F110432C7EE1E5005E1A31 /* FirebaseFirestore */; };
@@ -40,7 +39,6 @@
 		A958BBF02C78C0A500A8FE0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A958BBF22C78C0A700A8FE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A9643F242C7CB7420076902E /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +151,6 @@
 				A958BBF22C78C0A700A8FE0C /* Assets.xcassets */,
 				A95120332C7DA9F600CA0759 /* GoogleService-Info.plist */,
 				A958BBF42C78C0A700A8FE0C /* Preview Content */,
-				A9643F242C7CB7420076902E /* Test.swift */,
 			);
 			path = Rituals;
 			sourceTree = "<group>";
@@ -255,7 +252,6 @@
 				A951202A2C7D7B7B00CA0759 /* User.swift in Sources */,
 				A95120202C7D2E2000CA0759 /* LoginView.swift in Sources */,
 				A95120262C7D677E00CA0759 /* ProfileView.swift in Sources */,
-				A9643F252C7CB7420076902E /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

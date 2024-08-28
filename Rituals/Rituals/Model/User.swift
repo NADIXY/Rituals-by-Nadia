@@ -13,9 +13,6 @@ struct User: Identifiable, Codable { // Identifizierbaren Protokoll und codierba
     let email: String
     
     //Initialentyp erstellen
-    
-    
-    
     var initials: String {
         let formatter = PersonNameComponentsFormatter() //Formatieren die Personen                       //PersonenNamen aus der Vollständigen Namen
         if let components = formatter.personNameComponents(from: fullname) {
