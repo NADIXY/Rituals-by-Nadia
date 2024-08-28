@@ -7,9 +7,11 @@
 
 import SwiftUI
 import Firebase
+import FirebaseAuth
 
 @main
 struct RitualsApp: App {
+    @StateObject var viewModel = AuthViewModel()
     
     init() {
         FirebaseConfiguration.shared.setLoggerLevel(.min)
@@ -20,6 +22,7 @@ struct RitualsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
         }
     }
 }

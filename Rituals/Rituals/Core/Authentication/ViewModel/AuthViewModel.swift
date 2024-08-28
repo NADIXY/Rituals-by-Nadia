@@ -6,7 +6,7 @@
 //
 
 import Foundation
-//import Firebase
+import Firebase
 import FirebaseAuth
 
 //Diese classe hat 1 Protokoll die für beobachtbare Objekte entspricht.
@@ -21,10 +21,12 @@ class AuthViewModel: ObservableObject {
     }
     
     func signIn(withEmail email: String, password: String) async throws {
+        print("Sign in...")
         
     }
     
     func createUser(withEmail email:String, pasword: String, fullname: String) async throws {
+        print("Create user")
         
     }
     

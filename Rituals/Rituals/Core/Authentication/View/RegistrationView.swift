@@ -16,7 +16,7 @@ struct RegistrationView: View {
     //Um sicherzustellen, dass unsere Navigation dadurch wieder auf den ursprünglichen Bildschirm zurückspringt, damit wir das tun können verwenden hier dazu diese praktische Umgebungseigenschaft:
     @Environment(\.dismiss) var dismiss
     
-    @StateObject var viewModel = AuthViewModel()
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         VStack {
@@ -30,7 +30,7 @@ struct RegistrationView: View {
             VStack(spacing: 24) {
                 InputView(text: $email,
                           title: "Email Address",
-                          placeholder: "name@example.com")
+                          placeholder: "name@icloud.com")
                 .autocapitalization(.none) //Automatische Großschreibung
                 
                 InputView(text: $fullname,
@@ -51,7 +51,9 @@ struct RegistrationView: View {
             .padding(.top, 12)
             
             Button {
-                print("Sign user up...")
+                Task {
+                    try await viewModel.createUser(withEmail: email, pasword: password, fullname: fullname)
+                }
             } label: {
                 HStack {
                     Text("SIGN UP")

@@ -2,7 +2,7 @@
 //  SettingsRowView.swift
 //  Rituals
 //
-//  Created by Nadia Marina Gaspar Baptista on 27.08.24.
+//  Created by Nadia on 27.08.24.
 //
 
 import SwiftUI

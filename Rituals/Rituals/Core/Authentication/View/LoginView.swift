@@ -11,7 +11,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
-    @StateObject var viewModel = AuthViewModel()
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         NavigationStack {
@@ -26,7 +26,7 @@ struct LoginView: View {
                 VStack(spacing: 24) {
                     InputView(text: $email,
                               title: "Email Address",
-                              placeholder: "name@example.com")
+                              placeholder: "name@icloud.com")
                     .autocapitalization(.none) //Automatische Großschreibung
                     
                     InputView(text: $password,
@@ -79,4 +79,5 @@ struct LoginView: View {
 
 #Preview {
     LoginView()
+    
 }
