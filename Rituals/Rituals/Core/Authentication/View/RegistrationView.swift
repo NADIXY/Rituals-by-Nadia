@@ -42,11 +42,30 @@ struct RegistrationView: View {
                           placeholder: "Enter your password",
                           isSecureField: true)
                 
-                InputView(text: $confirmPassword,
-                          title: "Confirm Password",
-                          placeholder: "Confirm your Password",
-                          isSecureField: true)
+                ZStack(alignment: .trailing) {
+                    InputView(text: $confirmPassword,
+                              title: "Confirm Password",
+                              placeholder: "Confirm your Password",
+                              isSecureField: true)
+                    
+                    //Passwörter stimmen überein?
+                    if !password.isEmpty && !confirmPassword.isEmpty {
+                        if password == confirmPassword { // Ob Passworter gleich sind
+                            Image(systemName: "checkmark.circle.fill") //'check' Häkchen anzeige
+                                .imageScale(.large)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color(.systemGreen))
+                        } else {
+                            Image(systemName: "xmark.circle.fill") // 'x' anzeige
+                                .imageScale(.large)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color(.systemRed))
+                            
+                        }
+                    }
+                }
             }
+
             .padding(.horizontal)
             .padding(.top, 12)
             
@@ -64,6 +83,8 @@ struct RegistrationView: View {
                 .frame(width: UIScreen.main.bounds.width - 32, height: 48)
             }
             .background(Color(.systemBlue))
+            .disabled(!formIsValid)//Ob es gültig ist
+            .opacity(formIsValid ? 1.0 : 0.5)//Gültigkeit angezeige
             .cornerRadius(10)
             .padding(.top, 24)
             
@@ -80,6 +101,18 @@ struct RegistrationView: View {
                 .font(.system(size: 14))
             }
         }
+    }
+}
+
+extension RegistrationView: AuthenticationFormProtocol {
+    var formIsValid: Bool {
+        return !email.isEmpty
+        && email.contains("@")
+        && !password.isEmpty
+        && password.count > 8
+        
+        && confirmPassword == password
+        && !fullname.isEmpty
     }
 }
 

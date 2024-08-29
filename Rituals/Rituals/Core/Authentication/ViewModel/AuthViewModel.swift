@@ -5,9 +5,14 @@
 //  Created by Nadia on 27.08.24.
 //
 import Foundation
-//import Firebase
+import Firebase
 import FirebaseAuth
 import FirebaseFirestore
+
+//protocol ob das Formular gültig ist oder nicht
+protocol AuthenticationFormProtocol {
+    var formIsValid: Bool { get }
+}
 
 //Diese classe hat 1 Protokoll die für beobachtbare Objekte entspricht.
 //Sodass unsere Ansichten in der Lage sein werden, Änderungen an unserem Authentifizierungsansichtsmodell zu beobachten
@@ -23,7 +28,6 @@ class AuthViewModel: ObservableObject {
         Task {
             await fetchUser()
         }
-        
     }
     
     func signIn(withEmail email: String, password: String) async throws {
