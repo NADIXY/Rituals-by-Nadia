@@ -27,5 +27,3 @@ extension User {
     static var MOCK_USER = User(id: NSUUID().uuidString, fullname: "", email: "")
     //Die Profilseite werden mit den Benutzerdaten befüllt
 }
-
-

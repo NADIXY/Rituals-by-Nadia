@@ -30,7 +30,6 @@ struct InputView: View {
                     .font(.system(size: 14))
             }
             Divider()//Teiler
-            
         }
     }
 }
@@ -41,4 +40,3 @@ struct InputView_Previews: PreviewProvider {
         InputView(text: .constant(""), title: "Email Address", placeholder: "name@example.com")
     }
 }
-

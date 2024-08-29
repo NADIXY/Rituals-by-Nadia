@@ -4,6 +4,7 @@
 //
 //  Created by Nadia on 27.08.24.
 //
+
 import Foundation
 import Firebase
 import FirebaseAuth
@@ -38,7 +39,7 @@ class AuthViewModel: ObservableObject {
         } catch {
             print("DEBUG: Failed to log in with error \(error.localizedDescription)")
         }
-
+        
     }
     
     func createUser(withEmail email: String, password: String, fullname: String) async throws {
@@ -78,8 +79,5 @@ class AuthViewModel: ObservableObject {
         self.currentUser = try? snapshot.data(as: User.self)
         
         print("DEBUG: Current user is \(self.currentUser)")
-        
     }
-    
-    
 }
