@@ -52,7 +52,7 @@ struct RegistrationView: View {
             
             Button {
                 Task {
-                    try await viewModel.createUser(withEmail: email, pasword: password, fullname: fullname)
+                    try await viewModel.createUser(withEmail: email, password: password, fullname: fullname)
                 }
             } label: {
                 HStack {
