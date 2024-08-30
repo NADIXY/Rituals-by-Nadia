@@ -15,6 +15,4 @@ struct Rituals: Identifiable, Codable {
     var image: String
     var location: String
     var isFavorite: Bool
-    
-    
 }

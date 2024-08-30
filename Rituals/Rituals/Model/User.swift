@@ -22,6 +22,7 @@ struct User: Identifiable, Codable { // Identifizierbaren Protokoll und codierba
         return ""
     }
 }
+
 extension User {
     //Schein Benutzer
     static var MOCK_USER = User(id: NSUUID().uuidString, fullname: "", email: "")

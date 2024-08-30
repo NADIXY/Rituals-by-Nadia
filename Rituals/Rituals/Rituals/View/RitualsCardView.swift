@@ -11,7 +11,6 @@ struct RitualsCardView: View {
     
     let ritual: Rituals
     
-    
     var body: some View {
         GeometryReader { geo in
             let size = geo.size
@@ -39,7 +38,6 @@ struct RitualsCardView: View {
         .padding(10)
     }
 }
-
 
 #Preview {
     RitualsCardView(

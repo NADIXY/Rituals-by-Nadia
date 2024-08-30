@@ -12,6 +12,14 @@
 		A92408962C818A9F00746D9C /* RitualsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408952C818A9F00746D9C /* RitualsCardView.swift */; };
 		A92408982C81982700746D9C /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408972C81982700746D9C /* CardImageView.swift */; };
 		A924089A2C81A0AE00746D9C /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408992C81A0AE00746D9C /* TestView.swift */; };
+		A924089E2C81BFA700746D9C /* UserRituals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A924089D2C81BFA700746D9C /* UserRituals.swift */; };
+		A92408A22C81CD5200746D9C /* FireStoreClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408A12C81CD5200746D9C /* FireStoreClient.swift */; };
+		A92408A92C81CFB200746D9C /* UserRitualsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408A82C81CFB200746D9C /* UserRitualsView.swift */; };
+		A92408AB2C81D01500746D9C /* UserRitualsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408AA2C81D01500746D9C /* UserRitualsViewModel.swift */; };
+		A92408AD2C81D0E900746D9C /* AddUserRitualsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408AC2C81D0E900746D9C /* AddUserRitualsViewModel.swift */; };
+		A92408AF2C81D10A00746D9C /* AddUserRitualsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408AE2C81D10A00746D9C /* AddUserRitualsView.swift */; };
+		A92408B22C81D20900746D9C /* UpdateUserRitualsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408B12C81D20900746D9C /* UpdateUserRitualsView.swift */; };
+		A92408B42C81D24B00746D9C /* UpdateUserRitualsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408B32C81D24B00746D9C /* UpdateUserRitualsViewModel.swift */; };
 		A95120202C7D2E2000CA0759 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A951201F2C7D2E2000CA0759 /* LoginView.swift */; };
 		A95120222C7D31EF00CA0759 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120212C7D31EF00CA0759 /* InputView.swift */; };
 		A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120232C7D509200CA0759 /* RegistrationView.swift */; };
@@ -25,7 +33,7 @@
 		A958BBF32C78C0A700A8FE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF22C78C0A700A8FE0C /* Assets.xcassets */; };
 		A958BBF62C78C0A700A8FE0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */; };
 		A9E4A25B2C80ADD10008962D /* Rituals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4A25A2C80ADD10008962D /* Rituals.swift */; };
-		A9E4A25D2C8114DD0008962D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4A25C2C8114DD0008962D /* MainView.swift */; };
+		A9E4A25D2C8114DD0008962D /* RitualsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4A25C2C8114DD0008962D /* RitualsView.swift */; };
 		A9F110402C7EE1E5005E1A31 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A9F1103F2C7EE1E5005E1A31 /* FirebaseAuth */; };
 		A9F110422C7EE1E5005E1A31 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A9F110412C7EE1E5005E1A31 /* FirebaseDatabase */; };
 		A9F110442C7EE1E5005E1A31 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A9F110432C7EE1E5005E1A31 /* FirebaseFirestore */; };
@@ -37,6 +45,14 @@
 		A92408952C818A9F00746D9C /* RitualsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitualsCardView.swift; sourceTree = "<group>"; };
 		A92408972C81982700746D9C /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 		A92408992C81A0AE00746D9C /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		A924089D2C81BFA700746D9C /* UserRituals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRituals.swift; sourceTree = "<group>"; };
+		A92408A12C81CD5200746D9C /* FireStoreClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreClient.swift; sourceTree = "<group>"; };
+		A92408A82C81CFB200746D9C /* UserRitualsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRitualsView.swift; sourceTree = "<group>"; };
+		A92408AA2C81D01500746D9C /* UserRitualsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRitualsViewModel.swift; sourceTree = "<group>"; };
+		A92408AC2C81D0E900746D9C /* AddUserRitualsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserRitualsViewModel.swift; sourceTree = "<group>"; };
+		A92408AE2C81D10A00746D9C /* AddUserRitualsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserRitualsView.swift; sourceTree = "<group>"; };
+		A92408B12C81D20900746D9C /* UpdateUserRitualsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRitualsView.swift; sourceTree = "<group>"; };
+		A92408B32C81D24B00746D9C /* UpdateUserRitualsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRitualsViewModel.swift; sourceTree = "<group>"; };
 		A951201F2C7D2E2000CA0759 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A95120212C7D31EF00CA0759 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		A95120232C7D509200CA0759 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -51,7 +67,7 @@
 		A958BBF22C78C0A700A8FE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A9E4A25A2C80ADD10008962D /* Rituals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rituals.swift; sourceTree = "<group>"; };
-		A9E4A25C2C8114DD0008962D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A9E4A25C2C8114DD0008962D /* RitualsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitualsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +93,69 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A924089B2C81BE6700746D9C /* Rituals */ = {
+			isa = PBXGroup;
+			children = (
+				A924089C2C81BE8800746D9C /* View */,
+			);
+			path = Rituals;
+			sourceTree = "<group>";
+		};
+		A924089C2C81BE8800746D9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9E4A25C2C8114DD0008962D /* RitualsView.swift */,
+				A92408952C818A9F00746D9C /* RitualsCardView.swift */,
+				A92408972C81982700746D9C /* CardImageView.swift */,
+				A92408912C8183FB00746D9C /* FavoritesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A92408A42C81CE2300746D9C /* UserRituals */ = {
+			isa = PBXGroup;
+			children = (
+				A92408A72C81CF1900746D9C /* UserRitualsView */,
+				A92408A62C81CF0700746D9C /* AddUserRituals */,
+				A92408A52C81CEA500746D9C /* UpdateUserRituals */,
+			);
+			path = UserRituals;
+			sourceTree = "<group>";
+		};
+		A92408A52C81CEA500746D9C /* UpdateUserRituals */ = {
+			isa = PBXGroup;
+			children = (
+				A92408B12C81D20900746D9C /* UpdateUserRitualsView.swift */,
+				A92408B32C81D24B00746D9C /* UpdateUserRitualsViewModel.swift */,
+			);
+			path = UpdateUserRituals;
+			sourceTree = "<group>";
+		};
+		A92408A62C81CF0700746D9C /* AddUserRituals */ = {
+			isa = PBXGroup;
+			children = (
+				A92408AC2C81D0E900746D9C /* AddUserRitualsViewModel.swift */,
+				A92408AE2C81D10A00746D9C /* AddUserRitualsView.swift */,
+			);
+			path = AddUserRituals;
+			sourceTree = "<group>";
+		};
+		A92408A72C81CF1900746D9C /* UserRitualsView */ = {
+			isa = PBXGroup;
+			children = (
+				A92408A82C81CFB200746D9C /* UserRitualsView.swift */,
+				A92408AA2C81D01500746D9C /* UserRitualsViewModel.swift */,
+			);
+			path = UserRitualsView;
+			sourceTree = "<group>";
+		};
 		A95120192C7D2B8C00CA0759 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				A95120292C7D7B7B00CA0759 /* User.swift */,
 				A9E4A25A2C80ADD10008962D /* Rituals.swift */,
+				A924089D2C81BFA700746D9C /* UserRituals.swift */,
+				A92408A12C81CD5200746D9C /* FireStoreClient.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,16 +174,8 @@
 			children = (
 				A951201D2C7D2D2400CA0759 /* Authentication */,
 				A951201E2C7D2D6500CA0759 /* Profile */,
-				A951201C2C7D2D1600CA0759 /* Root */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		A951201C2C7D2D1600CA0759 /* Root */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Root;
 			sourceTree = "<group>";
 		};
 		A951201D2C7D2D2400CA0759 /* Authentication */ = {
@@ -166,15 +232,13 @@
 		A958BBED2C78C0A500A8FE0C /* Rituals */ = {
 			isa = PBXGroup;
 			children = (
+				A95120192C7D2B8C00CA0759 /* Model */,
 				A951201A2C7D2BB900CA0759 /* Components */,
 				A951201B2C7D2BE200CA0759 /* Core */,
-				A95120192C7D2B8C00CA0759 /* Model */,
+				A924089B2C81BE6700746D9C /* Rituals */,
+				A92408A42C81CE2300746D9C /* UserRituals */,
 				A958BBF02C78C0A500A8FE0C /* ContentView.swift */,
-				A9E4A25C2C8114DD0008962D /* MainView.swift */,
 				A958BBEE2C78C0A500A8FE0C /* RitualsApp.swift */,
-				A92408912C8183FB00746D9C /* FavoritesView.swift */,
-				A92408952C818A9F00746D9C /* RitualsCardView.swift */,
-				A92408972C81982700746D9C /* CardImageView.swift */,
 				A958BBF22C78C0A700A8FE0C /* Assets.xcassets */,
 				A95120332C7DA9F600CA0759 /* GoogleService-Info.plist */,
 				A958BBF42C78C0A700A8FE0C /* Preview Content */,
@@ -275,18 +339,26 @@
 				A95120302C7D8CDD00CA0759 /* AuthViewModel.swift in Sources */,
 				A958BBF12C78C0A500A8FE0C /* ContentView.swift in Sources */,
 				A9E4A25B2C80ADD10008962D /* Rituals.swift in Sources */,
+				A92408AB2C81D01500746D9C /* UserRitualsViewModel.swift in Sources */,
 				A958BBEF2C78C0A500A8FE0C /* RitualsApp.swift in Sources */,
 				A95120222C7D31EF00CA0759 /* InputView.swift in Sources */,
 				A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */,
+				A92408A22C81CD5200746D9C /* FireStoreClient.swift in Sources */,
+				A92408AD2C81D0E900746D9C /* AddUserRitualsViewModel.swift in Sources */,
+				A92408AF2C81D10A00746D9C /* AddUserRitualsView.swift in Sources */,
 				A924089A2C81A0AE00746D9C /* TestView.swift in Sources */,
+				A92408B42C81D24B00746D9C /* UpdateUserRitualsViewModel.swift in Sources */,
+				A92408A92C81CFB200746D9C /* UserRitualsView.swift in Sources */,
 				A95120282C7D6CA400CA0759 /* SettingsRowView.swift in Sources */,
-				A9E4A25D2C8114DD0008962D /* MainView.swift in Sources */,
+				A9E4A25D2C8114DD0008962D /* RitualsView.swift in Sources */,
 				A92408922C8183FB00746D9C /* FavoritesView.swift in Sources */,
+				A92408B22C81D20900746D9C /* UpdateUserRitualsView.swift in Sources */,
 				A92408982C81982700746D9C /* CardImageView.swift in Sources */,
 				A951202A2C7D7B7B00CA0759 /* User.swift in Sources */,
 				A92408962C818A9F00746D9C /* RitualsCardView.swift in Sources */,
 				A95120202C7D2E2000CA0759 /* LoginView.swift in Sources */,
 				A95120262C7D677E00CA0759 /* ProfileView.swift in Sources */,
+				A924089E2C81BFA700746D9C /* UserRituals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

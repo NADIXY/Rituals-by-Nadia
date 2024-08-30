@@ -9,7 +9,7 @@ import SwiftUI
 import FirebaseFirestore
 import FirebaseFirestore
 
-struct MainView: View {
+struct RitualsView: View {
     //Propeties
     @FirestoreQuery(collectionPath: "rituals") var items: [Rituals]
     var columns = Array(repeating: GridItem(), count: 2)
@@ -24,7 +24,7 @@ struct MainView: View {
                     }
                 }
             }
-            
+
             //Navigation Bar
             .navigationTitle("Rituals")
             .toolbar {
@@ -42,29 +42,18 @@ struct MainView: View {
                     }
                     .buttonStyle(.plain)
                 }
+                ToolbarItem(placement: .bottomBar) {
+                    NavigationLink(destination: UserRitualsView()) {
+                        Image(systemName: "")
+                            .font(.title2)
+                        Text("Your Rituals")
+                    }
+                }
             }
         }
     }
 }
 
 #Preview {
-    MainView()
+    RitualsView()
 }
-
-
-/*
- @FirestoreQuery(collectionPath: "rituals") var items: [Rituals]
-
- var body: some View {
-     List {
-         ForEach(items) { item in
-             HStack {
-                 Text(item.name)
-                 Text("\(item.description)")
-             }
-         }
-     }
- }
-}
- */
-
