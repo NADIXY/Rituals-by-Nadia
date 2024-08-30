@@ -44,7 +44,7 @@ struct RitualsView: View {
                 }
                 ToolbarItem(placement: .bottomBar) {
                     NavigationLink(destination: UserRitualsView()) {
-                        Image(systemName: "")
+                        Image(systemName: "newspaper")
                             .font(.title2)
                         Text("Your Rituals")
                     }
