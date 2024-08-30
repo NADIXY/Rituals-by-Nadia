@@ -27,6 +27,7 @@ struct SettingsRowView: View {
         
     }
 }
+
 struct SettingsRowView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsRowView(imageName: "gear", title: "Version", tintenColor: Color(.systemGray))

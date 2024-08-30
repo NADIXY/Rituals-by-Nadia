@@ -14,7 +14,7 @@ struct ContentView: View {
         Group {
             //wenn eine Benutzersitzung gibt, wenn nicht gleich null, wird an die Profilansicht weitergeleitet
             if viewModel.userSession != nil {
-                ProfileView()
+                MainView()
             } else {
                 //sonst, wenn der Wert gleich null ist, leitet an die Loginansicht
                 LoginView()
