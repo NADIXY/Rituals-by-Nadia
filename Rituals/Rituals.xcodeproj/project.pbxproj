@@ -11,6 +11,7 @@
 		A92408922C8183FB00746D9C /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408912C8183FB00746D9C /* FavoritesView.swift */; };
 		A92408962C818A9F00746D9C /* RitualsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408952C818A9F00746D9C /* RitualsCardView.swift */; };
 		A92408982C81982700746D9C /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408972C81982700746D9C /* CardImageView.swift */; };
+		A924089A2C81A0AE00746D9C /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408992C81A0AE00746D9C /* TestView.swift */; };
 		A95120202C7D2E2000CA0759 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A951201F2C7D2E2000CA0759 /* LoginView.swift */; };
 		A95120222C7D31EF00CA0759 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120212C7D31EF00CA0759 /* InputView.swift */; };
 		A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120232C7D509200CA0759 /* RegistrationView.swift */; };
@@ -35,6 +36,7 @@
 		A92408912C8183FB00746D9C /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		A92408952C818A9F00746D9C /* RitualsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitualsCardView.swift; sourceTree = "<group>"; };
 		A92408972C81982700746D9C /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
+		A92408992C81A0AE00746D9C /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		A951201F2C7D2E2000CA0759 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A95120212C7D31EF00CA0759 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		A95120232C7D509200CA0759 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -172,10 +174,11 @@
 				A958BBEE2C78C0A500A8FE0C /* RitualsApp.swift */,
 				A92408912C8183FB00746D9C /* FavoritesView.swift */,
 				A92408952C818A9F00746D9C /* RitualsCardView.swift */,
+				A92408972C81982700746D9C /* CardImageView.swift */,
 				A958BBF22C78C0A700A8FE0C /* Assets.xcassets */,
 				A95120332C7DA9F600CA0759 /* GoogleService-Info.plist */,
 				A958BBF42C78C0A700A8FE0C /* Preview Content */,
-				A92408972C81982700746D9C /* CardImageView.swift */,
+				A92408992C81A0AE00746D9C /* TestView.swift */,
 			);
 			path = Rituals;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				A958BBEF2C78C0A500A8FE0C /* RitualsApp.swift in Sources */,
 				A95120222C7D31EF00CA0759 /* InputView.swift in Sources */,
 				A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */,
+				A924089A2C81A0AE00746D9C /* TestView.swift in Sources */,
 				A95120282C7D6CA400CA0759 /* SettingsRowView.swift in Sources */,
 				A9E4A25D2C8114DD0008962D /* MainView.swift in Sources */,
 				A92408922C8183FB00746D9C /* FavoritesView.swift in Sources */,
