@@ -10,11 +10,12 @@ import FirebaseFirestore
 import FirebaseFirestore
 
 struct RitualsView: View {
-    //Propeties
-    @FirestoreQuery(collectionPath: "rituals") var items: [Rituals]
-    var columns = Array(repeating: GridItem(), count: 2)
     
-    //Body
+    // MARK: - Propeties
+    @FirestoreQuery(collectionPath: "rituals") var items: [Rituals]
+    var columns = Array(repeating: GridItem(), count: 1)
+    
+    // MARK: - Body
     var body: some View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
@@ -42,6 +43,7 @@ struct RitualsView: View {
                     }
                     .buttonStyle(.plain)
                 }
+            
                 ToolbarItem(placement: .bottomBar) {
                     NavigationLink(destination: UserRitualsView()) {
                         Image(systemName: "newspaper")

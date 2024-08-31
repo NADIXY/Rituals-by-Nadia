@@ -1,5 +1,5 @@
 //
-//  FileFireStoreClient.swift
+//  FireStoreClient.swift
 //  Rituals
 //
 //  Created by Nadia on 30.08.24.

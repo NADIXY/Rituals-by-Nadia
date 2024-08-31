@@ -15,29 +15,46 @@ struct RitualsCardView: View {
         GeometryReader { geo in
             let size = geo.size
             
-            ZStack(alignment: .topTrailing) {
-                if let url = URL(string: ritual.image) {
-                    CardImageView(url: url, width: size.width, height: size.height)
-                    
-                    Button {
-                        //action
-                    } label: {
-                        Image(systemName: "star.fill")
-                            .padding(10)
-                            .foregroundColor(ritual.isFavorite ? .yellow : .white)
-                            .background(.blue)
-                            .clipShape(Circle())
-                            .padding()
+            ZStack(alignment: .bottom) {
+                ZStack(alignment: .topTrailing) {
+                    if let url = URL(string: ritual.image) {
+                        CardImageView(url: url, width: size.width, height: size.height)
+                        
+                        Button {
+                            //action
+                        } label: {
+                            Image(systemName: "star.fill")
+                                .padding(10)
+                                .foregroundColor(ritual.isFavorite ? .yellow : .white)
+                                .background(.blue)
+                                .clipShape(Circle())
+                                .padding()
+                        }
                     }
                 }
+                
+                VStack(alignment: .leading) {
+                    Text(ritual.name)
+                        .titleFont()
+                        //.foregroundColor(.yellow)
+                    Text("Location: \(ritual.location)")
+                        //.foregroundColor(.red)
+                        .subtitle()
+                }
+                .padding(10)
+                //.frame(maxWidth: .infinity, alignment: .leading)
+                .background(.background.opacity(0.5))
+                .cornerRadius(10)
+                .padding(10)
             }
         }
-
+        
         .frame(height: UIScreen.main.bounds.width * 0.7)
         .background(.background.opacity(0.5))
         .padding(10)
     }
 }
+
 
 #Preview {
     RitualsCardView(
