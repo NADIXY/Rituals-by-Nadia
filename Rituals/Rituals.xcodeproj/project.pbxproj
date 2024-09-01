@@ -20,6 +20,9 @@
 		A92408AF2C81D10A00746D9C /* AddUserRitualsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408AE2C81D10A00746D9C /* AddUserRitualsView.swift */; };
 		A92408B22C81D20900746D9C /* UpdateUserRitualsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408B12C81D20900746D9C /* UpdateUserRitualsView.swift */; };
 		A92408B42C81D24B00746D9C /* UpdateUserRitualsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408B32C81D24B00746D9C /* UpdateUserRitualsViewModel.swift */; };
+		A9273CEA2C847D60003F95FC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CE92C847D60003F95FC /* ViewModel.swift */; };
+		A9273CED2C84B44C003F95FC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CEC2C84B44C003F95FC /* DetailView.swift */; };
+		A9273CF02C84D455003F95FC /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CEF2C84D455003F95FC /* BackButtonView.swift */; };
 		A95120202C7D2E2000CA0759 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A951201F2C7D2E2000CA0759 /* LoginView.swift */; };
 		A95120222C7D31EF00CA0759 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120212C7D31EF00CA0759 /* InputView.swift */; };
 		A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120232C7D509200CA0759 /* RegistrationView.swift */; };
@@ -32,7 +35,6 @@
 		A958BBF12C78C0A500A8FE0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958BBF02C78C0A500A8FE0C /* ContentView.swift */; };
 		A958BBF32C78C0A700A8FE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF22C78C0A700A8FE0C /* Assets.xcassets */; };
 		A958BBF62C78C0A700A8FE0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */; };
-		A9D242542C83725A005B8A6E /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D242532C83725A005B8A6E /* CartView.swift */; };
 		A9D242562C837A65005B8A6E /* Extension+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D242552C837A64005B8A6E /* Extension+Text.swift */; };
 		A9E4A25B2C80ADD10008962D /* Rituals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4A25A2C80ADD10008962D /* Rituals.swift */; };
 		A9E4A25D2C8114DD0008962D /* RitualsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4A25C2C8114DD0008962D /* RitualsView.swift */; };
@@ -55,6 +57,9 @@
 		A92408AE2C81D10A00746D9C /* AddUserRitualsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserRitualsView.swift; sourceTree = "<group>"; };
 		A92408B12C81D20900746D9C /* UpdateUserRitualsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRitualsView.swift; sourceTree = "<group>"; };
 		A92408B32C81D24B00746D9C /* UpdateUserRitualsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRitualsViewModel.swift; sourceTree = "<group>"; };
+		A9273CE92C847D60003F95FC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A9273CEC2C84B44C003F95FC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A9273CEF2C84D455003F95FC /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 		A951201F2C7D2E2000CA0759 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A95120212C7D31EF00CA0759 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		A95120232C7D509200CA0759 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -68,7 +73,6 @@
 		A958BBF02C78C0A500A8FE0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A958BBF22C78C0A700A8FE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A9D242532C83725A005B8A6E /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		A9D242552C837A64005B8A6E /* Extension+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Text.swift"; sourceTree = "<group>"; };
 		A9E4A25A2C80ADD10008962D /* Rituals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rituals.swift; sourceTree = "<group>"; };
 		A9E4A25C2C8114DD0008962D /* RitualsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitualsView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 		A924089B2C81BE6700746D9C /* Rituals */ = {
 			isa = PBXGroup;
 			children = (
+				A9273CEE2C84D185003F95FC /* Extensions */,
+				A9273CE82C847D20003F95FC /* ViewModel */,
 				A924089C2C81BE8800746D9C /* View */,
 			);
 			path = Rituals;
@@ -109,9 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				A9E4A25C2C8114DD0008962D /* RitualsView.swift */,
-				A92408952C818A9F00746D9C /* RitualsCardView.swift */,
-				A92408972C81982700746D9C /* CardImageView.swift */,
 				A92408912C8183FB00746D9C /* FavoritesView.swift */,
+				A9273CEC2C84B44C003F95FC /* DetailView.swift */,
+				A9273CEB2C849E85003F95FC /* SubView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,6 +159,31 @@
 			path = UserRitualsView;
 			sourceTree = "<group>";
 		};
+		A9273CE82C847D20003F95FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9273CE92C847D60003F95FC /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9273CEB2C849E85003F95FC /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				A92408972C81982700746D9C /* CardImageView.swift */,
+				A92408952C818A9F00746D9C /* RitualsCardView.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		A9273CEE2C84D185003F95FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A9D242552C837A64005B8A6E /* Extension+Text.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A95120192C7D2B8C00CA0759 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +200,7 @@
 			children = (
 				A95120212C7D31EF00CA0759 /* InputView.swift */,
 				A95120272C7D6CA400CA0759 /* SettingsRowView.swift */,
+				A9273CEF2C84D455003F95FC /* BackButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -177,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				A951201D2C7D2D2400CA0759 /* Authentication */,
-				A951201E2C7D2D6500CA0759 /* Profile */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -239,16 +270,15 @@
 				A95120192C7D2B8C00CA0759 /* Model */,
 				A951201A2C7D2BB900CA0759 /* Components */,
 				A951201B2C7D2BE200CA0759 /* Core */,
+				A951201E2C7D2D6500CA0759 /* Profile */,
 				A924089B2C81BE6700746D9C /* Rituals */,
 				A92408A42C81CE2300746D9C /* UserRituals */,
 				A958BBF02C78C0A500A8FE0C /* ContentView.swift */,
-				A9D242532C83725A005B8A6E /* CartView.swift */,
 				A958BBEE2C78C0A500A8FE0C /* RitualsApp.swift */,
 				A958BBF22C78C0A700A8FE0C /* Assets.xcassets */,
 				A95120332C7DA9F600CA0759 /* GoogleService-Info.plist */,
 				A958BBF42C78C0A700A8FE0C /* Preview Content */,
 				A92408992C81A0AE00746D9C /* TestView.swift */,
-				A9D242552C837A64005B8A6E /* Extension+Text.swift */,
 			);
 			path = Rituals;
 			sourceTree = "<group>";
@@ -348,18 +378,20 @@
 				A9E4A25B2C80ADD10008962D /* Rituals.swift in Sources */,
 				A92408AB2C81D01500746D9C /* UserRitualsViewModel.swift in Sources */,
 				A958BBEF2C78C0A500A8FE0C /* RitualsApp.swift in Sources */,
+				A9273CEA2C847D60003F95FC /* ViewModel.swift in Sources */,
 				A95120222C7D31EF00CA0759 /* InputView.swift in Sources */,
-				A9D242542C83725A005B8A6E /* CartView.swift in Sources */,
 				A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */,
 				A92408A22C81CD5200746D9C /* FireStoreClient.swift in Sources */,
 				A92408AD2C81D0E900746D9C /* AddUserRitualsViewModel.swift in Sources */,
 				A92408AF2C81D10A00746D9C /* AddUserRitualsView.swift in Sources */,
 				A924089A2C81A0AE00746D9C /* TestView.swift in Sources */,
 				A92408B42C81D24B00746D9C /* UpdateUserRitualsViewModel.swift in Sources */,
+				A9273CF02C84D455003F95FC /* BackButtonView.swift in Sources */,
 				A92408A92C81CFB200746D9C /* UserRitualsView.swift in Sources */,
 				A95120282C7D6CA400CA0759 /* SettingsRowView.swift in Sources */,
 				A9E4A25D2C8114DD0008962D /* RitualsView.swift in Sources */,
 				A92408922C8183FB00746D9C /* FavoritesView.swift in Sources */,
+				A9273CED2C84B44C003F95FC /* DetailView.swift in Sources */,
 				A92408B22C81D20900746D9C /* UpdateUserRitualsView.swift in Sources */,
 				A92408982C81982700746D9C /* CardImageView.swift in Sources */,
 				A951202A2C7D7B7B00CA0759 /* User.swift in Sources */,
