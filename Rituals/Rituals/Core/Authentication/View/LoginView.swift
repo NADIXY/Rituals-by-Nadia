@@ -59,8 +59,6 @@ struct LoginView: View {
                 
                 Spacer()//abstandshalter
                 
-                //sign up button
-                
                 //Wir wollen nur von einer Screen zu den andere navigieren
                 NavigationLink {
                     RegistrationView() //Das Ziel
@@ -86,10 +84,8 @@ extension LoginView: AuthenticationFormProtocol {
         && !password.isEmpty
         && password.count > 8
     }
-    
 }
 
 #Preview {
-    LoginView()
-    
+    LoginView()    
 }

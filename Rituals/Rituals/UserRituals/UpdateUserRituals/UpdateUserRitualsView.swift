@@ -11,23 +11,37 @@ struct UpdateUserRitualsView: View {
     @StateObject var viewModel: UpdateUserRitualsViewModel
     @Binding var isPresented: Bool
     @Environment(\.dismiss) var dismiss
-
+    
     var body: some View {
-        VStack(spacing: 20) {
-            TextEditor(text: $viewModel.text)
-            Button {
-                viewModel.updateUserRituals()
-                isPresented.toggle()
-                dismiss()
-            } label: {
-                Text("UPDATE YOUR RITUALS")
+        NavigationView {
+            VStack(spacing: 20) {
+                TextField("Name", text: $viewModel.title)
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 10).stroke(Color.yellow, lineWidth: 2))
+                    .padding([.leading, .trailing], 16)
+                
+                TextField("Description", text: $viewModel.text, axis: .vertical)
+                    .padding()
+                    .frame(height: 200) // Größeres Textfeld für Beschreibung
+                    .background(RoundedRectangle(cornerRadius: 10).stroke(Color.yellow, lineWidth: 2))
+                    .padding([.leading, .trailing], 16)
+                
+                Spacer()
+                
+                Button {
+                    viewModel.updateUserRituals()
+                    isPresented.toggle()
+                    dismiss()
+                } label: {
+                    Text("Save")
+                }
             }
+            .background(Color.gray.opacity(0.9))
+            .navigationTitle("UPDATE")
         }
-        .padding()
-        .background(Color.gray.opacity(0.2))
     }
 }
 
 #Preview {
-    UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: UserRituals(text: "")), isPresented: .constant(true))
+    UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: UserRituals(title: "", text: "")), isPresented: .constant(true))
 }

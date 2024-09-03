@@ -9,14 +9,14 @@ import Foundation
 import FirebaseAuth
 
 class UpdateUserRitualsViewModel: ObservableObject {
-
     private let store = FireStoreClient.shared
-    
     private let userRituals: UserRituals
-    @Published var text: String
     
+    @Published var text: String
+    @Published var title: String
     
     init(userRituals: UserRituals) {
+        self.title = userRituals.title ?? ""
         self.text = userRituals.text
         self.userRituals = userRituals
     }
@@ -25,7 +25,7 @@ class UpdateUserRitualsViewModel: ObservableObject {
         Task {
             do {
                 if let uid = Auth.auth().currentUser?.uid, let userRitualsId = userRituals.id {
-                    try await store.updateUserRituals(text: text, userId: uid, userRitualsId: userRitualsId)
+                    try await store.updateUserRituals(title: title, text: text, userId: uid, userRitualsId: userRitualsId)
                 }
             }
         }

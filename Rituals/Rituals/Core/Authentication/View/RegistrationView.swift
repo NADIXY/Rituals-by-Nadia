@@ -15,7 +15,6 @@ struct RegistrationView: View {
     
     //Um sicherzustellen, dass unsere Navigation dadurch wieder auf den ursprünglichen Bildschirm zurückspringt, damit wir das tun können verwenden hier dazu diese praktische Umgebungseigenschaft:
     @Environment(\.dismiss) var dismiss
-    
     @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
@@ -115,7 +114,6 @@ extension RegistrationView: AuthenticationFormProtocol {
         && !fullname.isEmpty
     }
 }
-
 
 #Preview {
     RegistrationView()

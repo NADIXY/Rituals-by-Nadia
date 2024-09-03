@@ -12,8 +12,8 @@ import FirebaseFirestore
 struct RitualsView: View {
     
     // MARK: - Propeties
-    
     @EnvironmentObject var vm: ViewModel
+    @ObservedObject var fvvm: FavoritesViewModel
     
     @FirestoreQuery(collectionPath: "rituals") var items: [Rituals]
     var columns = Array(repeating: GridItem(), count: 1)
@@ -26,6 +26,7 @@ struct RitualsView: View {
                     ForEach(items) { item in
                         NavigationLink(destination: DetailView(ritual: item)) {
                             RitualsCardView(ritual: item)
+                                .environmentObject(fvvm)
                         }
                         .buttonStyle(.plain)
                     }
@@ -40,7 +41,7 @@ struct RitualsView: View {
             .navigationTitle("Rituals")
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    NavigationLink(destination: FavoritesView()) {
+                    NavigationLink(destination: FavoritesView(fvvm: fvvm)) {
                         Image(systemName: "star.fill")
                             .font(.title2)
                     }
@@ -63,11 +64,15 @@ struct RitualsView: View {
                     }
                 }
             }
+            .background {
+                Image("Background")
+                    .aspectRatio(contentMode: .fill)
+            }
         }
     }
 }
 
 #Preview {
-    RitualsView()
+    RitualsView(fvvm: FavoritesViewModel())
         .environmentObject(ViewModel())
 }

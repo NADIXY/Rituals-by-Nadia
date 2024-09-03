@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var viewModel: AuthViewModel
-    
     @StateObject var vm = ViewModel()
+    @StateObject var fvvm = FavoritesViewModel()
     
     var body: some View {
         Group {
             //wenn eine Benutzersitzung gibt, wenn nicht gleich null, wird an die Profilansicht weitergeleitet
             if viewModel.userSession != nil {
-                RitualsView()
+                RitualsView(fvvm: fvvm)
                     .environmentObject(vm)
             } else {
                 //sonst, wenn der Wert gleich null ist, leitet an die Loginansicht

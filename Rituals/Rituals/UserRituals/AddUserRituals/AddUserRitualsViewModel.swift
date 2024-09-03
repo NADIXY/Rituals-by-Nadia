@@ -10,13 +10,14 @@ import FirebaseAuth
 
 class AddUserRitualsViewModel: ObservableObject {
     @Published var text = ""
+    @Published var title = ""
 
     private let store = FireStoreClient.shared
 
     func addUserRituals() {
         do {
             if let uid = Auth.auth().currentUser?.uid {
-                try store.addUserRituals(text: text, userId: uid)
+                try store.addUserRituals(title: title, text: text, userId: uid)
             }
         } catch {
             print(error.localizedDescription)

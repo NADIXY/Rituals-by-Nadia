@@ -20,6 +20,7 @@ struct UserRitualsView: View {
                     UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: item),
                                    isPresented: $showEditUserRituals)
                 } label: {
+                    Text(item.title ?? "")
                     Text(item.text)
                         .swipeActions {
                             Button {

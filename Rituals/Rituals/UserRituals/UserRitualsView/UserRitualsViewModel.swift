@@ -10,7 +10,6 @@ import FirebaseAuth
 
 @MainActor
 class UserRitualsViewModel: ObservableObject {
-
     @Published var currentUser: User?
     @Published var userRituals: [UserRituals] = []
     @Published var showSettings = false
@@ -23,6 +22,7 @@ class UserRitualsViewModel: ObservableObject {
                 if let uid = Auth.auth().currentUser?.uid {
                     userRituals = try await store.getUserRituals(userId: uid)
                 }
+                print("\(userRituals)")
             } catch {
                 print(error.localizedDescription)
                 userRituals = []

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct User: Identifiable, Codable { // Identifizierbaren Protokoll und codierbaren Protokoll entspricht
+struct User: Identifiable, Codable {
     let id: String
     let fullname: String
     let email: String
@@ -21,10 +21,4 @@ struct User: Identifiable, Codable { // Identifizierbaren Protokoll und codierba
         }
         return ""
     }
-}
-
-extension User {
-    //Schein Benutzer
-    static var MOCK_USER = User(id: NSUUID().uuidString, fullname: "", email: "")
-    //Die Profilseite werden mit den Benutzerdaten befüllt
 }

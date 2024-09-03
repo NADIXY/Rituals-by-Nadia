@@ -10,8 +10,7 @@ import SwiftUI
 struct RitualsCardView: View {
     
     // MARK: Properties
-    
-    @EnvironmentObject var vm: ViewModel
+    @EnvironmentObject var vm: FavoritesViewModel
     
     let ritual: Rituals
     
@@ -25,11 +24,15 @@ struct RitualsCardView: View {
                         CardImageView(url: url, width: size.width, height: size.height)
                         
                         Button {
-                            vm.toggleFavorite(ritual: ritual)
+                            if vm.isFavorite(fvRitualID: ritual.id ?? "") {
+                                vm.deleteFavoriteRituals(thisFavoriteRitualsId: ritual.id)
+                            } else {
+                                vm.addFavoriteRituals(id: ritual.id ?? "", name: ritual.name, description: ritual.description, image: ritual.image, location: ritual.location)
+                            }
                         } label: {
                             Image(systemName: "star.fill")
                                 .padding(10)
-                                .foregroundColor(ritual.isFavorite ? .yellow : .white)
+                                .foregroundColor(vm.isFavorite(fvRitualID: ritual.id ?? "") ? .yellow : .white)
                                 .background(.blue)
                                 .clipShape(Circle())
                                 .padding()
@@ -60,7 +63,6 @@ struct RitualsCardView: View {
     }
 }
 
-
 #Preview {
     //RitualsView()
         //.environmentObject(ViewModel())
@@ -70,9 +72,7 @@ struct RitualsCardView: View {
             name: "Glücksbringer",
             description: "Verwandeln Sie einen Stein in einen Glücksbringer. Ein Stein des Strandes am besten klein, schließen sie in der Hand und wünschen, dass 1 bestimmte Person immer viel Glück und Schutz bekommt und verschenken sie es.",
             image: "https://firebasestorage.googleapis.com/v0/b/rituals-3bb39.appspot.com/o/Bildschirmfoto%202024-08-29%20um%2019.44.58.png?alt=media&token=3bf5c5a4-78cb-42c8-b259-18db795bbde5",
-            location: "Ans Meer",
-            isFavorite: false
+            location: "Ans Meer"
         )
     )
 }
-

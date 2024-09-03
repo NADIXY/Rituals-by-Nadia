@@ -11,7 +11,6 @@
 		A92408922C8183FB00746D9C /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408912C8183FB00746D9C /* FavoritesView.swift */; };
 		A92408962C818A9F00746D9C /* RitualsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408952C818A9F00746D9C /* RitualsCardView.swift */; };
 		A92408982C81982700746D9C /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408972C81982700746D9C /* CardImageView.swift */; };
-		A924089A2C81A0AE00746D9C /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408992C81A0AE00746D9C /* TestView.swift */; };
 		A924089E2C81BFA700746D9C /* UserRituals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A924089D2C81BFA700746D9C /* UserRituals.swift */; };
 		A92408A22C81CD5200746D9C /* FireStoreClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408A12C81CD5200746D9C /* FireStoreClient.swift */; };
 		A92408A92C81CFB200746D9C /* UserRitualsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408A82C81CFB200746D9C /* UserRitualsView.swift */; };
@@ -23,6 +22,7 @@
 		A9273CEA2C847D60003F95FC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CE92C847D60003F95FC /* ViewModel.swift */; };
 		A9273CED2C84B44C003F95FC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CEC2C84B44C003F95FC /* DetailView.swift */; };
 		A9273CF02C84D455003F95FC /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CEF2C84D455003F95FC /* BackButtonView.swift */; };
+		A9273CF22C853D05003F95FC /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CF12C853D05003F95FC /* BackgroundView.swift */; };
 		A95120202C7D2E2000CA0759 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A951201F2C7D2E2000CA0759 /* LoginView.swift */; };
 		A95120222C7D31EF00CA0759 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120212C7D31EF00CA0759 /* InputView.swift */; };
 		A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120232C7D509200CA0759 /* RegistrationView.swift */; };
@@ -35,6 +35,7 @@
 		A958BBF12C78C0A500A8FE0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958BBF02C78C0A500A8FE0C /* ContentView.swift */; };
 		A958BBF32C78C0A700A8FE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF22C78C0A700A8FE0C /* Assets.xcassets */; };
 		A958BBF62C78C0A700A8FE0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */; };
+		A9C9E5B12C86FFE200FC46E5 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9E5B02C86FFE200FC46E5 /* FavoritesViewModel.swift */; };
 		A9D242562C837A65005B8A6E /* Extension+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D242552C837A64005B8A6E /* Extension+Text.swift */; };
 		A9E4A25B2C80ADD10008962D /* Rituals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4A25A2C80ADD10008962D /* Rituals.swift */; };
 		A9E4A25D2C8114DD0008962D /* RitualsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4A25C2C8114DD0008962D /* RitualsView.swift */; };
@@ -48,7 +49,6 @@
 		A92408912C8183FB00746D9C /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		A92408952C818A9F00746D9C /* RitualsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitualsCardView.swift; sourceTree = "<group>"; };
 		A92408972C81982700746D9C /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
-		A92408992C81A0AE00746D9C /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		A924089D2C81BFA700746D9C /* UserRituals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRituals.swift; sourceTree = "<group>"; };
 		A92408A12C81CD5200746D9C /* FireStoreClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreClient.swift; sourceTree = "<group>"; };
 		A92408A82C81CFB200746D9C /* UserRitualsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRitualsView.swift; sourceTree = "<group>"; };
@@ -60,6 +60,7 @@
 		A9273CE92C847D60003F95FC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A9273CEC2C84B44C003F95FC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A9273CEF2C84D455003F95FC /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
+		A9273CF12C853D05003F95FC /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		A951201F2C7D2E2000CA0759 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A95120212C7D31EF00CA0759 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		A95120232C7D509200CA0759 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		A958BBF02C78C0A500A8FE0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A958BBF22C78C0A700A8FE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9C9E5B02C86FFE200FC46E5 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		A9D242552C837A64005B8A6E /* Extension+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Text.swift"; sourceTree = "<group>"; };
 		A9E4A25A2C80ADD10008962D /* Rituals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rituals.swift; sourceTree = "<group>"; };
 		A9E4A25C2C8114DD0008962D /* RitualsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitualsView.swift; sourceTree = "<group>"; };
@@ -114,8 +116,8 @@
 		A924089C2C81BE8800746D9C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A9C9E5AF2C86FFAD00FC46E5 /* FavoritesView */,
 				A9E4A25C2C8114DD0008962D /* RitualsView.swift */,
-				A92408912C8183FB00746D9C /* FavoritesView.swift */,
 				A9273CEC2C84B44C003F95FC /* DetailView.swift */,
 				A9273CEB2C849E85003F95FC /* SubView */,
 			);
@@ -201,6 +203,7 @@
 				A95120212C7D31EF00CA0759 /* InputView.swift */,
 				A95120272C7D6CA400CA0759 /* SettingsRowView.swift */,
 				A9273CEF2C84D455003F95FC /* BackButtonView.swift */,
+				A9273CF12C853D05003F95FC /* BackgroundView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -278,7 +281,6 @@
 				A958BBF22C78C0A700A8FE0C /* Assets.xcassets */,
 				A95120332C7DA9F600CA0759 /* GoogleService-Info.plist */,
 				A958BBF42C78C0A700A8FE0C /* Preview Content */,
-				A92408992C81A0AE00746D9C /* TestView.swift */,
 			);
 			path = Rituals;
 			sourceTree = "<group>";
@@ -289,6 +291,15 @@
 				A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A9C9E5AF2C86FFAD00FC46E5 /* FavoritesView */ = {
+			isa = PBXGroup;
+			children = (
+				A92408912C8183FB00746D9C /* FavoritesView.swift */,
+				A9C9E5B02C86FFE200FC46E5 /* FavoritesViewModel.swift */,
+			);
+			path = FavoritesView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +383,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C9E5B12C86FFE200FC46E5 /* FavoritesViewModel.swift in Sources */,
+				A9273CF22C853D05003F95FC /* BackgroundView.swift in Sources */,
 				A95120302C7D8CDD00CA0759 /* AuthViewModel.swift in Sources */,
 				A9D242562C837A65005B8A6E /* Extension+Text.swift in Sources */,
 				A958BBF12C78C0A500A8FE0C /* ContentView.swift in Sources */,
@@ -384,7 +397,6 @@
 				A92408A22C81CD5200746D9C /* FireStoreClient.swift in Sources */,
 				A92408AD2C81D0E900746D9C /* AddUserRitualsViewModel.swift in Sources */,
 				A92408AF2C81D10A00746D9C /* AddUserRitualsView.swift in Sources */,
-				A924089A2C81A0AE00746D9C /* TestView.swift in Sources */,
 				A92408B42C81D24B00746D9C /* UpdateUserRitualsViewModel.swift in Sources */,
 				A9273CF02C84D455003F95FC /* BackButtonView.swift in Sources */,
 				A92408A92C81CFB200746D9C /* UserRitualsView.swift in Sources */,
