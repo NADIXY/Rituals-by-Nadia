@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailView: View {
-    
+
     let ritual: Rituals
     
     var body: some View {
@@ -24,7 +24,6 @@ struct DetailView: View {
                     HStack {
                         Text(ritual.name)
                             .titleFont()
-                        
                     }
                     
                     HStack {

@@ -54,6 +54,7 @@ class AuthViewModel: ObservableObject {
         }
     }
     
+    
     //Benutzer auf Firebase abmelden und züruck auf Sign In Screen zurück geleitet werden
     func signOut() {
         do {
@@ -65,7 +66,6 @@ class AuthViewModel: ObservableObject {
         } catch {
             print("DEBUG: Failed to sign out with error \(error.localizedDescription)")
         }
-        
     }
     
     func deleteAccount() {
@@ -80,3 +80,4 @@ class AuthViewModel: ObservableObject {
         print("DEBUG: Current user is \(self.currentUser)")
     }
 }
+

@@ -18,20 +18,26 @@ struct UserRitualsView: View {
             List(mainViewModel.userRituals) { item in
                 NavigationLink {
                     UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: item),
-                                   isPresented: $showEditUserRituals)
+                                          isPresented: $showEditUserRituals)
                 } label: {
-                    Text(item.title ?? "")
-                    Text(item.text)
-                        .swipeActions {
-                            Button {
-                                mainViewModel.deleteUserRituals(thisUserRitualsId: item.id)
-                            } label: {
-                                Image(systemName: "trash")
+                    VStack(alignment: .leading, spacing: 8.0) {
+                        Text(item.title ?? "")
+                            .lineLimit(2)
+                            .foregroundColor(.yellow)
+                        
+                        Text(item.text)
+                            .lineLimit(2)
+                            .swipeActions {
+                                Button {
+                                    mainViewModel.deleteUserRituals(thisUserRitualsId: item.id)
+                                } label: {
+                                    Image(systemName: "trash")
+                                }
                             }
-                        }
+                    }
                 }
-
             }
+
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
@@ -44,6 +50,7 @@ struct UserRitualsView: View {
                     }
                 }
             }
+            
             .onAppear {
                 Task {
                      await authViewModel.fetchUser()
@@ -51,11 +58,13 @@ struct UserRitualsView: View {
                 
                 mainViewModel.getUserRituals()
             }
+            
             .onChange(of: showAddUserRituals) {
                 if showAddUserRituals == false {
                     mainViewModel.getUserRituals()
                 }
             }
+            
             .sheet(isPresented: $showAddUserRituals) {
                 AddUserRitualsView(isPresented: $showAddUserRituals)
             }

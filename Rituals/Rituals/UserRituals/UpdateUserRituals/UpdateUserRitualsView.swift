@@ -16,13 +16,14 @@ struct UpdateUserRitualsView: View {
         NavigationView {
             VStack(spacing: 20) {
                 TextField("Name", text: $viewModel.title)
+                    .foregroundColor(.yellow)
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 10).stroke(Color.yellow, lineWidth: 2))
                     .padding([.leading, .trailing], 16)
                 
                 TextField("Description", text: $viewModel.text, axis: .vertical)
                     .padding()
-                    .frame(height: 200) // Größeres Textfeld für Beschreibung
+                    .frame(height: 450) // Größeres Textfeld für Beschreibung
                     .background(RoundedRectangle(cornerRadius: 10).stroke(Color.yellow, lineWidth: 2))
                     .padding([.leading, .trailing], 16)
                 
@@ -33,11 +34,11 @@ struct UpdateUserRitualsView: View {
                     isPresented.toggle()
                     dismiss()
                 } label: {
-                    Text("Save")
+                    Text("Update")
+                        .monospaced()
                 }
             }
-            .background(Color.gray.opacity(0.9))
-            .navigationTitle("UPDATE")
+            Spacer()
         }
     }
 }

@@ -12,6 +12,7 @@ import FirebaseFirestore
 struct RitualsView: View {
     
     // MARK: - Propeties
+    
     @EnvironmentObject var vm: ViewModel
     @ObservedObject var fvvm: FavoritesViewModel
     
@@ -19,6 +20,7 @@ struct RitualsView: View {
     var columns = Array(repeating: GridItem(), count: 1)
     
     // MARK: - Body
+    
     var body: some View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
@@ -40,6 +42,7 @@ struct RitualsView: View {
             
             .navigationTitle("Rituals")
             .toolbar {
+                
                 ToolbarItem(placement: .topBarLeading) {
                     NavigationLink(destination: FavoritesView(fvvm: fvvm)) {
                         Image(systemName: "star.fill")
@@ -64,6 +67,7 @@ struct RitualsView: View {
                     }
                 }
             }
+            
             .background {
                 Image("Background")
                     .aspectRatio(contentMode: .fill)

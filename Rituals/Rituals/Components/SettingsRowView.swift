@@ -23,7 +23,6 @@ struct SettingsRowView: View {
                 .font(.subheadline)
                 .foregroundColor(.black)
         }
-        
     }
 }
 

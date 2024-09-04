@@ -11,7 +11,6 @@ import FirebaseAuth
 @MainActor
 class FavoritesViewModel: ObservableObject {
     @Published var favoriteRituals : [Rituals] = []
-
     private let store = FireStoreClient.shared
     
     func getFavoriteRituals() {
@@ -29,13 +28,11 @@ class FavoritesViewModel: ObservableObject {
     }
     
     func isFavorite(fvRitualID: String) -> Bool {
-        if favoriteRituals.contains(where: {$0.id == fvRitualID })
-        { return true
-            
+        if favoriteRituals.contains(where: {$0.id == fvRitualID}) {
+            return true
         } else {
             return false
         }
-            
     }
 
     func deleteFavoriteRituals(thisFavoriteRitualsId: String?) {

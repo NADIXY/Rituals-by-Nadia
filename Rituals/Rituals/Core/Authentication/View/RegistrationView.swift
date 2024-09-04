@@ -64,7 +64,6 @@ struct RegistrationView: View {
                     }
                 }
             }
-
             .padding(.horizontal)
             .padding(.top, 12)
             

@@ -14,15 +14,15 @@ struct AddUserRitualsView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                //TextEditor(text: $viewModel.text)
                 TextField("Title", text: $viewModel.title)
+                    .foregroundColor(.yellow)
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 10).stroke(Color.yellow, lineWidth: 2))
                     .padding([.leading, .trailing], 16)
 
                 TextField("Description", text: $viewModel.text, axis: .vertical)
                     .padding()
-                    .frame(height: 200) // Größeres Textfeld für Beschreibung
+                    .frame(height: 450) // Größeres Textfeld für Beschreibung
                     .background(RoundedRectangle(cornerRadius: 10).stroke(Color.yellow, lineWidth: 2))
                     .padding([.leading, .trailing], 16)
 
@@ -31,7 +31,6 @@ struct AddUserRitualsView: View {
                 Button {
                     viewModel.addUserRituals()
                     isPresented.toggle()
-                    
                 } label: {
                     Text("Save")
                 }
@@ -44,7 +43,6 @@ struct AddUserRitualsView: View {
         }
     }
 }
-
 
 #Preview {
     AddUserRitualsView(isPresented: .constant(true))
