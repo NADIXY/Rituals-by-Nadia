@@ -12,7 +12,7 @@ struct InputView: View {
     
     let title: String
     let placeholder: String
-    var isSecureField = false //Sicheres Feld mit standart
+    var isSecureField = false
     
     var body: some View {
         //Vorderkante ausrichten und Abstand mit Pixel

@@ -14,7 +14,7 @@ struct User: Identifiable, Codable {
     
     //Initialentyp erstellen
     var initials: String {
-        let formatter = PersonNameComponentsFormatter() //Formatieren die Personen                       //PersonenNamen aus der Vollständigen Namen
+        let formatter = PersonNameComponentsFormatter() 
         if let components = formatter.personNameComponents(from: fullname) {
             formatter.style = .abbreviated
             return formatter.string(from: components)
