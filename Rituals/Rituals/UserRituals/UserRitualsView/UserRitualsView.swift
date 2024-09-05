@@ -15,33 +15,50 @@ struct UserRitualsView: View {
     
     var body: some View {
         NavigationStack {
-            List(mainViewModel.userRituals) { item in
-                NavigationLink {
-                    UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: item),
-                                          isPresented: $showEditUserRituals)
-                } label: {
-                    VStack(alignment: .leading, spacing: 8.0) {
-                        Text(item.title ?? "")
-                            .lineLimit(2)
-                            .foregroundColor(.yellow)
-                        
-                        Text(item.text)
-                            .lineLimit(2)
-                            .swipeActions {
-                                Button {
-                                    mainViewModel.deleteUserRituals(thisUserRitualsId: item.id)
-                                } label: {
-                                    Image(systemName: "trash")
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 250, height: 250)
+                
+                Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
+                .font(.title2).bold()
+                .foregroundColor(.brown)
+            
+            ZStack {
+                
+                List(mainViewModel.userRituals) { item in
+                    NavigationLink {
+                        UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: item),
+                                              isPresented: $showEditUserRituals)
+                    } label: {
+                        VStack(alignment: .leading, spacing: 8.0) {
+                            Text(item.title ?? "")
+                                .lineLimit(2)
+                                .foregroundColor(.yellow)
+                            
+                            Text(item.text)
+                                .lineLimit(2)
+                                .swipeActions {
+                                    Button {
+                                        mainViewModel.deleteUserRituals(thisUserRitualsId: item.id)
+                                    } label: {
+                                        Image(systemName: "trash")
+                                    }
+                                    
                                 }
-                            }
+                        }
+                        
                     }
+                    
+                    
                 }
+                
             }
-
+            
             .toolbar {
-                ToolbarItem(placement: .principal) {
+                /*ToolbarItem(placement: .principal) {
                     Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
-                }
+                }*/
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         showAddUserRituals.toggle()
@@ -64,11 +81,19 @@ struct UserRitualsView: View {
                     mainViewModel.getUserRituals()
                 }
             }
+            .cornerRadius(.maximum(20, 20))
+            
+            
             
             .sheet(isPresented: $showAddUserRituals) {
                 AddUserRitualsView(isPresented: $showAddUserRituals)
             }
+            .navigationTitle("Your Rituals")
         }
+        .padding(.all, 30)
+        .background(.secondary.opacity(0.2))
+        .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
+        //.cornerRadius(.greatestFiniteMagnitude)
     }
 }
 

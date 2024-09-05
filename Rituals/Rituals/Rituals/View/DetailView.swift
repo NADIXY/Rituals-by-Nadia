@@ -24,11 +24,15 @@ struct DetailView: View {
                     HStack {
                         Text(ritual.name)
                             .titleFont()
+                            .foregroundColor(.yellow)
                     }
                     
                     HStack {
-                        Text("Location: \(ritual.location)")
-                            .titleFont()
+                        Text("Location:")
+                            .foregroundColor(.blue)
+                            .subtitle()
+                        Text("\(ritual.location)")
+                            .subtitle()
                     }
                     
                     Text(ritual.description)

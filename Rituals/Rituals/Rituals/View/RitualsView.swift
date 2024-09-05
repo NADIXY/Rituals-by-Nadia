@@ -17,23 +17,33 @@ struct RitualsView: View {
     @ObservedObject var fvvm: FavoritesViewModel
     
     @FirestoreQuery(collectionPath: "rituals") var items: [Rituals]
-    var columns = Array(repeating: GridItem(), count: 1)
     
     // MARK: - Body
     
     var body: some View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
-                LazyVGrid(columns: columns) {
-                    ForEach(items) { item in
-                        NavigationLink(destination: DetailView(ritual: item)) {
-                            RitualsCardView(ritual: item)
-                                .environmentObject(fvvm)
-                        }
-                        .buttonStyle(.plain)
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 250, height: 250)
+                
+                Text("Recommended Rituals")
+                    .font(.title2)
+                    .bold()
+                    //.titleFont()
+                    .foregroundColor(.brown)
+                                                
+                ForEach(items) { item in
+                    NavigationLink(destination: DetailView(ritual: item)) {
+                        RitualsCardView(ritual: item)
+                            .environmentObject(fvvm)
                     }
+                    .buttonStyle(.plain)
                 }
+                
             }
+
             .padding(.horizontal, 10)
             .background(.secondary.opacity(0.2))
             .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
@@ -46,7 +56,9 @@ struct RitualsView: View {
                 ToolbarItem(placement: .topBarLeading) {
                     NavigationLink(destination: FavoritesView(fvvm: fvvm)) {
                         Image(systemName: "star.fill")
-                            .font(.title2)
+                            .font(.callout)
+                            .foregroundColor(.brown)
+                        
                     }
                     .buttonStyle(.plain)
                 }
@@ -54,23 +66,19 @@ struct RitualsView: View {
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink(destination: ProfileView()) {
                         Image(systemName: "person.fill")
-                            .font(.title2)
+                            .font(.callout)
+                            .foregroundColor(.brown)
                     }
                     .buttonStyle(.plain)
                 }
             
                 ToolbarItem(placement: .bottomBar) {
                     NavigationLink(destination: UserRitualsView()) {
-                        Image(systemName: "newspaper")
-                            .font(.title2)
+                        Image(systemName: "pencil")
+                            .font(.callout)
                         Text("Your Rituals")
                     }
                 }
-            }
-            
-            .background {
-                Image("Background")
-                    .aspectRatio(contentMode: .fill)
             }
         }
     }

@@ -22,7 +22,7 @@ struct RegistrationView: View {
             Image("logo")
                 .resizable()//größe verändern
                 .scaledToFill()//um ihn zu füllen
-                .frame(width: 100, height: 120)// Rahmen mit einer Breite geben
+                .frame(width: 250, height: 250)// Rahmen mit einer Breite geben
                 .padding(.vertical, 32)//Punkt abstand mit Pixel
             
             //Formularfeldabsschnitt

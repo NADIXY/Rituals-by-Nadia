@@ -11,6 +11,7 @@ struct ProfileView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
+        NavigationStack {
         if let user = viewModel.currentUser {
             List {
                 Section {
@@ -63,11 +64,14 @@ struct ProfileView: View {
                         SettingsRowView(imageName: "xmark.circle.fill",
                                         title: "Delet Account",
                                         tintenColor: .red)
-                    
+                        
                     }
                 }
             }
+            .navigationTitle("Profile")
         }
+            
+    }
 
     }
 }
