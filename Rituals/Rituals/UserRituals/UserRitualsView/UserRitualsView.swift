@@ -82,9 +82,6 @@ struct UserRitualsView: View {
                 }
             }
             .cornerRadius(.maximum(20, 20))
-            
-            
-            
             .sheet(isPresented: $showAddUserRituals) {
                 AddUserRitualsView(isPresented: $showAddUserRituals)
             }
