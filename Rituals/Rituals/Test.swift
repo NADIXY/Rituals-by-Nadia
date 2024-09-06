@@ -70,7 +70,6 @@ struct UserRitualsView: View {
                     }
                 }
             }
-            
             .onAppear {
                 Task {
                      await authViewModel.fetchUser()
@@ -78,32 +77,25 @@ struct UserRitualsView: View {
                 
                 mainViewModel.getUserRituals()
             }
-            
             .onChange(of: showAddUserRituals) {
                 if showAddUserRituals == false {
                     mainViewModel.getUserRituals()
                 }
             }
             .cornerRadius(.maximum(20, 20))
-            
-            
-            
-            
             .sheet(isPresented: $showAddUserRituals) {
                 AddUserRitualsView(isPresented: $showAddUserRituals)
             }
             .navigationTitle("Your Rituals")
         }
         .frame(maxWidth:.infinity)
-        //.padding(.all, 0)
         .background(BackgroundView())
-        //.background(.secondary.opacity(0.2))
         .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
     }
 }
 
 #Preview {
     UserRitualsView()
-}
- */
+}*/
+ 
 

@@ -15,17 +15,16 @@ struct UserRitualsView: View {
     
     var body: some View {
         NavigationStack {
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 250, height: 250)
-                
-                Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
-                .font(.title2).bold()
-                .foregroundColor(.brown)
+            Image("logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 250, height: 250)
+            
+            Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
+            .font(.title2).bold()
+            .foregroundColor(.black)
             
             ZStack {
-                
                 List(mainViewModel.userRituals) { item in
                     NavigationLink {
                         UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: item),
@@ -44,17 +43,12 @@ struct UserRitualsView: View {
                                     } label: {
                                         Image(systemName: "trash")
                                     }
-                                    
                                 }
                         }
-                        
                     }
-                    
-                    
                 }
-                
             }
-            
+
             .toolbar {
                 /*ToolbarItem(placement: .principal) {
                     Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
@@ -93,8 +87,10 @@ struct UserRitualsView: View {
         .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
         //.cornerRadius(.greatestFiniteMagnitude)
     }
+        
 }
 
 #Preview {
     UserRitualsView()
 }
+

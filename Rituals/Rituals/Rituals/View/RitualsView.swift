@@ -32,7 +32,7 @@ struct RitualsView: View {
                     .font(.title2)
                     .bold()
                     //.titleFont()
-                    .foregroundColor(.brown)
+                    .foregroundColor(.black)
                                                 
                 ForEach(items) { item in
                     NavigationLink(destination: DetailView(ritual: item)) {
@@ -58,7 +58,7 @@ struct RitualsView: View {
                     NavigationLink(destination: FavoritesView(fvvm: fvvm)) {
                         Image(systemName: "star.fill")
                             .font(.callout)
-                            .foregroundColor(.brown)
+                            .foregroundColor(.blue)
                         
                     }
                     .buttonStyle(.plain)
@@ -68,7 +68,7 @@ struct RitualsView: View {
                     NavigationLink(destination: ProfileView()) {
                         Image(systemName: "person.fill")
                             .font(.callout)
-                            .foregroundColor(.brown)
+                            .foregroundColor(.blue)
                     }
                     .buttonStyle(.plain)
                 }

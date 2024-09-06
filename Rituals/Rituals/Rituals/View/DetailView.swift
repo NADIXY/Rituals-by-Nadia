@@ -47,7 +47,7 @@ struct DetailView: View {
                         .padding(.horizontal, 30)
                     }
                     .navigationTitle("Rituals Details")
-                    .background(.secondary.opacity(0.3))
+                    //.background(.secondary.opacity(0.3))
                 }
             }
         }
