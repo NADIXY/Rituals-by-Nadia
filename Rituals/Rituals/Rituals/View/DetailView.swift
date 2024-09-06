@@ -8,46 +8,48 @@
 import SwiftUI
 
 struct DetailView: View {
-
+    
     let ritual: Rituals
     
     var body: some View {
-        ZStack(alignment: .topLeading) {
-            VStack {
-                if let url = URL(string: ritual.image) {
-                    CardImageView(url: url, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 1.7)
-                        .ignoresSafeArea()
-                        .shadow(color: .black.opacity(0.3), radius: 10, x: 5, y: 8)
-                }
-                
-                VStack(alignment: .leading, spacing: 20) {
-                    HStack {
-                        Text(ritual.name)
-                            .titleFont()
-                            .foregroundColor(.yellow)
+        NavigationStack {
+            ZStack(alignment: .topLeading) {
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack {
+                        if let url = URL(string: ritual.image) {
+                            CardImageView(url: url, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 1.7)
+                                .ignoresSafeArea()
+                                .shadow(color: .black.opacity(0.3), radius: 10, x: 5, y: 8)
+                        }
+                        
+                        VStack(alignment: .leading, spacing: 20) {
+                            HStack {
+                                Text(ritual.name)
+                                    .titleFont()
+                                    .foregroundColor(.yellow)
+                            }
+                            
+                            HStack {
+                                Text("Location:")
+                                    .foregroundColor(.blue)
+                                    .subtitle()
+                                Text("\(ritual.location)")
+                                    .subtitle()
+                            }
+                            
+                            Text(ritual.description)
+                                .subtitle()
+                                .fixedSize(horizontal: false, vertical: true)
+                            
+                            Spacer()
+                            
+                        }
+                        .padding(.horizontal, 30)
                     }
-                    
-                    HStack {
-                        Text("Location:")
-                            .foregroundColor(.blue)
-                            .subtitle()
-                        Text("\(ritual.location)")
-                            .subtitle()
-                    }
-                    
-                    Text(ritual.description)
-                        .subtitle()
-                        .fixedSize(horizontal: false, vertical: true)
-                    
-                    Spacer()
-                    
+                    .navigationTitle("Rituals Details")
+                    .background(.secondary.opacity(0.3))
                 }
-                .padding(.horizontal, 30)
             }
-            .background(.secondary.opacity(0.3))
-            .navigationBarBackButtonHidden()
-            BackButtonView()
-                .padding(.leading)
         }
     }
 }

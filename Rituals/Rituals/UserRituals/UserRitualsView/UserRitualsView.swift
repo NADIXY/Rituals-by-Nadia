@@ -32,6 +32,7 @@ struct UserRitualsView: View {
                                               isPresented: $showEditUserRituals)
                     } label: {
                         VStack(alignment: .leading, spacing: 8.0) {
+                            BackgroundView()
                             Text(item.title ?? "")
                                 .lineLimit(2)
                                 .foregroundColor(.yellow)
@@ -49,8 +50,6 @@ struct UserRitualsView: View {
                         }
                         
                     }
-                    
-                    
                 }
                 
             }
@@ -85,6 +84,7 @@ struct UserRitualsView: View {
             
             
             
+            
             .sheet(isPresented: $showAddUserRituals) {
                 AddUserRitualsView(isPresented: $showAddUserRituals)
             }
@@ -93,7 +93,6 @@ struct UserRitualsView: View {
         .padding(.all, 30)
         .background(.secondary.opacity(0.2))
         .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
-        //.cornerRadius(.greatestFiniteMagnitude)
     }
 }
 

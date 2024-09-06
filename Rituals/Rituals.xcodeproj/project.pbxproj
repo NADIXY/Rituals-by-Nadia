@@ -21,7 +21,6 @@
 		A92408B42C81D24B00746D9C /* UpdateUserRitualsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408B32C81D24B00746D9C /* UpdateUserRitualsViewModel.swift */; };
 		A9273CEA2C847D60003F95FC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CE92C847D60003F95FC /* ViewModel.swift */; };
 		A9273CED2C84B44C003F95FC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CEC2C84B44C003F95FC /* DetailView.swift */; };
-		A9273CF02C84D455003F95FC /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CEF2C84D455003F95FC /* BackButtonView.swift */; };
 		A9273CF22C853D05003F95FC /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CF12C853D05003F95FC /* BackgroundView.swift */; };
 		A95120202C7D2E2000CA0759 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A951201F2C7D2E2000CA0759 /* LoginView.swift */; };
 		A95120222C7D31EF00CA0759 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120212C7D31EF00CA0759 /* InputView.swift */; };
@@ -59,7 +58,6 @@
 		A92408B32C81D24B00746D9C /* UpdateUserRitualsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRitualsViewModel.swift; sourceTree = "<group>"; };
 		A9273CE92C847D60003F95FC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A9273CEC2C84B44C003F95FC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		A9273CEF2C84D455003F95FC /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 		A9273CF12C853D05003F95FC /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		A951201F2C7D2E2000CA0759 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A95120212C7D31EF00CA0759 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 			children = (
 				A95120212C7D31EF00CA0759 /* InputView.swift */,
 				A95120272C7D6CA400CA0759 /* SettingsRowView.swift */,
-				A9273CEF2C84D455003F95FC /* BackButtonView.swift */,
 				A9273CF12C853D05003F95FC /* BackgroundView.swift */,
 			);
 			path = Components;
@@ -398,7 +395,6 @@
 				A92408AD2C81D0E900746D9C /* AddUserRitualsViewModel.swift in Sources */,
 				A92408AF2C81D10A00746D9C /* AddUserRitualsView.swift in Sources */,
 				A92408B42C81D24B00746D9C /* UpdateUserRitualsViewModel.swift in Sources */,
-				A9273CF02C84D455003F95FC /* BackButtonView.swift in Sources */,
 				A92408A92C81CFB200746D9C /* UserRitualsView.swift in Sources */,
 				A95120282C7D6CA400CA0759 /* SettingsRowView.swift in Sources */,
 				A9E4A25D2C8114DD0008962D /* RitualsView.swift in Sources */,
