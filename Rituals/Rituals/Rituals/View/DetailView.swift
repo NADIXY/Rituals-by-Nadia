@@ -38,7 +38,6 @@ struct DetailView: View {
                     Text(ritual.description)
                         .subtitle()
                         .fixedSize(horizontal: false, vertical: true)
-                        .lineLimit(6)
                     
                     Spacer()
                     

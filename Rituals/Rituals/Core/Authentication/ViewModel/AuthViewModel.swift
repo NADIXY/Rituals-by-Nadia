@@ -79,7 +79,6 @@ class AuthViewModel: ObservableObject {
         }
     }
 
-
     func fetchUser() async {
         guard let uid = Auth.auth().currentUser?.uid else { return } //Uberprüfen wenn 1 akktuell angemeldeter Benutzer vorhanden ist, wird es abgerufen, wenn nicht, wird es genau dort angehalten
         guard let snapshot = try? await Firestore.firestore().collection("users").document(uid).getDocument() else { return }

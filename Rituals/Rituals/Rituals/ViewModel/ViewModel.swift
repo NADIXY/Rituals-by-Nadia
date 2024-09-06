@@ -13,7 +13,13 @@ final class ViewModel: ObservableObject {
     @Published var currentUser: User?
     @Published var favoriteRituals: [Rituals] = []
     
+    private let db = Firestore.firestore().collection("rituals")
     private let store = FireStoreClient.shared
+    
+    private func updateItem(_ ritual: Rituals, data: [String : Any]) {
+        guard let id = ritual.id else { return }
+        db.document(id).updateData(data)
+    }
     
     func getFavoriteRituals() {
         Task {
