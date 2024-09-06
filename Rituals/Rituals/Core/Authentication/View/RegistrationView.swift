@@ -98,7 +98,9 @@ struct RegistrationView: View {
                 }
                 .font(.system(size: 14))
             }
+            
         }
+        .background(BackgroundView())
     }
 }
 

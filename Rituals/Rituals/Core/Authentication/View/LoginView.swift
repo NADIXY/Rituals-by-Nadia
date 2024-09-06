@@ -75,6 +75,7 @@ struct LoginView: View {
                 }
                 
             }
+            .background(BackgroundView())
             
         }
         

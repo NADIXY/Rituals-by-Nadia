@@ -35,7 +35,8 @@ struct AddUserRitualsView: View {
                     Text("Save")
                 }
             }
-            .background(Color.clear.opacity(0.9))
+            .background(BackgroundView())
+            //.background(Color.clear.opacity(0.9))
             .navigationTitle("ADD A NEW RITUAL")
             .navigationBarItems(trailing: Button("Cancel") {
                 isPresented = false

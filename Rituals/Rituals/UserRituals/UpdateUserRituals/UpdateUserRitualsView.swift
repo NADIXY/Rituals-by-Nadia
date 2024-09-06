@@ -28,6 +28,7 @@ struct UpdateUserRitualsView: View {
                     .padding([.leading, .trailing], 16)
                 
                 Spacer()
+                    .background(BackgroundView())
                 
                 Button {
                     viewModel.updateUserRituals()
