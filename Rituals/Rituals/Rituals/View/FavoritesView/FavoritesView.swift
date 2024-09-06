@@ -29,7 +29,8 @@ struct FavoritesView: View {
             fvvm.getFavoriteRituals()
         }
         .padding(.horizontal, 10)
-        .background(.secondary.opacity(0.2))
+        .background(BackgroundView())
+        //.background(.secondary.opacity(0.2))
         .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
             
         .navigationTitle("Favorites")
