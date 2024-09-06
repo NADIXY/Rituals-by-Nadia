@@ -1,11 +1,12 @@
 //
-//  UserRitualsView.swift
+//  Test.swift
 //  Rituals
 //
-//  Created by Nadia on 30.08.24.
+//  Created by Nadia on 06.09.24.
+//
 //
 
-import SwiftUI
+/*import SwiftUI
 
 struct UserRitualsView: View {
     @StateObject var mainViewModel = UserRitualsViewModel()
@@ -25,34 +26,36 @@ struct UserRitualsView: View {
                 .foregroundColor(.brown)
             
             ZStack {
-                
-                List(mainViewModel.userRituals) { item in
-                    NavigationLink {
-                        UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: item),
-                                              isPresented: $showEditUserRituals)
-                    } label: {
-                        VStack(alignment: .leading, spacing: 8.0) {
-                            Text(item.title ?? "")
-                                .lineLimit(2)
-                                .foregroundColor(.yellow)
-                            
-                            Text(item.text)
-                                .lineLimit(2)
-                                .swipeActions {
-                                    Button {
-                                        mainViewModel.deleteUserRituals(thisUserRitualsId: item.id)
-                                    } label: {
-                                        Image(systemName: "trash")
+                ScrollView(.vertical, showsIndicators: false) {
+                    
+                    ForEach(mainViewModel.userRituals) { item in
+                        NavigationLink {
+                            UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: item),
+                                                  isPresented: $showEditUserRituals)
+                        } label: {
+                            VStack(alignment: .leading, spacing: 8.0) {
+                                Text(item.title ?? "")
+                                    .lineLimit(2)
+                                    .foregroundColor(.yellow)
+                                
+                                Text(item.text)
+                                    .lineLimit(2)
+                                    .swipeActions {
+                                        Button {
+                                            mainViewModel.deleteUserRituals(thisUserRitualsId: item.id)
+                                        } label: {
+                                            Image(systemName: "trash")
+                                        }
+                                        
                                     }
-                                    
-                                }
+                            }
+                            
                         }
-                        
                     }
                     
                     
                 }
-                
+                .background(BackgroundView())
             }
             
             .toolbar {
@@ -85,19 +88,22 @@ struct UserRitualsView: View {
             
             
             
+            
             .sheet(isPresented: $showAddUserRituals) {
                 AddUserRitualsView(isPresented: $showAddUserRituals)
             }
             .navigationTitle("Your Rituals")
         }
-        .padding(.all, 30)
+        .frame(maxWidth:.infinity)
+        //.padding(.all, 0)
         .background(BackgroundView())
         //.background(.secondary.opacity(0.2))
         .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
-        //.cornerRadius(.greatestFiniteMagnitude)
     }
 }
 
 #Preview {
     UserRitualsView()
 }
+ */
+
