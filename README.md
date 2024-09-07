@@ -2,7 +2,9 @@
 
 **Unlock the Power of Rituals - Dive into the World of Magic!**
 
-<img width="972" alt="Bildschirmfoto 2024-08-26 um 03 14 33" src="https://github.com/user-attachments/assets/676c9ab5-88ec-435d-ac01-d14606e14bc7">
+<!---
+<img width="972" alt="Bildschirmfoto 2024-08-26 um 03 14 33" src="https://github.com/user-attachments/assets/676c9ab5-88ec-435d-ac01-d14606e14bc7"> 
+--->
 
 ## Überblick
 
@@ -16,11 +18,13 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
 - **Synchronisation mit Firebase:** Alle Daten werden sicher in Firebase Firestore gespeichert und können von überall aus abgerufen werden.
 - **Benutzerfreundliches Interface:** Ein klar strukturiertes Design mit einfacher Navigation ermöglicht es dir, dich voll und ganz auf die Magie zu konzentrieren.
 
+<!---
 ## Geplantes Design
 
 Hier sind einige repräsentative Beispiele Designs für die App:
 
 <img width="1664" alt="Bildschirmfoto 2024-08-26 um 04 09 28" src="https://github.com/user-attachments/assets/7a9faa8e-87fc-4ab6-9adc-ba4f38046e4f">
+--->
 
 ## Features
 
@@ -28,9 +32,10 @@ Hier sind einige repräsentative Beispiele Designs für die App:
 - [x] Detailansicht eines Rituals
 - [x] Favorisieren und Speichern von Ritualen
 - [x] Erstellen, Bearbeiten und Löschen von eigenen Ritualen
-- [ ] Benutzerprofile mit individuellen Einstellungen
+- [x] Benutzerprofile mit individuellen Einstellungen
 - [ ] Push-Benachrichtigungen für neue Rituale und Updates
 - [ ] Integration weiterer magischer Inhalte und Ressourcen
+--->
 
 ## Technischer Aufbau
 
