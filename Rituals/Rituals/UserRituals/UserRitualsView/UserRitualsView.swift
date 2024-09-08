@@ -24,6 +24,8 @@ struct UserRitualsView: View {
             .font(.title2).bold()
             .foregroundColor(.black)
             
+            .padding()
+            
             ZStack {
                 List(mainViewModel.userRituals) { item in
                     NavigationLink {

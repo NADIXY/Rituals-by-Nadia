@@ -35,6 +35,10 @@
 		A958BBF12C78C0A500A8FE0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958BBF02C78C0A500A8FE0C /* ContentView.swift */; };
 		A958BBF32C78C0A700A8FE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF22C78C0A700A8FE0C /* Assets.xcassets */; };
 		A958BBF62C78C0A700A8FE0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */; };
+		A9C4CFFD2C8E2CEF00D11E39 /* ApiUserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4CFFC2C8E2CEF00D11E39 /* ApiUserListView.swift */; };
+		A9C4CFFF2C8E2E5700D11E39 /* ApiUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4CFFE2C8E2E5700D11E39 /* ApiUser.swift */; };
+		A9C4D0012C8E2F3800D11E39 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4D0002C8E2F3800D11E39 /* WebService.swift */; };
+		A9C4D0032C8E37C300D11E39 /* ApiUserListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4D0022C8E37C300D11E39 /* ApiUserListVM.swift */; };
 		A9C9E5B12C86FFE200FC46E5 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9E5B02C86FFE200FC46E5 /* FavoritesViewModel.swift */; };
 		A9D242562C837A65005B8A6E /* Extension+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D242552C837A64005B8A6E /* Extension+Text.swift */; };
 		A9E4A25B2C80ADD10008962D /* Rituals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4A25A2C80ADD10008962D /* Rituals.swift */; };
@@ -74,6 +78,10 @@
 		A958BBF02C78C0A500A8FE0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A958BBF22C78C0A700A8FE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9C4CFFC2C8E2CEF00D11E39 /* ApiUserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUserListView.swift; sourceTree = "<group>"; };
+		A9C4CFFE2C8E2E5700D11E39 /* ApiUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUser.swift; sourceTree = "<group>"; };
+		A9C4D0002C8E2F3800D11E39 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		A9C4D0022C8E37C300D11E39 /* ApiUserListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUserListVM.swift; sourceTree = "<group>"; };
 		A9C9E5B02C86FFE200FC46E5 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		A9D242552C837A64005B8A6E /* Extension+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Text.swift"; sourceTree = "<group>"; };
 		A9E4A25A2C80ADD10008962D /* Rituals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rituals.swift; sourceTree = "<group>"; };
@@ -269,6 +277,7 @@
 		A958BBED2C78C0A500A8FE0C /* Rituals */ = {
 			isa = PBXGroup;
 			children = (
+				A9C4CFF92C8E2BA200D11E39 /* ApiUserList */,
 				A95120192C7D2B8C00CA0759 /* Model */,
 				A951201A2C7D2BB900CA0759 /* Components */,
 				A951201B2C7D2BE200CA0759 /* Core */,
@@ -291,6 +300,17 @@
 				A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A9C4CFF92C8E2BA200D11E39 /* ApiUserList */ = {
+			isa = PBXGroup;
+			children = (
+				A9C4CFFC2C8E2CEF00D11E39 /* ApiUserListView.swift */,
+				A9C4CFFE2C8E2E5700D11E39 /* ApiUser.swift */,
+				A9C4D0002C8E2F3800D11E39 /* WebService.swift */,
+				A9C4D0022C8E37C300D11E39 /* ApiUserListVM.swift */,
+			);
+			path = ApiUserList;
 			sourceTree = "<group>";
 		};
 		A9C9E5AF2C86FFAD00FC46E5 /* FavoritesView */ = {
@@ -389,8 +409,10 @@
 				A9D242562C837A65005B8A6E /* Extension+Text.swift in Sources */,
 				A958BBF12C78C0A500A8FE0C /* ContentView.swift in Sources */,
 				A9E4A25B2C80ADD10008962D /* Rituals.swift in Sources */,
+				A9C4D0032C8E37C300D11E39 /* ApiUserListVM.swift in Sources */,
 				A92408AB2C81D01500746D9C /* UserRitualsViewModel.swift in Sources */,
 				A958BBEF2C78C0A500A8FE0C /* RitualsApp.swift in Sources */,
+				A9C4CFFF2C8E2E5700D11E39 /* ApiUser.swift in Sources */,
 				A9273CEA2C847D60003F95FC /* ViewModel.swift in Sources */,
 				A95120222C7D31EF00CA0759 /* InputView.swift in Sources */,
 				A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */,
@@ -399,6 +421,7 @@
 				A92408AF2C81D10A00746D9C /* AddUserRitualsView.swift in Sources */,
 				A92408B42C81D24B00746D9C /* UpdateUserRitualsViewModel.swift in Sources */,
 				A92408A92C81CFB200746D9C /* UserRitualsView.swift in Sources */,
+				A9C4D0012C8E2F3800D11E39 /* WebService.swift in Sources */,
 				A95120282C7D6CA400CA0759 /* SettingsRowView.swift in Sources */,
 				A9293EAE2C8B3872005A229F /* Test.swift in Sources */,
 				A9E4A25D2C8114DD0008962D /* RitualsView.swift in Sources */,
@@ -411,6 +434,7 @@
 				A95120202C7D2E2000CA0759 /* LoginView.swift in Sources */,
 				A95120262C7D677E00CA0759 /* ProfileView.swift in Sources */,
 				A924089E2C81BFA700746D9C /* UserRituals.swift in Sources */,
+				A9C4CFFD2C8E2CEF00D11E39 /* ApiUserListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

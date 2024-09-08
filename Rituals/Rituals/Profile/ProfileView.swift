@@ -70,6 +70,15 @@ struct ProfileView: View {
                     }
                 }
                 .navigationTitle("Profile")
+                .toolbar {
+                    ToolbarItem(placement: .bottomBar) {
+                        NavigationLink(destination: ApiUserListView(apiUserListVM: ApiUserListVM())) {
+                            Image(systemName: "person")
+                                .font(.callout)
+                            Text("Users List")
+                        }
+                    }
+                }
             }
         }
     }

@@ -12,19 +12,67 @@ struct ContentView: View {
     @StateObject var vm = ViewModel()
     @StateObject var fvvm = FavoritesViewModel()
     
+    @State private var isActive = false
+    @State private var scale: CGFloat = 3.0
+    @State private var opacity: Double = 0.0
+    
+    @State private var animatedGradient = false
+    
     var body: some View {
         Group {
+            
             //wenn eine Benutzersitzung gibt, wenn nicht gleich null, wird an die Profilansicht weitergeleitet
             if viewModel.userSession != nil {
                 RitualsView(fvvm: fvvm)
                     .environmentObject(vm)
             } else {
-                //sonst, wenn der Wert gleich null ist, leitet an die Loginansicht
-                LoginView()
+                if isActive {
+                    //sonst, wenn der Wert gleich null ist, leitet an die Loginansicht
+                    
+                    LoginView()
+                } else {
+                    ZStack {
+                        LinearGradient(colors: [.brown, .yellow, .brown, .brown], startPoint: animatedGradient ? .topLeading:
+                                .bottomLeading, endPoint: animatedGradient ? .bottomTrailing: .topTrailing)
+                        .ignoresSafeArea()
+                        
+                        VStack {
+                            Text("RITUALS")
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .foregroundColor(.black)
+                                .scaleEffect(scale)
+                                //.opacity(opacity)
+                            
+                            Image("logoT")
+                                .resizable()
+                                .scaledToFit()
+                                .scaleEffect(scale)
+                                .frame(width: 250, height: 250)
+                            
+                                .onAppear {
+                                    withAnimation(.linear(duration: 9.0).repeatForever(autoreverses: true))
+                                        {
+                                            animatedGradient.toggle()
+                                        }
+                                    withAnimation(Animation.easeInOut(duration: 2.0)) {
+                                        scale = 1.0
+                                        //opacity = 1.0
+                                    }
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 9.0) {
+                                        withAnimation {
+                                            isActive = true
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                }
             }
         }
     }
 }
+    
 
 #Preview {
     ContentView()

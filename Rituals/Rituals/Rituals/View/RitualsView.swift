@@ -15,6 +15,7 @@ struct RitualsView: View {
     
     @EnvironmentObject var vm: ViewModel
     @ObservedObject var fvvm: FavoritesViewModel
+    @EnvironmentObject var authViewModel: AuthViewModel
     
     @FirestoreQuery(collectionPath: "rituals") var items: [Rituals]
     
@@ -23,6 +24,9 @@ struct RitualsView: View {
     var body: some View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
+                
+                Text("Welcome, \(authViewModel.currentUser?.fullname ?? "")")
+                
                 Image("logo")
                     .resizable()
                     .scaledToFit()
@@ -33,6 +37,8 @@ struct RitualsView: View {
                     .bold()
                     //.titleFont()
                     .foregroundColor(.black)
+                
+                    .padding()
                                                 
                 ForEach(items) { item in
                     NavigationLink(destination: DetailView(ritual: item)) {
@@ -52,6 +58,8 @@ struct RitualsView: View {
             // MARK: - Navigation Bar
             
             .navigationTitle("Rituals")
+            //.navigationBarTitle("Rituals", displayMode: .inline)
+            
             .toolbar {
                 
                 ToolbarItem(placement: .topBarLeading) {
