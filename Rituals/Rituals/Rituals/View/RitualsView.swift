@@ -10,6 +10,7 @@ import FirebaseFirestore
 import FirebaseFirestore
 
 struct RitualsView: View {
+    //xxx
     
     // MARK: - Propeties
     
