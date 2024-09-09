@@ -20,56 +20,37 @@ struct UserRitualsView: View {
                 .scaledToFit()
                 .frame(width: 250, height: 250)
             
-            Text("\(authViewModel.currentUser?.fullname ?? "")'s Rituals")
-                .font(.title)
+            Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
+                .font(.title2).bold()
                 .foregroundColor(.black)
-                .bold()
+            
                 .padding()
-
-            VStack {
-                ScrollView {
-                    VStack {
-                        ForEach(mainViewModel.userRituals) { item in
-                            NavigationLink {
-                                UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: item),
-                                                      isPresented: $showEditUserRituals)
-                            } label: {
-                                VStack(alignment: .leading, spacing: 8.0) {
-                                    
-                                    Text(item.title ?? "")
-                                        .lineLimit(2)
-                                        .font(.title)
-                                        .foregroundColor(.black)
-                                        .bold()
-                                    
-                                    Text(item.text)
-                                        .lineLimit(2)
-                                        .foregroundColor(.black)
-                                }
-                                .padding(10)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .background(.background.opacity(0.3))
-                                .cornerRadius(10)
-                                .padding(10)
-                            }
+            
+            ZStack {
+                List(mainViewModel.userRituals) { item in
+                    NavigationLink {
+                        UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: item),
+                                              isPresented: $showEditUserRituals)
+                    } label: {
+                        VStack(alignment: .leading, spacing: 8.0) {
+                            Text(item.title ?? "")
+                                .lineLimit(2)
+                                .foregroundColor(.yellow)
                             
-                            .swipeActions {
-                                Button {
-                                    mainViewModel.deleteUserRituals(thisUserRitualsId: item.id)
-                                } label: {
-                                    Image(systemName: "trash")
+                            Text(item.text)
+                                .lineLimit(2)
+                                .swipeActions {
+                                    Button {
+                                        mainViewModel.deleteUserRituals(thisUserRitualsId: item.id)
+                                    } label: {
+                                        Image(systemName: "trash")
+                                    }
                                 }
-                            }
-                            
                         }
                     }
                 }
             }
             
-            .background(BackgroundView())
-            .cornerRadius(.maximum(20,20))
-            }
-                
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
@@ -79,11 +60,12 @@ struct UserRitualsView: View {
                     }
                 }
             }
-
+            
             .onAppear {
                 Task {
-                     await authViewModel.fetchUser()
+                    await authViewModel.fetchUser()
                 }
+                
                 mainViewModel.getUserRituals()
             }
             
@@ -91,20 +73,18 @@ struct UserRitualsView: View {
                 if showAddUserRituals == false {
                     mainViewModel.getUserRituals()
                 }
-                    
             }
-            
+            .cornerRadius(.maximum(20, 20))
             .sheet(isPresented: $showAddUserRituals) {
                 AddUserRitualsView(isPresented: $showAddUserRituals)
             }
             .navigationTitle("Your Rituals")
-            .padding(.all, 30)
-            .background(BackgroundView())
-            .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
-            
-        
         }
+        .padding(.all, 30)
+        .background(BackgroundView())
+        .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
     }
+}
 
 #Preview {
     UserRitualsView()
