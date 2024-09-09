@@ -16,48 +16,42 @@ struct UserRitualsView: View {
     
     var body: some View {
         NavigationStack {
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 250, height: 250)
-                
-                Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
-                .font(.title2).bold()
-                .foregroundColor(.brown)
+            Image("logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 250, height: 250)
+            
+            Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
+            .font(.title2).bold()
+            .foregroundColor(.black)
+            
+            .padding()
             
             ZStack {
-                ScrollView(.vertical, showsIndicators: false) {
-                    
-                    ForEach(mainViewModel.userRituals) { item in
-                        NavigationLink {
-                            UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: item),
-                                                  isPresented: $showEditUserRituals)
-                        } label: {
-                            VStack(alignment: .leading, spacing: 8.0) {
-                                Text(item.title ?? "")
-                                    .lineLimit(2)
-                                    .foregroundColor(.yellow)
-                                
-                                Text(item.text)
-                                    .lineLimit(2)
-                                    .swipeActions {
-                                        Button {
-                                            mainViewModel.deleteUserRituals(thisUserRitualsId: item.id)
-                                        } label: {
-                                            Image(systemName: "trash")
-                                        }
-                                        
-                                    }
-                            }
+                List(mainViewModel.userRituals) { item in
+                    NavigationLink {
+                        UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: item),
+                                              isPresented: $showEditUserRituals)
+                    } label: {
+                        VStack(alignment: .leading, spacing: 8.0) {
+                            Text(item.title ?? "")
+                                .lineLimit(2)
+                                .foregroundColor(.yellow)
                             
+                            Text(item.text)
+                                .lineLimit(2)
+                                .swipeActions {
+                                    Button {
+                                        mainViewModel.deleteUserRituals(thisUserRitualsId: item.id)
+                                    } label: {
+                                        Image(systemName: "trash")
+                                    }
+                                }
                         }
                     }
-                    
-                    
                 }
-                .background(BackgroundView())
             }
-            
+
             .toolbar {
                 /*ToolbarItem(placement: .principal) {
                     Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
@@ -70,6 +64,7 @@ struct UserRitualsView: View {
                     }
                 }
             }
+            
             .onAppear {
                 Task {
                      await authViewModel.fetchUser()
@@ -77,6 +72,7 @@ struct UserRitualsView: View {
                 
                 mainViewModel.getUserRituals()
             }
+            
             .onChange(of: showAddUserRituals) {
                 if showAddUserRituals == false {
                     mainViewModel.getUserRituals()
@@ -88,14 +84,11 @@ struct UserRitualsView: View {
             }
             .navigationTitle("Your Rituals")
         }
-        .frame(maxWidth:.infinity)
+        .padding(.all, 30)
         .background(BackgroundView())
+        //.background(.secondary.opacity(0.2))
         .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
+        //.cornerRadius(.greatestFiniteMagnitude)
     }
-}
-
-#Preview {
-    UserRitualsView()
+        
 }*/
- 
-

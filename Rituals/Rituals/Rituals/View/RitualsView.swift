@@ -10,7 +10,6 @@ import FirebaseFirestore
 import FirebaseFirestore
 
 struct RitualsView: View {
-    //xxx
     
     // MARK: - Propeties
     
@@ -27,6 +26,7 @@ struct RitualsView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 
                 Text("Welcome, \(authViewModel.currentUser?.fullname ?? "")")
+                    .font(.title2)
                 
                 Image("logo")
                     .resizable()
@@ -34,11 +34,9 @@ struct RitualsView: View {
                     .frame(width: 250, height: 250)
                 
                 Text("Recommended Rituals")
-                    .font(.title2)
-                    .bold()
-                    //.titleFont()
+                    .font(.title)
                     .foregroundColor(.black)
-                
+                    .bold()
                     .padding()
                                                 
                 ForEach(items) { item in
@@ -53,13 +51,11 @@ struct RitualsView: View {
 
             .padding(.horizontal, 10)
             .background(BackgroundView())
-            //.background(.secondary.opacity(0.2))
             .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
 
             // MARK: - Navigation Bar
             
             .navigationTitle("Rituals")
-            //.navigationBarTitle("Rituals", displayMode: .inline)
             
             .toolbar {
                 

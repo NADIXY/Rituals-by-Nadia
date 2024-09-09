@@ -39,10 +39,9 @@ struct ContentView: View {
                         VStack {
                             Text("RITUALS")
                                 .font(.largeTitle)
-                                .fontWeight(.bold)
                                 .foregroundColor(.black)
+                                .fontWeight(.bold)
                                 .scaleEffect(scale)
-                                //.opacity(opacity)
                             
                             Image("logoT")
                                 .resizable()
@@ -51,13 +50,8 @@ struct ContentView: View {
                                 .frame(width: 250, height: 250)
                             
                                 .onAppear {
-                                    withAnimation(.linear(duration: 9.0).repeatForever(autoreverses: true))
-                                        {
-                                            animatedGradient.toggle()
-                                        }
                                     withAnimation(Animation.easeInOut(duration: 2.0)) {
                                         scale = 1.0
-                                        //opacity = 1.0
                                     }
                                     DispatchQueue.main.asyncAfter(deadline: .now() + 9.0) {
                                         withAnimation {

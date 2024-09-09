@@ -13,27 +13,28 @@ struct ApiUserListView: View {
     
     var body: some View {
         NavigationStack {
-            ZStack {
-                List(apiUserListVM.users, id: \.id) { user in
-                    VStack(alignment: .leading, spacing: 8.0) {
-                        Text("\(user.name)")
-                        Text("\(user.email)")
+            ScrollView {
+                VStack {
+                    ForEach(apiUserListVM.users, id: \.id) { user in
+                        VStack(alignment: .leading, spacing: 8.0) {
+                            Text("\(user.name)")
+                                .bold()
+                            Text("\(user.email)")
+                        }
+                        .padding(10)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(.background.opacity(0.3))
+                        .cornerRadius(10)
+                        .padding(10)
+  
                     }
+                    .navigationTitle("UsersList")
                     
+                }.onAppear {
+                    apiUserListVM.fetchAllUsers()
                 }
-                .cornerRadius(.maximum(20,20))
-                
-                
-                .navigationTitle("UsersList")
-                
-            }.onAppear {
-                apiUserListVM.fetchAllUsers()
-                    
             }
-            .padding(.all, 30)
             .background(BackgroundView())
-            
-            .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
         }
     }
 }

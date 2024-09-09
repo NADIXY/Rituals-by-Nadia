@@ -152,8 +152,8 @@
 		A92408A62C81CF0700746D9C /* AddUserRituals */ = {
 			isa = PBXGroup;
 			children = (
-				A92408AC2C81D0E900746D9C /* AddUserRitualsViewModel.swift */,
 				A92408AE2C81D10A00746D9C /* AddUserRitualsView.swift */,
+				A92408AC2C81D0E900746D9C /* AddUserRitualsViewModel.swift */,
 			);
 			path = AddUserRituals;
 			sourceTree = "<group>";

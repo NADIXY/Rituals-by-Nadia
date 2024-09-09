@@ -13,10 +13,8 @@ struct LoginView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-        
         NavigationStack {
             VStack {
-                
                 Image("logo")
                     .resizable()//größe verändern
                     .scaledToFill()//um ihn zu füllen
@@ -76,7 +74,6 @@ struct LoginView: View {
                 
             }
             .background(BackgroundView())
-            
         }
         
     }
