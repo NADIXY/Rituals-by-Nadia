@@ -46,6 +46,12 @@
 		A9D242562C837A65005B8A6E /* Extension+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D242552C837A64005B8A6E /* Extension+Text.swift */; };
 		A9E4A25B2C80ADD10008962D /* Rituals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4A25A2C80ADD10008962D /* Rituals.swift */; };
 		A9E4A25D2C8114DD0008962D /* RitualsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4A25C2C8114DD0008962D /* RitualsView.swift */; };
+		A9F004D72C8F1E1B00075B8A /* AboutMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004D62C8F1E1B00075B8A /* AboutMagic.swift */; };
+		A9F004DC2C8F207100075B8A /* AboutMagicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004DB2C8F207100075B8A /* AboutMagicView.swift */; };
+		A9F004DF2C8F25CA00075B8A /* AboutMagicCardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004DE2C8F25CA00075B8A /* AboutMagicCardImageView.swift */; };
+		A9F004E12C8F261100075B8A /* AboutMagicCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004E02C8F261100075B8A /* AboutMagicCardView.swift */; };
+		A9F004E32C8F274A00075B8A /* AboutMagicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004E22C8F274A00075B8A /* AboutMagicViewModel.swift */; };
+		A9F004E52C8F2E8300075B8A /* AboutMagicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004E42C8F2E8300075B8A /* AboutMagicDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +91,12 @@
 		A9D242552C837A64005B8A6E /* Extension+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Text.swift"; sourceTree = "<group>"; };
 		A9E4A25A2C80ADD10008962D /* Rituals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rituals.swift; sourceTree = "<group>"; };
 		A9E4A25C2C8114DD0008962D /* RitualsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitualsView.swift; sourceTree = "<group>"; };
+		A9F004D62C8F1E1B00075B8A /* AboutMagic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagic.swift; sourceTree = "<group>"; };
+		A9F004DB2C8F207100075B8A /* AboutMagicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicView.swift; sourceTree = "<group>"; };
+		A9F004DE2C8F25CA00075B8A /* AboutMagicCardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicCardImageView.swift; sourceTree = "<group>"; };
+		A9F004E02C8F261100075B8A /* AboutMagicCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicCardView.swift; sourceTree = "<group>"; };
+		A9F004E22C8F274A00075B8A /* AboutMagicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicViewModel.swift; sourceTree = "<group>"; };
+		A9F004E42C8F2E8300075B8A /* AboutMagicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +211,7 @@
 				A9E4A25A2C80ADD10008962D /* Rituals.swift */,
 				A924089D2C81BFA700746D9C /* UserRituals.swift */,
 				A92408A12C81CD5200746D9C /* FireStoreClient.swift */,
+				A9F004D62C8F1E1B00075B8A /* AboutMagic.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +294,7 @@
 				A951201B2C7D2BE200CA0759 /* Core */,
 				A951201E2C7D2D6500CA0759 /* Profile */,
 				A924089B2C81BE6700746D9C /* Rituals */,
+				A9F004D82C8F1F1400075B8A /* AboutMagic */,
 				A92408A42C81CE2300746D9C /* UserRituals */,
 				A958BBF02C78C0A500A8FE0C /* ContentView.swift */,
 				A958BBEE2C78C0A500A8FE0C /* RitualsApp.swift */,
@@ -318,6 +332,26 @@
 				A9C9E5B02C86FFE200FC46E5 /* FavoritesViewModel.swift */,
 			);
 			path = FavoritesView;
+			sourceTree = "<group>";
+		};
+		A9F004D82C8F1F1400075B8A /* AboutMagic */ = {
+			isa = PBXGroup;
+			children = (
+				A9F004E22C8F274A00075B8A /* AboutMagicViewModel.swift */,
+				A9F004DB2C8F207100075B8A /* AboutMagicView.swift */,
+				A9F004E42C8F2E8300075B8A /* AboutMagicDetailView.swift */,
+				A9F004DD2C8F257300075B8A /* SubView */,
+			);
+			path = AboutMagic;
+			sourceTree = "<group>";
+		};
+		A9F004DD2C8F257300075B8A /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				A9F004DE2C8F25CA00075B8A /* AboutMagicCardImageView.swift */,
+				A9F004E02C8F261100075B8A /* AboutMagicCardView.swift */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +434,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F004DC2C8F207100075B8A /* AboutMagicView.swift in Sources */,
+				A9F004DF2C8F25CA00075B8A /* AboutMagicCardImageView.swift in Sources */,
 				A9C9E5B12C86FFE200FC46E5 /* FavoritesViewModel.swift in Sources */,
 				A9273CF22C853D05003F95FC /* BackgroundView.swift in Sources */,
 				A95120302C7D8CDD00CA0759 /* AuthViewModel.swift in Sources */,
@@ -407,9 +443,11 @@
 				A9C782172C8EB6080076BFF6 /* Tests.swift in Sources */,
 				A958BBF12C78C0A500A8FE0C /* ContentView.swift in Sources */,
 				A9E4A25B2C80ADD10008962D /* Rituals.swift in Sources */,
+				A9F004E32C8F274A00075B8A /* AboutMagicViewModel.swift in Sources */,
 				A9C4D0032C8E37C300D11E39 /* ApiUserListVM.swift in Sources */,
 				A92408AB2C81D01500746D9C /* UserRitualsViewModel.swift in Sources */,
 				A958BBEF2C78C0A500A8FE0C /* RitualsApp.swift in Sources */,
+				A9F004E12C8F261100075B8A /* AboutMagicCardView.swift in Sources */,
 				A9C4CFFF2C8E2E5700D11E39 /* ApiUser.swift in Sources */,
 				A9273CEA2C847D60003F95FC /* ViewModel.swift in Sources */,
 				A95120222C7D31EF00CA0759 /* InputView.swift in Sources */,
@@ -423,9 +461,11 @@
 				A95120282C7D6CA400CA0759 /* SettingsRowView.swift in Sources */,
 				A9E4A25D2C8114DD0008962D /* RitualsView.swift in Sources */,
 				A92408922C8183FB00746D9C /* FavoritesView.swift in Sources */,
+				A9F004D72C8F1E1B00075B8A /* AboutMagic.swift in Sources */,
 				A9273CED2C84B44C003F95FC /* DetailView.swift in Sources */,
 				A92408B22C81D20900746D9C /* UpdateUserRitualsView.swift in Sources */,
 				A92408982C81982700746D9C /* CardImageView.swift in Sources */,
+				A9F004E52C8F2E8300075B8A /* AboutMagicDetailView.swift in Sources */,
 				A951202A2C7D7B7B00CA0759 /* User.swift in Sources */,
 				A92408962C818A9F00746D9C /* RitualsCardView.swift in Sources */,
 				A95120202C7D2E2000CA0759 /* LoginView.swift in Sources */,
