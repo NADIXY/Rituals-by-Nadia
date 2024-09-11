@@ -28,7 +28,6 @@ struct AboutMagicDetailView: View {
                                     .foregroundColor(.yellow)
                             }
                             
-                           
                             Text(magic.magicDescription)
                                 .subtitle()
                                 .fixedSize(horizontal: false, vertical: true)

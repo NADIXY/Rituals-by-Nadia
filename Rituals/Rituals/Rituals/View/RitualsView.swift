@@ -10,16 +10,12 @@ import FirebaseFirestore
 import FirebaseFirestore
 
 struct RitualsView: View {
-    
-    // MARK: - Propeties
-    
     @EnvironmentObject var vm: ViewModel
     @ObservedObject var fvvm: FavoritesViewModel
     @EnvironmentObject var authViewModel: AuthViewModel
+    @ObservedObject var apiUserListVM: ApiUserListVM
     
     @FirestoreQuery(collectionPath: "rituals") var items: [Rituals]
-    
-    // MARK: - Body
     
     var body: some View {
         NavigationStack {
@@ -32,7 +28,33 @@ struct RitualsView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 250, height: 250)
+                    .padding()
+                 
+                Text("The newest Users")
+                    .font(.title)
+                    .foregroundColor(.black)
+                    .bold()
                 
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(apiUserListVM.users, id: \.id) { user in
+                            HStack {
+                                Text("\(user.initials)")
+                                    .font(.title)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.white)
+                                    .frame(width: 72, height: 72)
+                                    .background(BackgroundView())
+                                    .clipShape(Circle())
+                            }
+                            
+                        }
+                    }.onAppear {
+                        apiUserListVM.fetchAllUsers()
+                        fvvm.getFavoriteRituals()
+                    }
+                }
+
                 Text("Recommended Rituals")
                     .font(.title)
                     .foregroundColor(.black)
@@ -61,7 +83,7 @@ struct RitualsView: View {
                 
                 ToolbarItem(placement: .topBarLeading) {
                     NavigationLink(destination: FavoritesView(fvvm: fvvm)) {
-                        Image(systemName: "star.fill")
+                        Image(systemName: "star.circle.fill")
                             .font(.callout)
                             .foregroundColor(.blue)
                         
@@ -75,22 +97,35 @@ struct RitualsView: View {
                             .font(.callout)
                             .foregroundColor(.blue)
                     }
-                    .buttonStyle(.plain)
+                }
+                
+                ToolbarItem(placement: .bottomBar) {
+                    NavigationLink(destination: ApiUserListView(apiUserListVM: ApiUserListVM())) {
+                        Image(systemName: "person.2")
+                            .font(.callout)
+                        //Text("Users")
+                    }
+                }
+                
+                ToolbarItem(placement: .status) {
+                    NavigationLink(destination: AboutMagicView()) {
+                        Image(systemName: "list.triangle")
+                            .font(.callout)
+                        //Text("About Magic")
+                    }
                 }
             
                 ToolbarItem(placement: .bottomBar) {
                     NavigationLink(destination: UserRitualsView()) {
                         Image(systemName: "pencil")
                             .font(.callout)
-                        Text("Your Rituals")
+                        //Text("Your Rituals")
                     }
                 }
+                
             }
         }
     }
 }
 
-#Preview {
-    RitualsView(fvvm: FavoritesViewModel())
-        .environmentObject(ViewModel())
-}
+

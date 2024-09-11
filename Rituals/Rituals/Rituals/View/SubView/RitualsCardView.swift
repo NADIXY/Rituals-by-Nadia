@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct RitualsCardView: View {
-    
-    // MARK: Properties
-    
     @EnvironmentObject var vm: FavoritesViewModel
     let ritual: Rituals
     
@@ -60,9 +57,4 @@ struct RitualsCardView: View {
         .frame(height: UIScreen.main.bounds.width * 0.7)
         .padding(10)
     }
-}
-
-#Preview {
-    RitualsView(fvvm: FavoritesViewModel())
-        .environmentObject(ViewModel())
 }

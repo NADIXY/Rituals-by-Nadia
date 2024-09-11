@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AboutMagicCardView: View {
-
     @EnvironmentObject var magicvm: ViewModel
     
     let magic: AboutMagic
@@ -39,4 +38,3 @@ struct AboutMagicCardView: View {
         .frame(height: UIScreen.main.bounds.width * 0.7)
     }
 }
-

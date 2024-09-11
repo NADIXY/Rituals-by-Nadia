@@ -52,6 +52,10 @@
 		A9F004E12C8F261100075B8A /* AboutMagicCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004E02C8F261100075B8A /* AboutMagicCardView.swift */; };
 		A9F004E32C8F274A00075B8A /* AboutMagicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004E22C8F274A00075B8A /* AboutMagicViewModel.swift */; };
 		A9F004E52C8F2E8300075B8A /* AboutMagicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004E42C8F2E8300075B8A /* AboutMagicDetailView.swift */; };
+		A9F14CE62C904D3500D60D97 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F14CE52C904D3500D60D97 /* Drawer.swift */; };
+		A9F14CE82C904D9500D60D97 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F14CE72C904D9500D60D97 /* Home.swift */; };
+		A9F14CEA2C9078C100D60D97 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F14CE92C9078C100D60D97 /* MenuButton.swift */; };
+		A9F14CEF2C907DA200D60D97 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F14CEE2C907DA200D60D97 /* MenuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +101,10 @@
 		A9F004E02C8F261100075B8A /* AboutMagicCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicCardView.swift; sourceTree = "<group>"; };
 		A9F004E22C8F274A00075B8A /* AboutMagicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicViewModel.swift; sourceTree = "<group>"; };
 		A9F004E42C8F2E8300075B8A /* AboutMagicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicDetailView.swift; sourceTree = "<group>"; };
+		A9F14CE52C904D3500D60D97 /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
+		A9F14CE72C904D9500D60D97 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A9F14CE92C9078C100D60D97 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		A9F14CEE2C907DA200D60D97 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +296,7 @@
 		A958BBED2C78C0A500A8FE0C /* Rituals */ = {
 			isa = PBXGroup;
 			children = (
+				A9F14CEB2C907C6D00D60D97 /* Drawer */,
 				A9C4CFF92C8E2BA200D11E39 /* ApiUserList */,
 				A95120192C7D2B8C00CA0759 /* Model */,
 				A951201A2C7D2BB900CA0759 /* Components */,
@@ -317,10 +326,10 @@
 		A9C4CFF92C8E2BA200D11E39 /* ApiUserList */ = {
 			isa = PBXGroup;
 			children = (
-				A9C4CFFC2C8E2CEF00D11E39 /* ApiUserListView.swift */,
-				A9C4CFFE2C8E2E5700D11E39 /* ApiUser.swift */,
-				A9C4D0002C8E2F3800D11E39 /* WebService.swift */,
-				A9C4D0022C8E37C300D11E39 /* ApiUserListVM.swift */,
+				A9F14CF62C915B7A00D60D97 /* Model */,
+				A9F14CF52C915B6200D60D97 /* View */,
+				A9F14CF42C915B4600D60D97 /* ViewModel */,
+				A9F14CF32C915B0D00D60D97 /* Service */,
 			);
 			path = ApiUserList;
 			sourceTree = "<group>";
@@ -352,6 +361,73 @@
 				A9F004E02C8F261100075B8A /* AboutMagicCardView.swift */,
 			);
 			path = SubView;
+			sourceTree = "<group>";
+		};
+		A9F14CEB2C907C6D00D60D97 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				A9F14CED2C907CA200D60D97 /* ViewModel */,
+				A9F14CEC2C907C8100D60D97 /* View */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		A9F14CEC2C907C8100D60D97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9F14CE72C904D9500D60D97 /* Home.swift */,
+				A9F14CF02C90AED100D60D97 /* SubViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9F14CED2C907CA200D60D97 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9F14CEE2C907DA200D60D97 /* MenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9F14CF02C90AED100D60D97 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				A9F14CE52C904D3500D60D97 /* Drawer.swift */,
+				A9F14CE92C9078C100D60D97 /* MenuButton.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		A9F14CF32C915B0D00D60D97 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A9C4D0002C8E2F3800D11E39 /* WebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A9F14CF42C915B4600D60D97 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9C4D0022C8E37C300D11E39 /* ApiUserListVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9F14CF52C915B6200D60D97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9C4CFFC2C8E2CEF00D11E39 /* ApiUserListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9F14CF62C915B7A00D60D97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9C4CFFE2C8E2E5700D11E39 /* ApiUser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +511,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9F004DC2C8F207100075B8A /* AboutMagicView.swift in Sources */,
+				A9F14CEA2C9078C100D60D97 /* MenuButton.swift in Sources */,
+				A9F14CE82C904D9500D60D97 /* Home.swift in Sources */,
 				A9F004DF2C8F25CA00075B8A /* AboutMagicCardImageView.swift in Sources */,
 				A9C9E5B12C86FFE200FC46E5 /* FavoritesViewModel.swift in Sources */,
 				A9273CF22C853D05003F95FC /* BackgroundView.swift in Sources */,
@@ -453,7 +531,9 @@
 				A95120222C7D31EF00CA0759 /* InputView.swift in Sources */,
 				A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */,
 				A92408A22C81CD5200746D9C /* FireStoreClient.swift in Sources */,
+				A9F14CE62C904D3500D60D97 /* Drawer.swift in Sources */,
 				A92408AD2C81D0E900746D9C /* AddUserRitualsViewModel.swift in Sources */,
+				A9F14CEF2C907DA200D60D97 /* MenuViewModel.swift in Sources */,
 				A92408AF2C81D10A00746D9C /* AddUserRitualsView.swift in Sources */,
 				A92408B42C81D24B00746D9C /* UpdateUserRitualsViewModel.swift in Sources */,
 				A92408A92C81CFB200746D9C /* UserRitualsView.swift in Sources */,

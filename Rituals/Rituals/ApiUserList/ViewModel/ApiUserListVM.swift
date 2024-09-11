@@ -8,11 +8,9 @@
 import Foundation
 
 class ApiUserListVM: ObservableObject {
-    
     @Published var users: [ApiUser] = []
     
     func fetchAllUsers() {
-        
         WebService().fetchUsers { result in
             switch result {
             case .success(let users):

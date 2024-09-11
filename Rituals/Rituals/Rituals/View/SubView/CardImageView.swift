@@ -8,14 +8,9 @@
 import SwiftUI
 
 struct CardImageView: View {
-    
-    // MARK: - Properties
-    
     let url: URL
     let width: CGFloat
     let height: CGFloat
-    
-    // MARK: - Body
     
     var body: some View {
         AsyncImage(url: url) { image in

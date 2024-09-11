@@ -11,11 +11,11 @@ struct ContentView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     @StateObject var vm = ViewModel()
     @StateObject var fvvm = FavoritesViewModel()
+    @StateObject var apiUserListVM = ApiUserListVM()
     
     @State private var isActive = false
     @State private var scale: CGFloat = 3.0
     @State private var opacity: Double = 0.0
-    
     @State private var animatedGradient = false
     
     var body: some View {
@@ -23,7 +23,8 @@ struct ContentView: View {
             
             //wenn eine Benutzersitzung gibt, wenn nicht gleich null, wird an die Profilansicht weitergeleitet
             if viewModel.userSession != nil {
-                RitualsView(fvvm: fvvm)
+                //Home()
+                RitualsView(fvvm: fvvm, apiUserListVM: apiUserListVM)
                     .environmentObject(vm)
             } else {
                 if isActive {

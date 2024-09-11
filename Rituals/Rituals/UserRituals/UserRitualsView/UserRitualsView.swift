@@ -23,7 +23,6 @@ struct UserRitualsView: View {
             Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
                 .font(.title2).bold()
                 .foregroundColor(.black)
-            
                 .padding()
             
             ZStack {
@@ -56,7 +55,7 @@ struct UserRitualsView: View {
                     Button {
                         showAddUserRituals.toggle()
                     } label: {
-                        Image(systemName: "plus")
+                        Image(systemName: "plus.circle")
                     }
                 }
             }

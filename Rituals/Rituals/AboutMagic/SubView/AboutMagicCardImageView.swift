@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AboutMagicCardImageView: View {
-    
     let url: URL
     let width: CGFloat
     let height: CGFloat

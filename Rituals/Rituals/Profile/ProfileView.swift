@@ -21,7 +21,7 @@ struct ProfileView: View {
                                 .fontWeight(.semibold)
                                 .foregroundColor(.white)
                                 .frame(width: 72, height: 72)
-                                .background(Color(.systemGray3))
+                                .background(BackgroundView())
                                 .clipShape(Circle())
                             
                             VStack(alignment: .leading, spacing: 4) {
@@ -68,19 +68,15 @@ struct ProfileView: View {
                             
                         }
                     }
+                    
                 }
+                
                 .navigationTitle("Profile")
-                .toolbar {
-                    ToolbarItem(placement: .bottomBar) {
-                        NavigationLink(destination: ApiUserListView(apiUserListVM: ApiUserListVM())) {
-                            Image(systemName: "person")
-                                .font(.callout)
-                            Text("Users List")
-                        }
-                    }
-                }
+                
             }
+                
         }
+        
     }
 }
 

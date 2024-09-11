@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct DetailView: View {
-    
     let ritual: Rituals
     
     var body: some View {

@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct ApiUserListView: View {
-    
-    @ObservedObject var apiUserListVM: ApiUserListVM
+    @StateObject var apiUserListVM = ApiUserListVM()
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack {
                     ForEach(apiUserListVM.users, id: \.id) { user in
-                        VStack(alignment: .leading, spacing: 8.0) {
-                            Text("\(user.name)")
-                                .bold()
-                            Text("\(user.email)")
+                        HStack {
+                            Text("\(user.initials)")
+                                .font(.title)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.white)
+                                .frame(width: 72, height: 72)
+                                .background(BackgroundView())
+                                .clipShape(Circle())
+                            VStack(alignment: .leading, spacing: 8.0) {
+                                Text("\(user.name)")
+                                    .bold()
+                                Text("\(user.email)")
+                            }
                         }
                         .padding(10)
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -28,7 +36,7 @@ struct ApiUserListView: View {
                         .padding(10)
   
                     }
-                    .navigationTitle("UsersList")
+                    .navigationTitle("Users")
                     
                 }.onAppear {
                     apiUserListVM.fetchAllUsers()
@@ -39,7 +47,3 @@ struct ApiUserListView: View {
     }
 }
 
-
-#Preview {
-    ApiUserListView(apiUserListVM: ApiUserListVM())
-}
