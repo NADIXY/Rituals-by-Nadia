@@ -13,6 +13,8 @@ struct UserRitualsView: View {
     @State var showEditUserRituals: Bool = false
     @EnvironmentObject var authViewModel: AuthViewModel
     
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some View {
         NavigationStack {
             Image("logo")
@@ -84,6 +86,8 @@ struct UserRitualsView: View {
         .padding(.all, 30)
         .background(Background())
         .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
+        
+        //.preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 

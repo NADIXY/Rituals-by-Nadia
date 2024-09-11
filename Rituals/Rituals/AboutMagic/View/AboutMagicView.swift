@@ -11,6 +11,8 @@ import FirebaseFirestore
 struct AboutMagicView: View {
     @EnvironmentObject var magicvm: ViewModel
     
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     @FirestoreQuery(collectionPath: "aboutMagic") var items: [AboutMagic]
 
     var body: some View {
@@ -28,6 +30,8 @@ struct AboutMagicView: View {
         .padding(.horizontal, 10)
         .background(Background())
         .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
+        
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 

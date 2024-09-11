@@ -12,6 +12,8 @@ struct LoginView: View {
     @State private var password = ""
     @EnvironmentObject var viewModel: AuthViewModel
     
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -76,9 +78,8 @@ struct LoginView: View {
             }
             .background(Background())
         }
-        
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
-    
 }
 
 //Authentifizierungs Protocol

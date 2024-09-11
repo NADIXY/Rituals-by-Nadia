@@ -12,6 +12,8 @@ struct UpdateUserRitualsView: View {
     @Binding var isPresented: Bool
     @Environment(\.dismiss) var dismiss
     
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
@@ -55,7 +57,7 @@ struct UpdateUserRitualsView: View {
             Spacer()
                 
         }
-        
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 

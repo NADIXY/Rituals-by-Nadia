@@ -15,6 +15,8 @@ struct RitualsView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
     @ObservedObject var apiUserListVM: ApiUserListVM
     
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     @FirestoreQuery(collectionPath: "rituals") var items: [Rituals]
     
     var body: some View {
@@ -124,6 +126,7 @@ struct RitualsView: View {
                 
             }
         }
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 

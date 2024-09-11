@@ -10,6 +10,8 @@ import SwiftUI
 struct ApiUserListView: View {
     @StateObject var apiUserListVM = ApiUserListVM()
     
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -44,6 +46,7 @@ struct ApiUserListView: View {
             }
             .background(Background())
         }
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 

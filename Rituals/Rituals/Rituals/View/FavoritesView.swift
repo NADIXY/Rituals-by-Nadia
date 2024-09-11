@@ -10,6 +10,8 @@ import FirebaseFirestore
 
 struct FavoritesView: View {
     @ObservedObject var fvvm : FavoritesViewModel
+    
+    @AppStorage("isDarkMode") private var isDarkMode = false
 
     var columns = Array(repeating: GridItem(), count: 2)
     
@@ -32,6 +34,7 @@ struct FavoritesView: View {
         .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
             
         .navigationTitle("Favorites")
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 

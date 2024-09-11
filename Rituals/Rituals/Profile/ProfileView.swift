@@ -10,6 +10,8 @@ import SwiftUI
 struct ProfileView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some View {
         NavigationStack {
             if let user = viewModel.currentUser {
@@ -48,6 +50,12 @@ struct ProfileView: View {
                                 .foregroundColor(.gray)
                         }
                     }
+                    Section(header: Text("Dark Mode")) {     // Umschalter Dark/Light hierv wird der Zustand von isDarkMode festgelegt
+                        Toggle(isOn: $isDarkMode) {
+                            Text("Dark Mode")
+                        }
+                    }
+                    
                     Section("Account") {
                         Button {
                             viewModel.signOut()
@@ -76,7 +84,7 @@ struct ProfileView: View {
             }
                 
         }
-        
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 

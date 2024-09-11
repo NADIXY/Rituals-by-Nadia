@@ -10,6 +10,8 @@ import SwiftUI
 struct AboutMagicDetailView: View {
     let magic: AboutMagic
     
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some View {
         NavigationStack {
             ZStack(alignment: .topLeading) {
@@ -40,5 +42,6 @@ struct AboutMagicDetailView: View {
                 }
             }
         }
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }

@@ -18,6 +18,9 @@ struct ContentView: View {
     @State private var opacity: Double = 0.0
     @State private var animatedGradient = false
     
+    @AppStorage("isDarkMode") // Wrapper für Einstellungen über ganze App hinweg. Er ermöglicht den Zugriff auf ein User Defaults Objekt hier Dark/Light Modus
+    private var isDarkMode = false // Zustandsvariable für den Dark/Light Modus der in der SettingsView ausgewählt ist
+    
     var body: some View {
         Group {
             //wenn eine Benutzersitzung gibt, wenn nicht gleich null, wird an die Profilansicht weitergeleitet
@@ -62,7 +65,9 @@ struct ContentView: View {
                 }
             }
         }
+        .preferredColorScheme(isDarkMode ? .dark : .light)// wählt das Farbshema basierend auf den Wert der isDarkMode Variable
     }
+    
 }
     
 

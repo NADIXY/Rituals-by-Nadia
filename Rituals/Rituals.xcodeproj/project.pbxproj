@@ -33,6 +33,7 @@
 		A958BBF12C78C0A500A8FE0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958BBF02C78C0A500A8FE0C /* ContentView.swift */; };
 		A958BBF32C78C0A700A8FE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF22C78C0A700A8FE0C /* Assets.xcassets */; };
 		A958BBF62C78C0A700A8FE0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */; };
+		A98F0E482C91D032001F1A37 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = A98F0E472C91D032001F1A37 /* user.json */; };
 		A9C4CFFD2C8E2CEF00D11E39 /* ApiUserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4CFFC2C8E2CEF00D11E39 /* ApiUserListView.swift */; };
 		A9C4CFFF2C8E2E5700D11E39 /* ApiUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4CFFE2C8E2E5700D11E39 /* ApiUser.swift */; };
 		A9C4D0012C8E2F3800D11E39 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4D0002C8E2F3800D11E39 /* WebService.swift */; };
@@ -81,6 +82,7 @@
 		A958BBF02C78C0A500A8FE0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A958BBF22C78C0A700A8FE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A98F0E472C91D032001F1A37 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		A9C4CFFC2C8E2CEF00D11E39 /* ApiUserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUserListView.swift; sourceTree = "<group>"; };
 		A9C4CFFE2C8E2E5700D11E39 /* ApiUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUser.swift; sourceTree = "<group>"; };
 		A9C4D0002C8E2F3800D11E39 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 			children = (
 				A92408A12C81CD5200746D9C /* FireStoreClient.swift */,
 				A9C4D0002C8E2F3800D11E39 /* WebService.swift */,
+				A98F0E472C91D032001F1A37 /* user.json */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98F0E482C91D032001F1A37 /* user.json in Resources */,
 				A958BBF62C78C0A700A8FE0C /* Preview Assets.xcassets in Resources */,
 				A958BBF32C78C0A700A8FE0C /* Assets.xcassets in Resources */,
 				A95120342C7DA9F600CA0759 /* GoogleService-Info.plist in Resources */,

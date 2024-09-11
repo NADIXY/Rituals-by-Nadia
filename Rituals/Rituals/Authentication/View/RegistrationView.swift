@@ -13,6 +13,8 @@ struct RegistrationView: View {
     @State private var password = ""
     @State private var confirmPassword = ""
     
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     //Um sicherzustellen, dass unsere Navigation dadurch wieder auf den ursprünglichen Bildschirm zurückspringt, damit wir das tun können verwenden hier dazu diese praktische Umgebungseigenschaft:
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var viewModel: AuthViewModel
@@ -101,6 +103,7 @@ struct RegistrationView: View {
             }
         }
         .background(Background())
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 

@@ -10,6 +10,8 @@ import SwiftUI
 struct DetailView: View {
     let ritual: Rituals
     
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some View {
         NavigationStack {
             ZStack(alignment: .topLeading) {
@@ -50,6 +52,7 @@ struct DetailView: View {
                 }
             }
         }
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
             

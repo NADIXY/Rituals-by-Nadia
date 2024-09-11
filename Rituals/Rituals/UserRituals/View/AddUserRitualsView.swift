@@ -11,6 +11,8 @@ struct AddUserRitualsView: View {
     @StateObject var viewModel = AddUserRitualsViewModel()
     @Binding var isPresented: Bool
     
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
@@ -55,6 +57,7 @@ struct AddUserRitualsView: View {
                 isPresented = false
             })
         }
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 
