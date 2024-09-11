@@ -51,7 +51,7 @@ struct UpdateUserRitualsView: View {
                         .padding([.horizontal], 64)
                 }
             }
-            .background(BackgroundView())
+            .background(Background())
             Spacer()
                 
         }

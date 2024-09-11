@@ -16,14 +16,16 @@ struct UserRitualsView: View {
     var body: some View {
         NavigationStack {
             Image("logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 250, height: 250)
-            
+                .resizable()//größe verändern
+                .scaledToFill()//um ihn zu füllen
+                .frame(width: 250, height: 250)// Rahmen mit einer Breite geben
+                .cornerRadius(.maximum(20, 20))
+                .padding(.vertical, 32)//Punkt abstand mit Pixel
+
             Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
-                .font(.title2).bold()
+                .font(.title)
                 .foregroundColor(.black)
-                .padding()
+                .bold()
             
             ZStack {
                 List(mainViewModel.userRituals) { item in
@@ -80,7 +82,7 @@ struct UserRitualsView: View {
             .navigationTitle("Your Rituals")
         }
         .padding(.all, 30)
-        .background(BackgroundView())
+        .background(Background())
         .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
     }
 }

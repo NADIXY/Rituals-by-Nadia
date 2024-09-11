@@ -13,7 +13,6 @@ struct FavoritesView: View {
 
     var columns = Array(repeating: GridItem(), count: 2)
     
-    // MARK: - Body
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             LazyVGrid(columns: columns) {
@@ -29,7 +28,7 @@ struct FavoritesView: View {
             fvvm.getFavoriteRituals()
         }
         .padding(.horizontal, 10)
-        .background(BackgroundView())
+        .background(Background())
         .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
             
         .navigationTitle("Favorites")

@@ -49,7 +49,7 @@ struct AddUserRitualsView: View {
                         .padding([.horizontal], 64)
                 }
             }
-            .background(BackgroundView())
+            .background(Background())
             .navigationTitle("Add Rituals")
             .navigationBarItems(trailing: Button("Cancel") {
                 isPresented = false

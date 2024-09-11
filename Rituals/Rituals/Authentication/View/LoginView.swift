@@ -19,6 +19,7 @@ struct LoginView: View {
                     .resizable()//größe verändern
                     .scaledToFill()//um ihn zu füllen
                     .frame(width: 250, height: 250)// Rahmen mit einer Breite geben
+                    .cornerRadius(.maximum(20, 20))
                     .padding(.vertical, 32)//Punkt abstand mit Pixel
                 
                 //Formularfeldabsschnitt
@@ -73,7 +74,7 @@ struct LoginView: View {
                 }
                 
             }
-            .background(BackgroundView())
+            .background(Background())
         }
         
     }

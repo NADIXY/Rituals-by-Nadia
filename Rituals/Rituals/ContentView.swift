@@ -20,16 +20,13 @@ struct ContentView: View {
     
     var body: some View {
         Group {
-            
             //wenn eine Benutzersitzung gibt, wenn nicht gleich null, wird an die Profilansicht weitergeleitet
             if viewModel.userSession != nil {
-                //Home()
                 RitualsView(fvvm: fvvm, apiUserListVM: apiUserListVM)
                     .environmentObject(vm)
             } else {
                 if isActive {
                     //sonst, wenn der Wert gleich null ist, leitet an die Loginansicht
-                    
                     LoginView()
                 } else {
                     ZStack {
@@ -47,9 +44,9 @@ struct ContentView: View {
                             Image("logoT")
                                 .resizable()
                                 .scaledToFit()
-                                .scaleEffect(scale)
                                 .frame(width: 250, height: 250)
-                            
+                                .scaleEffect(scale)
+
                                 .onAppear {
                                     withAnimation(Animation.easeInOut(duration: 2.0)) {
                                         scale = 1.0

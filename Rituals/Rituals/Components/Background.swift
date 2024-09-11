@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BackgroundView: View {
+struct Background: View {
     @State private var animatedGradient = false
     
     var body: some View {
@@ -23,5 +23,5 @@ struct BackgroundView: View {
 }
 
 #Preview {
-    BackgroundView()
+    Background()
 }

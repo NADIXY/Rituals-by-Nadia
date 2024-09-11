@@ -32,6 +32,7 @@ struct DetailView: View {
                                 Text("Location:")
                                     .foregroundColor(.blue)
                                     .subtitle()
+                                
                                 Text("\(ritual.location)")
                                     .subtitle()
                             }

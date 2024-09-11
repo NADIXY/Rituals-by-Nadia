@@ -25,10 +25,12 @@ struct RitualsView: View {
                     .font(.title2)
                 
                 Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 250, height: 250)
-                    .padding()
+                    .resizable()//größe verändern
+                    .scaledToFill()//um ihn zu füllen
+                    .frame(width: 250, height: 250)// Rahmen mit einer Breite geben
+                    .cornerRadius(.maximum(20, 20))
+                    .padding(.vertical, 32)//Punkt abstand mit Pixel)
+            
                  
                 Text("The newest Users")
                     .font(.title)
@@ -44,7 +46,7 @@ struct RitualsView: View {
                                     .fontWeight(.semibold)
                                     .foregroundColor(.white)
                                     .frame(width: 72, height: 72)
-                                    .background(BackgroundView())
+                                    .background(Background())
                                     .clipShape(Circle())
                             }
                             
@@ -72,7 +74,7 @@ struct RitualsView: View {
             }
 
             .padding(.horizontal, 10)
-            .background(BackgroundView())
+            .background(Background())
             .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
 
             // MARK: - Navigation Bar
@@ -103,7 +105,6 @@ struct RitualsView: View {
                     NavigationLink(destination: ApiUserListView(apiUserListVM: ApiUserListVM())) {
                         Image(systemName: "person.2")
                             .font(.callout)
-                        //Text("Users")
                     }
                 }
                 
@@ -111,7 +112,6 @@ struct RitualsView: View {
                     NavigationLink(destination: AboutMagicView()) {
                         Image(systemName: "list.triangle")
                             .font(.callout)
-                        //Text("About Magic")
                     }
                 }
             
@@ -119,7 +119,6 @@ struct RitualsView: View {
                     NavigationLink(destination: UserRitualsView()) {
                         Image(systemName: "pencil")
                             .font(.callout)
-                        //Text("Your Rituals")
                     }
                 }
                 

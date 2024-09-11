@@ -22,12 +22,11 @@ struct AboutMagicView: View {
                     }
                     .buttonStyle(.plain)
                 }
-                
             }
         }
         .navigationTitle("About Magic")
         .padding(.horizontal, 10)
-        .background(BackgroundView())
+        .background(Background())
         .shadow(color: .black.opacity(0.9), radius: 8, x: 5, y: 8)
     }
 }

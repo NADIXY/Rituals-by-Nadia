@@ -33,7 +33,6 @@ struct AboutMagicDetailView: View {
                                 .fixedSize(horizontal: false, vertical: true)
                             
                             Spacer()
-                            
                         }
                         .padding(.horizontal, 30)
                     }

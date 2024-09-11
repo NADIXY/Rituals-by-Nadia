@@ -20,7 +20,7 @@
 		A92408B42C81D24B00746D9C /* UpdateUserRitualsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408B32C81D24B00746D9C /* UpdateUserRitualsViewModel.swift */; };
 		A9273CEA2C847D60003F95FC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CE92C847D60003F95FC /* ViewModel.swift */; };
 		A9273CED2C84B44C003F95FC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CEC2C84B44C003F95FC /* DetailView.swift */; };
-		A9273CF22C853D05003F95FC /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CF12C853D05003F95FC /* BackgroundView.swift */; };
+		A9273CF22C853D05003F95FC /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9273CF12C853D05003F95FC /* Background.swift */; };
 		A95120202C7D2E2000CA0759 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A951201F2C7D2E2000CA0759 /* LoginView.swift */; };
 		A95120222C7D31EF00CA0759 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120212C7D31EF00CA0759 /* InputView.swift */; };
 		A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120232C7D509200CA0759 /* RegistrationView.swift */; };
@@ -41,7 +41,6 @@
 		A9C4D0082C8E56F300D11E39 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A9C4D0072C8E56F300D11E39 /* FirebaseDatabase */; };
 		A9C4D00A2C8E56F300D11E39 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A9C4D0092C8E56F300D11E39 /* FirebaseFirestore */; };
 		A9C4D00C2C8E56F300D11E39 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A9C4D00B2C8E56F300D11E39 /* FirebaseStorage */; };
-		A9C782172C8EB6080076BFF6 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C782162C8EB6080076BFF6 /* Tests.swift */; };
 		A9C9E5B12C86FFE200FC46E5 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9E5B02C86FFE200FC46E5 /* FavoritesViewModel.swift */; };
 		A9D242562C837A65005B8A6E /* Extension+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D242552C837A64005B8A6E /* Extension+Text.swift */; };
 		A9E4A25B2C80ADD10008962D /* Rituals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4A25A2C80ADD10008962D /* Rituals.swift */; };
@@ -52,10 +51,6 @@
 		A9F004E12C8F261100075B8A /* AboutMagicCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004E02C8F261100075B8A /* AboutMagicCardView.swift */; };
 		A9F004E32C8F274A00075B8A /* AboutMagicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004E22C8F274A00075B8A /* AboutMagicViewModel.swift */; };
 		A9F004E52C8F2E8300075B8A /* AboutMagicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004E42C8F2E8300075B8A /* AboutMagicDetailView.swift */; };
-		A9F14CE62C904D3500D60D97 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F14CE52C904D3500D60D97 /* Drawer.swift */; };
-		A9F14CE82C904D9500D60D97 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F14CE72C904D9500D60D97 /* Home.swift */; };
-		A9F14CEA2C9078C100D60D97 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F14CE92C9078C100D60D97 /* MenuButton.swift */; };
-		A9F14CEF2C907DA200D60D97 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F14CEE2C907DA200D60D97 /* MenuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,7 +67,7 @@
 		A92408B32C81D24B00746D9C /* UpdateUserRitualsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRitualsViewModel.swift; sourceTree = "<group>"; };
 		A9273CE92C847D60003F95FC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A9273CEC2C84B44C003F95FC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		A9273CF12C853D05003F95FC /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		A9273CF12C853D05003F95FC /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		A951201F2C7D2E2000CA0759 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A95120212C7D31EF00CA0759 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		A95120232C7D509200CA0759 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -90,7 +85,6 @@
 		A9C4CFFE2C8E2E5700D11E39 /* ApiUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUser.swift; sourceTree = "<group>"; };
 		A9C4D0002C8E2F3800D11E39 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		A9C4D0022C8E37C300D11E39 /* ApiUserListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUserListVM.swift; sourceTree = "<group>"; };
-		A9C782162C8EB6080076BFF6 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		A9C9E5B02C86FFE200FC46E5 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		A9D242552C837A64005B8A6E /* Extension+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Text.swift"; sourceTree = "<group>"; };
 		A9E4A25A2C80ADD10008962D /* Rituals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rituals.swift; sourceTree = "<group>"; };
@@ -101,10 +95,6 @@
 		A9F004E02C8F261100075B8A /* AboutMagicCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicCardView.swift; sourceTree = "<group>"; };
 		A9F004E22C8F274A00075B8A /* AboutMagicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicViewModel.swift; sourceTree = "<group>"; };
 		A9F004E42C8F2E8300075B8A /* AboutMagicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicDetailView.swift; sourceTree = "<group>"; };
-		A9F14CE52C904D3500D60D97 /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
-		A9F14CE72C904D9500D60D97 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		A9F14CE92C9078C100D60D97 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
-		A9F14CEE2C907DA200D60D97 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,9 +132,9 @@
 		A924089C2C81BE8800746D9C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A9C9E5AF2C86FFAD00FC46E5 /* FavoritesView */,
 				A9E4A25C2C8114DD0008962D /* RitualsView.swift */,
-				A9273CEC2C84B44C003F95FC /* DetailView.swift */,
+				A92408912C8183FB00746D9C /* FavoritesView.swift */,
+				A98F0E3C2C91B797001F1A37 /* Details */,
 				A9273CEB2C849E85003F95FC /* SubView */,
 			);
 			path = View;
@@ -153,44 +143,17 @@
 		A92408A42C81CE2300746D9C /* UserRituals */ = {
 			isa = PBXGroup;
 			children = (
-				A92408A72C81CF1900746D9C /* UserRitualsView */,
-				A92408A62C81CF0700746D9C /* AddUserRituals */,
-				A92408A52C81CEA500746D9C /* UpdateUserRituals */,
+				A98F0E412C91BA47001F1A37 /* ViewModel */,
+				A98F0E422C91BA8B001F1A37 /* View */,
 			);
 			path = UserRituals;
-			sourceTree = "<group>";
-		};
-		A92408A52C81CEA500746D9C /* UpdateUserRituals */ = {
-			isa = PBXGroup;
-			children = (
-				A92408B12C81D20900746D9C /* UpdateUserRitualsView.swift */,
-				A92408B32C81D24B00746D9C /* UpdateUserRitualsViewModel.swift */,
-			);
-			path = UpdateUserRituals;
-			sourceTree = "<group>";
-		};
-		A92408A62C81CF0700746D9C /* AddUserRituals */ = {
-			isa = PBXGroup;
-			children = (
-				A92408AE2C81D10A00746D9C /* AddUserRitualsView.swift */,
-				A92408AC2C81D0E900746D9C /* AddUserRitualsViewModel.swift */,
-			);
-			path = AddUserRituals;
-			sourceTree = "<group>";
-		};
-		A92408A72C81CF1900746D9C /* UserRitualsView */ = {
-			isa = PBXGroup;
-			children = (
-				A92408A82C81CFB200746D9C /* UserRitualsView.swift */,
-				A92408AA2C81D01500746D9C /* UserRitualsViewModel.swift */,
-			);
-			path = UserRitualsView;
 			sourceTree = "<group>";
 		};
 		A9273CE82C847D20003F95FC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				A9273CE92C847D60003F95FC /* ViewModel.swift */,
+				A9C9E5B02C86FFE200FC46E5 /* FavoritesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -215,11 +178,12 @@
 		A95120192C7D2B8C00CA0759 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A9C4CFFE2C8E2E5700D11E39 /* ApiUser.swift */,
 				A95120292C7D7B7B00CA0759 /* User.swift */,
 				A9E4A25A2C80ADD10008962D /* Rituals.swift */,
 				A924089D2C81BFA700746D9C /* UserRituals.swift */,
-				A92408A12C81CD5200746D9C /* FireStoreClient.swift */,
 				A9F004D62C8F1E1B00075B8A /* AboutMagic.swift */,
+				A9F14CF32C915B0D00D60D97 /* Service */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,17 +193,9 @@
 			children = (
 				A95120212C7D31EF00CA0759 /* InputView.swift */,
 				A95120272C7D6CA400CA0759 /* SettingsRowView.swift */,
-				A9273CF12C853D05003F95FC /* BackgroundView.swift */,
+				A9273CF12C853D05003F95FC /* Background.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		A951201B2C7D2BE200CA0759 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				A951201D2C7D2D2400CA0759 /* Authentication */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		A951201D2C7D2D2400CA0759 /* Authentication */ = {
@@ -296,21 +252,19 @@
 		A958BBED2C78C0A500A8FE0C /* Rituals */ = {
 			isa = PBXGroup;
 			children = (
-				A9F14CEB2C907C6D00D60D97 /* Drawer */,
-				A9C4CFF92C8E2BA200D11E39 /* ApiUserList */,
 				A95120192C7D2B8C00CA0759 /* Model */,
 				A951201A2C7D2BB900CA0759 /* Components */,
-				A951201B2C7D2BE200CA0759 /* Core */,
+				A951201D2C7D2D2400CA0759 /* Authentication */,
 				A951201E2C7D2D6500CA0759 /* Profile */,
-				A924089B2C81BE6700746D9C /* Rituals */,
+				A9C4CFF92C8E2BA200D11E39 /* ApiUserList */,
 				A9F004D82C8F1F1400075B8A /* AboutMagic */,
+				A924089B2C81BE6700746D9C /* Rituals */,
 				A92408A42C81CE2300746D9C /* UserRituals */,
 				A958BBF02C78C0A500A8FE0C /* ContentView.swift */,
 				A958BBEE2C78C0A500A8FE0C /* RitualsApp.swift */,
 				A958BBF22C78C0A700A8FE0C /* Assets.xcassets */,
 				A95120332C7DA9F600CA0759 /* GoogleService-Info.plist */,
 				A958BBF42C78C0A700A8FE0C /* Preview Content */,
-				A9C782162C8EB6080076BFF6 /* Tests.swift */,
 			);
 			path = Rituals;
 			sourceTree = "<group>";
@@ -323,33 +277,74 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A98F0E3B2C91B61F001F1A37 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				A9F004E42C8F2E8300075B8A /* AboutMagicDetailView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		A98F0E3C2C91B797001F1A37 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				A9273CEC2C84B44C003F95FC /* DetailView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		A98F0E3E2C91B860001F1A37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9F004DB2C8F207100075B8A /* AboutMagicView.swift */,
+				A98F0E3B2C91B61F001F1A37 /* Details */,
+				A9F004DD2C8F257300075B8A /* SubView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A98F0E402C91B8A3001F1A37 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9F004E22C8F274A00075B8A /* AboutMagicViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A98F0E412C91BA47001F1A37 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A92408AA2C81D01500746D9C /* UserRitualsViewModel.swift */,
+				A92408AC2C81D0E900746D9C /* AddUserRitualsViewModel.swift */,
+				A92408B32C81D24B00746D9C /* UpdateUserRitualsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A98F0E422C91BA8B001F1A37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A92408A82C81CFB200746D9C /* UserRitualsView.swift */,
+				A92408AE2C81D10A00746D9C /* AddUserRitualsView.swift */,
+				A92408B12C81D20900746D9C /* UpdateUserRitualsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A9C4CFF92C8E2BA200D11E39 /* ApiUserList */ = {
 			isa = PBXGroup;
 			children = (
-				A9F14CF62C915B7A00D60D97 /* Model */,
-				A9F14CF52C915B6200D60D97 /* View */,
 				A9F14CF42C915B4600D60D97 /* ViewModel */,
-				A9F14CF32C915B0D00D60D97 /* Service */,
+				A9F14CF52C915B6200D60D97 /* View */,
 			);
 			path = ApiUserList;
-			sourceTree = "<group>";
-		};
-		A9C9E5AF2C86FFAD00FC46E5 /* FavoritesView */ = {
-			isa = PBXGroup;
-			children = (
-				A92408912C8183FB00746D9C /* FavoritesView.swift */,
-				A9C9E5B02C86FFE200FC46E5 /* FavoritesViewModel.swift */,
-			);
-			path = FavoritesView;
 			sourceTree = "<group>";
 		};
 		A9F004D82C8F1F1400075B8A /* AboutMagic */ = {
 			isa = PBXGroup;
 			children = (
-				A9F004E22C8F274A00075B8A /* AboutMagicViewModel.swift */,
-				A9F004DB2C8F207100075B8A /* AboutMagicView.swift */,
-				A9F004E42C8F2E8300075B8A /* AboutMagicDetailView.swift */,
-				A9F004DD2C8F257300075B8A /* SubView */,
+				A98F0E402C91B8A3001F1A37 /* ViewModel */,
+				A98F0E3E2C91B860001F1A37 /* View */,
 			);
 			path = AboutMagic;
 			sourceTree = "<group>";
@@ -363,44 +358,10 @@
 			path = SubView;
 			sourceTree = "<group>";
 		};
-		A9F14CEB2C907C6D00D60D97 /* Drawer */ = {
-			isa = PBXGroup;
-			children = (
-				A9F14CED2C907CA200D60D97 /* ViewModel */,
-				A9F14CEC2C907C8100D60D97 /* View */,
-			);
-			path = Drawer;
-			sourceTree = "<group>";
-		};
-		A9F14CEC2C907C8100D60D97 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A9F14CE72C904D9500D60D97 /* Home.swift */,
-				A9F14CF02C90AED100D60D97 /* SubViews */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		A9F14CED2C907CA200D60D97 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A9F14CEE2C907DA200D60D97 /* MenuViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		A9F14CF02C90AED100D60D97 /* SubViews */ = {
-			isa = PBXGroup;
-			children = (
-				A9F14CE52C904D3500D60D97 /* Drawer.swift */,
-				A9F14CE92C9078C100D60D97 /* MenuButton.swift */,
-			);
-			path = SubViews;
-			sourceTree = "<group>";
-		};
 		A9F14CF32C915B0D00D60D97 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A92408A12C81CD5200746D9C /* FireStoreClient.swift */,
 				A9C4D0002C8E2F3800D11E39 /* WebService.swift */,
 			);
 			path = Service;
@@ -420,14 +381,6 @@
 				A9C4CFFC2C8E2CEF00D11E39 /* ApiUserListView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A9F14CF62C915B7A00D60D97 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A9C4CFFE2C8E2E5700D11E39 /* ApiUser.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,14 +464,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9F004DC2C8F207100075B8A /* AboutMagicView.swift in Sources */,
-				A9F14CEA2C9078C100D60D97 /* MenuButton.swift in Sources */,
-				A9F14CE82C904D9500D60D97 /* Home.swift in Sources */,
 				A9F004DF2C8F25CA00075B8A /* AboutMagicCardImageView.swift in Sources */,
 				A9C9E5B12C86FFE200FC46E5 /* FavoritesViewModel.swift in Sources */,
-				A9273CF22C853D05003F95FC /* BackgroundView.swift in Sources */,
+				A9273CF22C853D05003F95FC /* Background.swift in Sources */,
 				A95120302C7D8CDD00CA0759 /* AuthViewModel.swift in Sources */,
 				A9D242562C837A65005B8A6E /* Extension+Text.swift in Sources */,
-				A9C782172C8EB6080076BFF6 /* Tests.swift in Sources */,
 				A958BBF12C78C0A500A8FE0C /* ContentView.swift in Sources */,
 				A9E4A25B2C80ADD10008962D /* Rituals.swift in Sources */,
 				A9F004E32C8F274A00075B8A /* AboutMagicViewModel.swift in Sources */,
@@ -531,9 +481,7 @@
 				A95120222C7D31EF00CA0759 /* InputView.swift in Sources */,
 				A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */,
 				A92408A22C81CD5200746D9C /* FireStoreClient.swift in Sources */,
-				A9F14CE62C904D3500D60D97 /* Drawer.swift in Sources */,
 				A92408AD2C81D0E900746D9C /* AddUserRitualsViewModel.swift in Sources */,
-				A9F14CEF2C907DA200D60D97 /* MenuViewModel.swift in Sources */,
 				A92408AF2C81D10A00746D9C /* AddUserRitualsView.swift in Sources */,
 				A92408B42C81D24B00746D9C /* UpdateUserRitualsViewModel.swift in Sources */,
 				A92408A92C81CFB200746D9C /* UserRitualsView.swift in Sources */,

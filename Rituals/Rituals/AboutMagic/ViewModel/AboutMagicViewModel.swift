@@ -16,5 +16,4 @@ final class AboutMagicViewModel: ObservableObject {
         guard let id = magic.id else { return }
         db.document(id).updateData(data)
     }
-    
 }
