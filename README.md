@@ -2,6 +2,8 @@
 
 **Unlock the Power of Rituals - Dive into the World of Magic!**
 
+![image](https://github.com/user-attachments/assets/485deb74-63a3-426d-9974-42d34bc0c4c3)
+
 <!---
 <img width="972" alt="Bildschirmfoto 2024-08-26 um 03 14 33" src="https://github.com/user-attachments/assets/676c9ab5-88ec-435d-ac01-d14606e14bc7"> 
 --->
