@@ -18,13 +18,18 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
 - **Synchronisation mit Firebase:** Alle Daten werden sicher in Firebase Firestore gespeichert und können von überall aus abgerufen werden.
 - **Benutzerfreundliches Interface:** Ein klar strukturiertes Design mit einfacher Navigation ermöglicht es dir, dich voll und ganz auf die Magie zu konzentrieren.
 
-<!---
 ## Geplantes Design
+<p>
+  <img src="https://github.com/user-attachments/assets/1dfac521-d429-4507-87ca-dbaff9dc0371" width="200">
+  <img src="https://github.com/user-attachments/assets/b3937568-0358-4e07-8c15-6b4b3280b4d0" width="200">
+  <img src="https://github.com/user-attachments/assets/cf4ae07c-7812-4c89-a7b0-2733aa0f2295" width="200">
+</p>
 
-Hier sind einige repräsentative Beispiele Designs für die App:
-
-<img width="1664" alt="Bildschirmfoto 2024-08-26 um 04 09 28" src="https://github.com/user-attachments/assets/7a9faa8e-87fc-4ab6-9adc-ba4f38046e4f">
---->
+<p>
+  <img src="https://github.com/user-attachments/assets/4ecd75f7-105f-4c2c-8f87-080399d7cae7" width="200">
+  <img src="https://github.com/user-attachments/assets/db96b10c-bbf8-4a4e-acda-46def0a6a5c4" width="200">
+  <img src="https://github.com/user-attachments/assets/75a4dfa6-63a1-48ca-a732-c9c50a138b44" width="200">
+</p>
 
 ## Features
 
