@@ -49,6 +49,11 @@ struct UserRitualsView: View {
                                         Image(systemName: "trash")
                                     }
                                 }
+                            
+                            Text("\(Date())")
+                                .font(.footnote)
+                                .foregroundColor(.secondary)
+                            
                         }
                     }
                 }
