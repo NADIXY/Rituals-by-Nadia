@@ -7,7 +7,6 @@
 
 import SwiftUI
 import FirebaseFirestore
-import FirebaseFirestore
 
 struct RitualsView: View {
     @EnvironmentObject var vm: ViewModel
@@ -104,23 +103,41 @@ struct RitualsView: View {
                 }
                 
                 ToolbarItem(placement: .bottomBar) {
+                    
                     NavigationLink(destination: ApiUserListView(apiUserListVM: ApiUserListVM())) {
-                        Image(systemName: "person.2")
-                            .font(.callout)
+                        VStack(alignment: .center, spacing: 1.0) {
+                            Image(systemName: "person.2")
+                                .foregroundColor(.yellow)
+                            Text("Users")
+                                .font(.caption2)
+                                .foregroundColor(.yellow)
+                        }
                     }
                 }
                 
                 ToolbarItem(placement: .status) {
                     NavigationLink(destination: AboutMagicView()) {
-                        Image(systemName: "list.triangle")
-                            .font(.callout)
+                        VStack(alignment: .center, spacing: 1.0) {
+                            Image(systemName: "list.triangle")
+                                .foregroundColor(.yellow)
+                            Text("About Magic")
+                                .font(.caption2)
+                                .foregroundColor(.yellow)
+                        }
+                            
                     }
                 }
             
                 ToolbarItem(placement: .bottomBar) {
                     NavigationLink(destination: UserRitualsView()) {
-                        Image(systemName: "pencil")
-                            .font(.callout)
+                        VStack(alignment: .center, spacing: 1.0) {
+                            Image(systemName: "pencil")
+                                .foregroundColor(.yellow)
+                            Text("Your Rituals")
+                                .font(.caption2)
+                                .foregroundColor(.yellow)
+                        }
+                            
                     }
                 }
                 
@@ -129,5 +146,3 @@ struct RitualsView: View {
         .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
-
-

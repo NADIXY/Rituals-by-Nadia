@@ -65,12 +65,10 @@ struct ContentView: View {
                 }
             }
         }
-        .preferredColorScheme(isDarkMode ? .dark : .light)// wählt das Farbshema basierend auf den Wert der isDarkMode Variable
     }
     
 }
     
-
 #Preview {
     ContentView()
 }

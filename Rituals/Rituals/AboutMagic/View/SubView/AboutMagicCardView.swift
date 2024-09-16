@@ -28,6 +28,7 @@ struct AboutMagicCardView: View {
                         .lineLimit(1)
                     Text(magic.magicDescription)
                         .subtitle()
+                        .lineLimit(2)
                 }
                 .padding(10)
                 .background(.background.opacity(0.5))
