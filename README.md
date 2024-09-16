@@ -1,12 +1,8 @@
 # Rituals App
 
-**Unlock the Power of Rituals - Dive into the World of Magic!**
+**Schalte die Kraft der Rituale frei - Tauche ein in die Welt der Magie!**
 
 ![Frame](https://github.com/user-attachments/assets/348fcac5-2591-4a78-8b68-77be1ab7efed)
-
-<!---
-<img width="972" alt="Bildschirmfoto 2024-08-26 um 03 14 33" src="https://github.com/user-attachments/assets/676c9ab5-88ec-435d-ac01-d14606e14bc7"> 
---->
 
 ## Überblick
 
@@ -42,7 +38,6 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
 - [x] Benutzerprofile mit individuellen Einstellungen
 - [ ] Push-Benachrichtigungen für neue Rituale und Updates
 - [ ] Integration weiterer magischer Inhalte und Ressourcen
---->
 
 ## Technischer Aufbau
 
