@@ -50,9 +50,9 @@ struct UserRitualsView: View {
                                     }
                                 }
                             
-                            Text("\(Date())")
-                                .font(.footnote)
-                                .foregroundColor(.secondary)
+                            //Text("\(Date())")
+                                //.font(.footnote)
+                                //.foregroundColor(.secondary)
                             
                         }
                     }
