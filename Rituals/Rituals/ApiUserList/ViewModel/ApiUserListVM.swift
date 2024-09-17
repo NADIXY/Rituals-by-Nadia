@@ -10,12 +10,12 @@ import Foundation
 class ApiUserListVM: ObservableObject {
     @Published var users: [ApiUser] = []
     
+    @MainActor
     func fetchAllUsers() {
-        WebService().fetchUsers { result in
-            switch result {
-            case .success(let users):
-                self.users = users
-            case .failure(let error):
+        Task {
+            do {
+                self.users = try await Repository().fetchUsers()
+            } catch {
                 print(error.localizedDescription)
                 
             }
