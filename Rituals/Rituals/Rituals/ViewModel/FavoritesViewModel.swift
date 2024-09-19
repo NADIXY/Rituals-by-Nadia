@@ -46,11 +46,13 @@ class FavoritesViewModel: ObservableObject {
             }
         }
     }
+    
+    /***/
 
-    func addFavoriteRituals(id: String, name: String,description: String, image: String, location: String) {
+    func addFavoriteRituals(id: String, name: String,description: String, image: String, location: String, createdAt: Date) {
         do {
             if let uid = Auth.auth().currentUser?.uid {
-                try store.addFavoriteRituals(id: id, name: name, userId: uid, description: description, image: image, location: location)
+                try store.addFavoriteRituals(id: id, name: name, userId: uid, description: description, image: image, location: location, createdAt: createdAt)
                 getFavoriteRituals()
             }
         } catch {

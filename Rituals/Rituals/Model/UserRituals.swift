@@ -14,4 +14,5 @@ struct UserRituals: Codable, Identifiable {
     let text: String
     var finished: Bool = false
     var createdAt: Date = Date.now
+    
 }

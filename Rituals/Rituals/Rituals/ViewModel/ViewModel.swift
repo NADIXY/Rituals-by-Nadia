@@ -32,13 +32,13 @@ final class ViewModel: ObservableObject {
                 favoriteRituals = []
             }
         }
-        
     }
+    /***/
     
     func addFavoriteRituals(ritual: Rituals) {
         do {
             if let uid = Auth.auth().currentUser?.uid {
-                try store.addFavoriteRituals(id: ritual.id ?? "", name: ritual.name, userId: uid, description: ritual.description, image: ritual.image, location: ritual.location)
+                try store.addFavoriteRituals(id: ritual.id ?? "", name: ritual.name, userId: uid, description: ritual.description, image: ritual.image, location: ritual.location, createdAt: ritual.createdAt)
             }
         } catch {
             print(error.localizedDescription)

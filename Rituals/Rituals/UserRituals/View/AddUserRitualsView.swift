@@ -16,6 +16,7 @@ struct AddUserRitualsView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
+                
                 TextField("Title", text: $viewModel.title)
                     .foregroundColor(.yellow)
                     .padding()

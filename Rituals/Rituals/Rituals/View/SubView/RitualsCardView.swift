@@ -24,7 +24,7 @@ struct RitualsCardView: View {
                             if vm.isFavorite(fvRitualID: ritual.id ?? "") {
                                 vm.deleteFavoriteRituals(thisFavoriteRitualsId: ritual.id)
                             } else {
-                                vm.addFavoriteRituals(id: ritual.id ?? "", name: ritual.name, description: ritual.description, image: ritual.image, location: ritual.location)
+                                vm.addFavoriteRituals(id: ritual.id ?? "", name: ritual.name, description: ritual.description, image: ritual.image, location: ritual.location, /***/createdAt: ritual.createdAt)
                             }
                         } label: {
                             Image(systemName: "star.fill")
@@ -42,9 +42,15 @@ struct RitualsCardView: View {
                         .titleFont()
                         .lineLimit(1)
                         .foregroundColor(.yellow)
+                    
                     Text("\(ritual.description)")
                         .subtitle()
+                        .lineLimit(2)
+                    
+                    Text("\(ritual.createdAt)")
                         .lineLimit(1)
+                        .font(.footnote)
+                        .foregroundColor(.secondary)
                 }
                 .padding(10)
                 .frame(maxWidth: .infinity, alignment: .leading)

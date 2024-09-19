@@ -14,4 +14,5 @@ struct Rituals: Identifiable, Codable {
     var description: String
     var image: String
     var location: String
+    var createdAt: Date = Date.now
 }

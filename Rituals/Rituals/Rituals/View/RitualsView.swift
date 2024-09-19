@@ -31,12 +31,14 @@ struct RitualsView: View {
                     .frame(width: 250, height: 250)// Rahmen mit einer Breite geben
                     .cornerRadius(.maximum(20, 20))
                     .padding(.vertical, 32)//Punkt abstand mit Pixel)
-            
-                 
-                Text("The newest Users")
-                    .font(.title)
-                    .foregroundColor(.black)
-                    .bold()
+                
+                NavigationLink(destination: ApiUserListView()) {
+                    
+                    Text("The newest Users")
+                        .font(.title)
+                        .foregroundColor(.blue)
+                        .bold()
+                }
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
@@ -50,7 +52,6 @@ struct RitualsView: View {
                                     .background(Background())
                                     .clipShape(Circle())
                             }
-                            
                         }
                     }.onAppear {
                         apiUserListVM.fetchAllUsers()
@@ -68,10 +69,10 @@ struct RitualsView: View {
                     NavigationLink(destination: DetailView(ritual: item)) {
                         RitualsCardView(ritual: item)
                             .environmentObject(fvvm)
+                            .environmentObject(vm)
                     }
                     .buttonStyle(.plain)
                 }
-                
             }
 
             .padding(.horizontal, 10)
@@ -81,7 +82,6 @@ struct RitualsView: View {
             // MARK: - Navigation Bar
             
             .navigationTitle("Rituals")
-            
             .toolbar {
                 
                 ToolbarItem(placement: .topBarLeading) {
@@ -140,7 +140,6 @@ struct RitualsView: View {
                             
                     }
                 }
-                
             }
         }
         .preferredColorScheme(isDarkMode ? .dark : .light)

@@ -34,6 +34,7 @@ struct UserRitualsView: View {
                     NavigationLink {
                         UpdateUserRitualsView(viewModel: UpdateUserRitualsViewModel(userRituals: item),
                                               isPresented: $showEditUserRituals)
+                                              
                     } label: {
                         VStack(alignment: .leading, spacing: 8.0) {
                             Text(item.title ?? "")
@@ -50,9 +51,10 @@ struct UserRitualsView: View {
                                     }
                                 }
                             
-                            //Text("\(Date())")
-                                //.font(.footnote)
-                                //.foregroundColor(.secondary)
+                            Text("\(item.createdAt)")
+                                .lineLimit(1)
+                                .font(.footnote)
+                                .foregroundColor(.secondary)
                             
                         }
                     }

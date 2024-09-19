@@ -55,7 +55,6 @@ struct ProfileView: View {
                             Text("Dark Mode")
                         }
                     }
-                    
                     Section("Account") {
                         Button {
                             viewModel.signOut()
@@ -68,27 +67,21 @@ struct ProfileView: View {
                             Task {
                                 try await viewModel.deleteAccount()
                             }
-                            
                         } label: {
                             SettingsRowView(imageName: "xmark.circle.fill",
                                             title: "Delet Account",
                                             tintenColor: .red)
-                            
                         }
                     }
-                    
                 }
                 
                 .navigationTitle("Profile")
-                
             }
-                
         }
         .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 
- 
 #Preview {
     ProfileView()
 }

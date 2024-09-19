@@ -25,6 +25,7 @@
 		A92CAD9F2C97E59200D48896 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A92CAD9E2C97E59200D48896 /* FirebaseDatabase */; };
 		A92CADA12C97E59200D48896 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A92CADA02C97E59200D48896 /* FirebaseFirestore */; };
 		A92CADA32C97E59200D48896 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A92CADA22C97E59200D48896 /* FirebaseStorage */; };
+		A94836E02C99D5FB00D563C4 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94836DF2C99D5FB00D563C4 /* Extension+Date.swift */; };
 		A95120202C7D2E2000CA0759 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A951201F2C7D2E2000CA0759 /* LoginView.swift */; };
 		A95120222C7D31EF00CA0759 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120212C7D31EF00CA0759 /* InputView.swift */; };
 		A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95120232C7D509200CA0759 /* RegistrationView.swift */; };
@@ -37,7 +38,7 @@
 		A958BBF12C78C0A500A8FE0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958BBF02C78C0A500A8FE0C /* ContentView.swift */; };
 		A958BBF32C78C0A700A8FE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF22C78C0A700A8FE0C /* Assets.xcassets */; };
 		A958BBF62C78C0A700A8FE0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */; };
-		A98F0E482C91D032001F1A37 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = A98F0E472C91D032001F1A37 /* user.json */; };
+		A98F0E482C91D032001F1A37 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = A98F0E472C91D032001F1A37 /* users.json */; };
 		A9901BB52C97642000A55308 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9901BB42C97642000A55308 /* Test.swift */; };
 		A9C4CFFD2C8E2CEF00D11E39 /* ApiUserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4CFFC2C8E2CEF00D11E39 /* ApiUserListView.swift */; };
 		A9C4CFFF2C8E2E5700D11E39 /* ApiUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4CFFE2C8E2E5700D11E39 /* ApiUser.swift */; };
@@ -70,6 +71,7 @@
 		A9273CE92C847D60003F95FC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A9273CEC2C84B44C003F95FC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A9273CF12C853D05003F95FC /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		A94836DF2C99D5FB00D563C4 /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		A951201F2C7D2E2000CA0759 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A95120212C7D31EF00CA0759 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		A95120232C7D509200CA0759 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -83,7 +85,7 @@
 		A958BBF02C78C0A500A8FE0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A958BBF22C78C0A700A8FE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A958BBF52C78C0A700A8FE0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A98F0E472C91D032001F1A37 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		A98F0E472C91D032001F1A37 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		A9901BB42C97642000A55308 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		A9C4CFFC2C8E2CEF00D11E39 /* ApiUserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUserListView.swift; sourceTree = "<group>"; };
 		A9C4CFFE2C8E2E5700D11E39 /* ApiUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUser.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		A92408A42C81CE2300746D9C /* UserRituals */ = {
 			isa = PBXGroup;
 			children = (
+				A94836DE2C99D59D00D563C4 /* Extension */,
 				A98F0E412C91BA47001F1A37 /* ViewModel */,
 				A98F0E422C91BA8B001F1A37 /* View */,
 			);
@@ -177,6 +180,14 @@
 				A9D242552C837A64005B8A6E /* Extension+Text.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A94836DE2C99D59D00D563C4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A94836DF2C99D5FB00D563C4 /* Extension+Date.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		A95120192C7D2B8C00CA0759 /* Model */ = {
@@ -368,7 +379,7 @@
 			children = (
 				A92408A12C81CD5200746D9C /* FireStoreClient.swift */,
 				A9C4D0002C8E2F3800D11E39 /* Repository.swift */,
-				A98F0E472C91D032001F1A37 /* user.json */,
+				A98F0E472C91D032001F1A37 /* users.json */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -456,7 +467,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A98F0E482C91D032001F1A37 /* user.json in Resources */,
+				A98F0E482C91D032001F1A37 /* users.json in Resources */,
 				A958BBF62C78C0A700A8FE0C /* Preview Assets.xcassets in Resources */,
 				A958BBF32C78C0A700A8FE0C /* Assets.xcassets in Resources */,
 				A95120342C7DA9F600CA0759 /* GoogleService-Info.plist in Resources */,
@@ -482,6 +493,7 @@
 				A9C4D0032C8E37C300D11E39 /* ApiUserListVM.swift in Sources */,
 				A92408AB2C81D01500746D9C /* UserRitualsViewModel.swift in Sources */,
 				A958BBEF2C78C0A500A8FE0C /* RitualsApp.swift in Sources */,
+				A94836E02C99D5FB00D563C4 /* Extension+Date.swift in Sources */,
 				A9F004E12C8F261100075B8A /* AboutMagicCardView.swift in Sources */,
 				A9C4CFFF2C8E2E5700D11E39 /* ApiUser.swift in Sources */,
 				A9273CEA2C847D60003F95FC /* ViewModel.swift in Sources */,
