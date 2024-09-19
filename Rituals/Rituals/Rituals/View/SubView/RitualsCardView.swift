@@ -47,7 +47,7 @@ struct RitualsCardView: View {
                         .subtitle()
                         .lineLimit(2)
                     
-                    Text("\(ritual.createdAt)")
+                    Text("\(ritual.formattedPublishedDate)")
                         .lineLimit(1)
                         .font(.footnote)
                         .foregroundColor(.secondary)

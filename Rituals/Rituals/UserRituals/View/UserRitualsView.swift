@@ -51,7 +51,7 @@ struct UserRitualsView: View {
                                     }
                                 }
                             
-                            Text("\(item.createdAt)")
+                            Text("\(item.formattedPublishedDate)")
                                 .lineLimit(1)
                                 .font(.footnote)
                                 .foregroundColor(.secondary)

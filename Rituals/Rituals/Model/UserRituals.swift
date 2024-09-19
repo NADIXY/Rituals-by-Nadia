@@ -15,4 +15,11 @@ struct UserRituals: Codable, Identifiable {
     var finished: Bool = false
     var createdAt: Date = Date.now
     
+    var formattedPublishedDate: String {
+           let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        dateFormatter.timeStyle = .medium
+        return dateFormatter.string(from: createdAt)
+    }
+    
 }

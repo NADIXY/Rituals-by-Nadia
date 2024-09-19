@@ -15,4 +15,11 @@ struct Rituals: Identifiable, Codable {
     var image: String
     var location: String
     var createdAt: Date = Date.now
+    
+    var formattedPublishedDate: String {
+           let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        dateFormatter.timeStyle = .short
+        return dateFormatter.string(from: createdAt)
+    }
 }
