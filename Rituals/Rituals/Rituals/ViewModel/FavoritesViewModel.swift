@@ -46,8 +46,6 @@ class FavoritesViewModel: ObservableObject {
             }
         }
     }
-    
-    /***/
 
     func addFavoriteRituals(id: String, name: String,description: String, image: String, location: String, createdAt: Date) {
         do {

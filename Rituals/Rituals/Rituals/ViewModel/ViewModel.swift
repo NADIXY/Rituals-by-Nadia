@@ -33,7 +33,6 @@ final class ViewModel: ObservableObject {
             }
         }
     }
-    /***/
     
     func addFavoriteRituals(ritual: Rituals) {
         do {

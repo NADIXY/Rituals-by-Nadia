@@ -147,7 +147,6 @@
 		A92408A42C81CE2300746D9C /* UserRituals */ = {
 			isa = PBXGroup;
 			children = (
-				A94836DE2C99D59D00D563C4 /* Extension */,
 				A98F0E412C91BA47001F1A37 /* ViewModel */,
 				A98F0E422C91BA8B001F1A37 /* View */,
 			);
@@ -178,13 +177,6 @@
 				A9D242552C837A64005B8A6E /* Extension+Text.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		A94836DE2C99D59D00D563C4 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		A95120192C7D2B8C00CA0759 /* Model */ = {

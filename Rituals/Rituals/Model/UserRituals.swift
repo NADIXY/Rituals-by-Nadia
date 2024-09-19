@@ -21,5 +21,4 @@ struct UserRituals: Codable, Identifiable {
         dateFormatter.timeStyle = .medium
         return dateFormatter.string(from: createdAt)
     }
-    
 }

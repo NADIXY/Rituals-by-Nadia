@@ -23,7 +23,7 @@ class FireStoreClient {
             .documents
             .map { try $0.data(as: Rituals.self) }
     }
- /***/
+    
     func addFavoriteRituals(id: String, name: String, userId: String, description: String, image: String, location: String, createdAt: Date) throws {
         let favoriteRituals = Rituals(id: id, name: name, description: description,
                                       image: image,
