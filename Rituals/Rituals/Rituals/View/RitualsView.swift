@@ -96,7 +96,7 @@ struct RitualsView: View {
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink(destination: ProfileView()) {
-                        Image(systemName: "person.fill")
+                        Image(systemName: "person.crop.circle.fill")
                             .font(.callout)
                             .foregroundColor(.blue)
                     }
@@ -106,7 +106,7 @@ struct RitualsView: View {
                     
                     NavigationLink(destination: ApiUserListView(apiUserListVM: ApiUserListVM())) {
                         VStack(alignment: .center, spacing: 1.0) {
-                            Image(systemName: "person.2")
+                            Image(systemName: "person.2.circle")
                                 .foregroundColor(.yellow)
                             Text("Users")
                                 .font(.caption2)
@@ -118,7 +118,7 @@ struct RitualsView: View {
                 ToolbarItem(placement: .status) {
                     NavigationLink(destination: AboutMagicView()) {
                         VStack(alignment: .center, spacing: 1.0) {
-                            Image(systemName: "list.triangle")
+                            Image(systemName: "exclamationmark.warninglight.fill")
                                 .foregroundColor(.yellow)
                             Text("About Magic")
                                 .font(.caption2)
@@ -131,7 +131,7 @@ struct RitualsView: View {
                 ToolbarItem(placement: .bottomBar) {
                     NavigationLink(destination: UserRitualsView()) {
                         VStack(alignment: .center, spacing: 1.0) {
-                            Image(systemName: "pencil")
+                            Image(systemName: "note.text.badge.plus")
                                 .foregroundColor(.yellow)
                             Text("Your Rituals")
                                 .font(.caption2)
