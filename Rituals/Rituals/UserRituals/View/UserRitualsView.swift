@@ -26,7 +26,6 @@ struct UserRitualsView: View {
 
             Text("Your Rituals, \(authViewModel.currentUser?.fullname ?? "")")
                 .font(.title)
-                .foregroundColor(.black)
                 .bold()
             
             ZStack {

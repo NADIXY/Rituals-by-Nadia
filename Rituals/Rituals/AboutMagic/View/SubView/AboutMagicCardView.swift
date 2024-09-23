@@ -22,13 +22,19 @@ struct AboutMagicCardView: View {
                         AboutMagicCardImageView(url: url, width: size.width, height: size.height)
                     }
                 }
-                VStack(alignment: .leading) {
-                    Text(magic.magicTitle)
-                        .titleFont()
-                        .lineLimit(1)
-                    Text(magic.magicDescription)
-                        .subtitle()
-                        .lineLimit(2)
+                
+                VStack(alignment: .trailing) {
+                    Image(systemName: "arrow.right")
+                        .foregroundColor(.blue)
+                    
+                    VStack(alignment: .leading) {
+                        Text(magic.magicTitle)
+                            .titleFont()
+                            .lineLimit(1)
+                        Text(magic.magicDescription)
+                            .subtitle()
+                            .lineLimit(2)
+                    }
                 }
                 .padding(10)
                 .background(.background.opacity(0.5))

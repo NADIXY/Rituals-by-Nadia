@@ -36,8 +36,10 @@ struct RitualsView: View {
                     
                     Text("The newest Users")
                         .font(.title)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.yellow)
                         .bold()
+                    Image(systemName: "arrow.right")
+                        .foregroundColor(.yellow)
                 }
                 
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -61,7 +63,6 @@ struct RitualsView: View {
 
                 Text("Recommended Rituals")
                     .font(.title)
-                    .foregroundColor(.black)
                     .bold()
                     .padding()
                                                 

@@ -37,21 +37,28 @@ struct RitualsCardView: View {
                     }
                 }
                 
-                VStack(alignment: .leading) {
-                    Text(ritual.name)
-                        .titleFont()
-                        .lineLimit(1)
-                        .foregroundColor(.yellow)
+                VStack(alignment: .trailing) {
+                    Image(systemName: "arrow.right")
+                        .foregroundColor(.blue)
                     
-                    Text("\(ritual.description)")
-                        .subtitle()
-                        .lineLimit(2)
-                    
-                    Text("\(ritual.formattedPublishedDate)")
-                        .lineLimit(1)
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
+                    VStack(alignment: .leading) {
+                        
+                        Text(ritual.name)
+                            .titleFont()
+                            .lineLimit(1)
+                            .foregroundColor(.yellow)
+                        
+                        Text("\(ritual.description)")
+                            .subtitle()
+                            .lineLimit(2)
+                        
+                        Text("\(ritual.formattedPublishedDate)")
+                            .lineLimit(1)
+                            .font(.footnote)
+                            .foregroundColor(.secondary)
+                    }
                 }
+                
                 .padding(10)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .background(.background.opacity(0.5))
