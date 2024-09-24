@@ -32,6 +32,13 @@ struct RitualsView: View {
                     .cornerRadius(.maximum(20, 20))
                     .padding(.vertical, 32)//Punkt abstand mit Pixel)
                 
+               /* NavigationLink(destination: VideoView()) {
+                    Text("The newest Community Videos")
+                        .font(.title)
+                        .bold()
+                    Image(systemName: "arrow.right")
+                }*/
+                
                 NavigationLink(destination: ApiUserListView()) {
                     
                     Text("The newest Users")
@@ -92,7 +99,14 @@ struct RitualsView: View {
                             .foregroundColor(.blue)
                         
                     }
-                    .buttonStyle(.plain)
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink(destination: VideoView()) {
+                        Image(systemName: "video.badge.plus.fill")
+                            .font(.callout)
+                            .foregroundColor(.blue)
+                    }
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
@@ -103,15 +117,15 @@ struct RitualsView: View {
                     }
                 }
                 
-                ToolbarItem(placement: .bottomBar) {
+                ToolbarItem(placement: .status) {
                     
                     NavigationLink(destination: ApiUserListView(apiUserListVM: ApiUserListVM())) {
                         VStack(alignment: .center, spacing: 1.0) {
                             Image(systemName: "person.2.circle")
-                                .foregroundColor(.yellow)
+                                .foregroundColor(.black)
                             Text("Users")
                                 .font(.caption2)
-                                .foregroundColor(.yellow)
+                                .foregroundColor(.black)
                         }
                     }
                 }
@@ -120,27 +134,51 @@ struct RitualsView: View {
                     NavigationLink(destination: AboutMagicView()) {
                         VStack(alignment: .center, spacing: 1.0) {
                             Image(systemName: "exclamationmark.warninglight.fill")
-                                .foregroundColor(.yellow)
+                                .foregroundColor(.black)
                             Text("About Magic")
                                 .font(.caption2)
-                                .foregroundColor(.yellow)
+                                .foregroundColor(.black)
                         }
                             
                     }
                 }
             
-                ToolbarItem(placement: .bottomBar) {
+                ToolbarItem(placement: .status) {
                     NavigationLink(destination: UserRitualsView()) {
                         VStack(alignment: .center, spacing: 1.0) {
                             Image(systemName: "note.text.badge.plus")
-                                .foregroundColor(.yellow)
+                                .foregroundColor(.black)
                             Text("Your Rituals")
                                 .font(.caption2)
-                                .foregroundColor(.yellow)
+                                .foregroundColor(.black)
                         }
-                            
                     }
                 }
+                
+                ToolbarItem(placement: .status) {
+                    NavigationLink(destination: VideoView()) {
+                        VStack(alignment: .center, spacing: 1.0) {
+                            Image(systemName: "person.crop.square.badge.video")
+                                .foregroundColor(.black)
+                            Text("Community Videos")
+                                .font(.caption2)
+                                .foregroundColor(.black)
+                        }
+                    }
+                }
+                
+                ToolbarItem(placement: .status) {
+                    NavigationLink(destination: MapView()) {
+                        VStack(alignment: .center, spacing: 1.0) {
+                            Image(systemName: "map.circle")
+                                .foregroundColor(.black)
+                            Text("Map")
+                                .font(.caption2)
+                                .foregroundColor(.black)
+                        }
+                    }
+                }
+                
             }
         }
         .preferredColorScheme(isDarkMode ? .dark : .light)
