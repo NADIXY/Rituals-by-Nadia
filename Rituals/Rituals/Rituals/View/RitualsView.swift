@@ -103,7 +103,7 @@ struct RitualsView: View {
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink(destination: VideoView()) {
-                        Image(systemName: "video.badge.plus.fill")
+                        Image(systemName: "video.badge.plus")
                             .font(.callout)
                             .foregroundColor(.blue)
                     }

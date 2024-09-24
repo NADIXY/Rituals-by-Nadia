@@ -37,7 +37,7 @@ struct VideoView: View {
                         
                         Text("Add your Video")
                         
-                        Image(systemName: "plus.circle")
+                        Image(systemName: "video.badge.plus")
                             .foregroundColor(.blue)
                     }
                 }
