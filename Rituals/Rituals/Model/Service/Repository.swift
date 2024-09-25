@@ -10,7 +10,7 @@ import FirebaseStorage
 
 class Repository {
     
-    // MARK: - Users Api
+    // MARK: - Users ApiUser
     
     func fetchUsers() async throws -> [ApiUser] {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else {

@@ -19,9 +19,8 @@ struct VideoView: View {
             ScrollView {
                 ForEach(videoVM.videos) { video in
                     VideoPlayer(player: AVPlayer(url: URL(string: video.videoUrl)!))
-                        .frame(height: 250)
-                    
-                    Text("")
+                        .frame(width: 350, height: 250)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
             }
             .refreshable {
@@ -29,6 +28,24 @@ struct VideoView: View {
                     try await videoVM.fetchVideos()
                 }
             }
+            
+            Button {
+                Task {
+                    try await videoVM.fetchVideos()
+                }
+            } label: {
+                HStack {
+                    Text("Refresh")
+                        .fontWeight(.semibold)
+                    Image(systemName: "arrow.clockwise")
+                }
+                .foregroundColor(.white)
+                .frame(width: UIScreen.main.bounds.width - 32, height: 48)
+            }
+            .background(Background())
+            .cornerRadius(10)
+            .padding(.top, 24)
+            
             .navigationTitle("Community Videos")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -43,7 +60,7 @@ struct VideoView: View {
                 }
                 
             }
-            .background(Background())
+            
         }
     }
 }

@@ -37,7 +37,7 @@ struct AboutMagicCardView: View {
                     }
                 }
                 .padding(10)
-                .background(.background.opacity(0.5))
+                .background(.background.opacity(0.7))
                 .cornerRadius(10)
                 .padding(10)
             }

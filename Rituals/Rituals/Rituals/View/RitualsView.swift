@@ -32,13 +32,6 @@ struct RitualsView: View {
                     .cornerRadius(.maximum(20, 20))
                     .padding(.vertical, 32)//Punkt abstand mit Pixel)
                 
-               /* NavigationLink(destination: VideoView()) {
-                    Text("The newest Community Videos")
-                        .font(.title)
-                        .bold()
-                    Image(systemName: "arrow.right")
-                }*/
-                
                 NavigationLink(destination: ApiUserListView()) {
                     
                     Text("The newest Users")
