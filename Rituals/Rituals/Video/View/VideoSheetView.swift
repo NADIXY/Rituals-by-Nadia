@@ -29,6 +29,9 @@ struct VideoSheetView: View {
                         
                     }   
             }
+            .onChange(of: videoVM.finishUploading) {
+                isPresented = false
+            }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Background())
             .navigationBarItems(leading: Button("Cancel") {

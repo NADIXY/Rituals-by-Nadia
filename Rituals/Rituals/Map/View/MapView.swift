@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-/*import MapKit
+import MapKit
 
 struct MapView: View {
     @StateObject var locationManager = LocationManager()
@@ -57,8 +57,8 @@ struct MapView: View {
         }
         .navigationTitle("Maps")
     }
-}*/
+}
 
-//#Preview {
-    //MapView()
-//}
+#Preview {
+    MapView()
+}

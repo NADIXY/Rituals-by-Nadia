@@ -6,7 +6,7 @@
 //
 
 import Foundation
-/*import CoreLocation
+import CoreLocation
 import _MapKit_SwiftUI
 
 class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
@@ -83,4 +83,4 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
             loading = false
         }
     }
-}*/
+}

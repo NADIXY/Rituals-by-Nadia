@@ -7,7 +7,7 @@
 
 import CoreLocation
 
-/*struct Location: Identifiable {
+struct Location: Identifiable {
     let id = UUID()
     let title: String
     let coordinate: CLLocationCoordinate2D
@@ -16,4 +16,4 @@ import CoreLocation
         .init(title: "Berliner HBF", coordinate: .berlinerHBF),
         .init(title: "Berliner Mall", coordinate: .berlinerMall)
     ]
-}*/
+}

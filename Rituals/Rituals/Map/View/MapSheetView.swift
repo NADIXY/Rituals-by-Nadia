@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/*struct MapSheetView: View {
+struct MapSheetView: View {
     @Binding var isPresented: Bool
     @EnvironmentObject var authViewModel: AuthViewModel
     
@@ -27,5 +27,5 @@ import SwiftUI
             })
         }
     }
-}*/
+}
 

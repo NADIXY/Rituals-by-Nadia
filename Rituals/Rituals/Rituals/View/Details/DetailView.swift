@@ -11,7 +11,7 @@ struct DetailView: View {
     let ritual: Rituals
     
     @AppStorage("isDarkMode") private var isDarkMode = false
-    //@State private var showMaps = false
+    @State private var showMaps = false
     
     var body: some View {
         NavigationStack {
@@ -52,7 +52,7 @@ struct DetailView: View {
                             Spacer()
                             
                         }
-                        /*.toolbar {
+                        .toolbar {
                             ToolbarItem(placement: .navigationBarTrailing) {
                                 Button(action: {
                                     showMaps.toggle()
@@ -65,7 +65,7 @@ struct DetailView: View {
                         }
                         .sheet(isPresented: $showMaps) {
                             MapSheetView(isPresented: $showMaps)
-                        }*/
+                        }
                         .padding(.horizontal, 30)
                     }
                     .navigationTitle("Rituals Details")

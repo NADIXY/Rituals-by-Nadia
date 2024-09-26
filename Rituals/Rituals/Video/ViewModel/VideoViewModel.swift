@@ -16,6 +16,7 @@ class VideoViewModel: ObservableObject {
     @Published var selectedItem: PhotosPickerItem? {
         didSet { Task { try await uploadVideo() } }
     }
+    @Published var finishUploading = false
     
     init() {
         Task { try await fetchVideos() }
@@ -38,6 +39,7 @@ class VideoViewModel: ObservableObject {
         //Url in den Firestore hochladen, damit diese Informationen in den Firestore hochgeladen werden
         try await Firestore.firestore().collection("videos").document().setData(["videoUrl": videoUrl])
         print("Finished video upload...")
+        finishUploading = true
     }
     
         @MainActor
