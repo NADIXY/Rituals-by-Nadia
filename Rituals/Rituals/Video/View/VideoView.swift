@@ -13,6 +13,8 @@ struct VideoView: View {
     
     @StateObject var videoVM = VideoViewModel()
     
+    @State private var showVideos = false
+    
     var body: some View {
         NavigationStack {
             
@@ -28,8 +30,15 @@ struct VideoView: View {
                     try await videoVM.fetchVideos()
                 }
             }
+            .onChange(of: showVideos) {
+                if showVideos == false {
+                    Task {
+                        try await videoVM.fetchVideos()
+                    }
+                }
+            }
             
-            Button {
+            /*Button {
                 Task {
                     try await videoVM.fetchVideos()
                 }
@@ -44,24 +53,29 @@ struct VideoView: View {
             }
             .background(Background())
             .cornerRadius(10)
-            .padding(.top, 24)
+            .padding(.top, 24)*/
             
             .navigationTitle("Community Videos")
+            
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    // Fotoauswahl und das ausgewählte Element
-                    PhotosPicker(selection: $videoVM.selectedItem, matching: .any(of: [.videos, .not(.images)])) {
-                        
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                        showVideos.toggle()
+                    }) {
                         Text("Add your Video")
-                        
                         Image(systemName: "video.badge.plus")
-                            .foregroundColor(.blue)
+                    
                     }
                 }
-                
+            }
+            .sheet(isPresented: $showVideos) {
+                VideoSheetView(videoVM: VideoViewModel(), isPresented: $showVideos)
             }
             
+            .padding(.horizontal, 30)
+
         }
+        .background(Background())
     }
 }
 

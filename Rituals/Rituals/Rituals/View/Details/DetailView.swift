@@ -11,6 +11,7 @@ struct DetailView: View {
     let ritual: Rituals
     
     @AppStorage("isDarkMode") private var isDarkMode = false
+    //@State private var showMaps = false
     
     var body: some View {
         NavigationStack {
@@ -32,8 +33,8 @@ struct DetailView: View {
                             
                             HStack {
                                 Text("Location:")
-                                    .foregroundColor(.blue)
                                     .subtitle()
+                                    .bold()
                                 
                                 Text("\(ritual.location)")
                                     .subtitle()
@@ -43,9 +44,28 @@ struct DetailView: View {
                                 .subtitle()
                                 .fixedSize(horizontal: false, vertical: true)
                             
+                            Text("\(ritual.formattedPublishedDate)")
+                                .lineLimit(1)
+                                .font(.footnote)
+                                .foregroundColor(.secondary)
+                            
                             Spacer()
                             
                         }
+                        /*.toolbar {
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button(action: {
+                                    showMaps.toggle()
+                                }) {
+                                    Text("Search locations")
+                                    Image(systemName: "magnifyingglass.circle.fill")
+                                
+                                }
+                            }
+                        }
+                        .sheet(isPresented: $showMaps) {
+                            MapSheetView(isPresented: $showMaps)
+                        }*/
                         .padding(.horizontal, 30)
                     }
                     .navigationTitle("Rituals Details")
@@ -55,12 +75,3 @@ struct DetailView: View {
         .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
-/*
-#Preview {
-    DetailView(
-        ritual: Rituals(
-        name: "Glücksbringer",
-        description: "Verwandeln Sie einen Stein in einen Glücksbringer. Ein Stein des Strandes am besten klein, schließen sie in der Hand und wünschen, dass 1 bestimmte Person immer viel Glück und Schutz bekommt und verschenken sie es.",
-        image: "https://firebasestorage.googleapis.com/v0/b/rituals-3bb39.appspot.com/o/Bildschirmfoto%202024-08-29%20um%2019.44.58.png?alt=media&token=3bf5c5a4-78cb-42c8-b259-18db795bbde5",
-        location: "Am Meer"))
-}*/

@@ -16,6 +16,7 @@
 		A9011E7E2CA2CD3A001D6799 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A9011E7D2CA2CD3A001D6799 /* FirebaseFirestore */; };
 		A9011E802CA2CD3A001D6799 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A9011E7F2CA2CD3A001D6799 /* FirebaseStorage */; };
 		A9011E832CA2ECAE001D6799 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9011E822CA2ECAE001D6799 /* MapView.swift */; };
+		A90B56CA2CA56B6500A879AD /* VideoSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B56C92CA56B6500A879AD /* VideoSheetView.swift */; };
 		A92408922C8183FB00746D9C /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408912C8183FB00746D9C /* FavoritesView.swift */; };
 		A92408962C818A9F00746D9C /* RitualsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408952C818A9F00746D9C /* RitualsCardView.swift */; };
 		A92408982C81982700746D9C /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92408972C81982700746D9C /* CardImageView.swift */; };
@@ -57,6 +58,10 @@
 		A9F004E12C8F261100075B8A /* AboutMagicCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004E02C8F261100075B8A /* AboutMagicCardView.swift */; };
 		A9F004E32C8F274A00075B8A /* AboutMagicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004E22C8F274A00075B8A /* AboutMagicViewModel.swift */; };
 		A9F004E52C8F2E8300075B8A /* AboutMagicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F004E42C8F2E8300075B8A /* AboutMagicDetailView.swift */; };
+		A9F230BA2CA51654007B744B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F230B92CA51654007B744B /* Location.swift */; };
+		A9F230BD2CA5172B007B744B /* Extension+CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F230BC2CA5172B007B744B /* Extension+CLLocationCoordinate2D.swift */; };
+		A9F230BF2CA51779007B744B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F230BE2CA51779007B744B /* LocationManager.swift */; };
+		A9F230C32CA55B3A007B744B /* MapSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F230C22CA55B3A007B744B /* MapSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +71,7 @@
 		A9011E762CA2CA99001D6799 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9011E812CA2CDDF001D6799 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9011E822CA2ECAE001D6799 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A90B56C92CA56B6500A879AD /* VideoSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSheetView.swift; sourceTree = "<group>"; };
 		A92408912C8183FB00746D9C /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		A92408952C818A9F00746D9C /* RitualsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RitualsCardView.swift; sourceTree = "<group>"; };
 		A92408972C81982700746D9C /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
@@ -108,6 +114,10 @@
 		A9F004E02C8F261100075B8A /* AboutMagicCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicCardView.swift; sourceTree = "<group>"; };
 		A9F004E22C8F274A00075B8A /* AboutMagicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicViewModel.swift; sourceTree = "<group>"; };
 		A9F004E42C8F2E8300075B8A /* AboutMagicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMagicDetailView.swift; sourceTree = "<group>"; };
+		A9F230B92CA51654007B744B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A9F230BC2CA5172B007B744B /* Extension+CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CLLocationCoordinate2D.swift"; sourceTree = "<group>"; };
+		A9F230BE2CA51779007B744B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		A9F230C22CA55B3A007B744B /* MapSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				A9011E6B2CA26A20001D6799 /* VideoView.swift */,
+				A90B56C92CA56B6500A879AD /* VideoSheetView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,7 +164,9 @@
 		A9011E732CA2C438001D6799 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				A9011E822CA2ECAE001D6799 /* MapView.swift */,
+				A9F230C12CA52010007B744B /* Manager */,
+				A9F230BB2CA516EE007B744B /* Extensions */,
+				A9F230C02CA51E90007B744B /* View */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -230,6 +243,7 @@
 				A9E4A25A2C80ADD10008962D /* Rituals.swift */,
 				A924089D2C81BFA700746D9C /* UserRituals.swift */,
 				A9F004D62C8F1E1B00075B8A /* AboutMagic.swift */,
+				A9F230B92CA51654007B744B /* Location.swift */,
 				A9F14CF32C915B0D00D60D97 /* Service */,
 			);
 			path = Model;
@@ -435,6 +449,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A9F230BB2CA516EE007B744B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A9F230BC2CA5172B007B744B /* Extension+CLLocationCoordinate2D.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A9F230C02CA51E90007B744B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9011E822CA2ECAE001D6799 /* MapView.swift */,
+				A9F230C22CA55B3A007B744B /* MapSheetView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9F230C12CA52010007B744B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A9F230BE2CA51779007B744B /* LocationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -527,14 +566,18 @@
 				A9E4A25B2C80ADD10008962D /* Rituals.swift in Sources */,
 				A9F004E32C8F274A00075B8A /* AboutMagicViewModel.swift in Sources */,
 				A9C4D0032C8E37C300D11E39 /* ApiUserListVM.swift in Sources */,
+				A9F230BD2CA5172B007B744B /* Extension+CLLocationCoordinate2D.swift in Sources */,
 				A92408AB2C81D01500746D9C /* UserRitualsViewModel.swift in Sources */,
+				A9F230C32CA55B3A007B744B /* MapSheetView.swift in Sources */,
 				A958BBEF2C78C0A500A8FE0C /* RitualsApp.swift in Sources */,
 				A9011E6C2CA26A20001D6799 /* VideoView.swift in Sources */,
 				A9F004E12C8F261100075B8A /* AboutMagicCardView.swift in Sources */,
 				A9C4CFFF2C8E2E5700D11E39 /* ApiUser.swift in Sources */,
+				A9F230BF2CA51779007B744B /* LocationManager.swift in Sources */,
 				A9273CEA2C847D60003F95FC /* ViewModel.swift in Sources */,
 				A95120222C7D31EF00CA0759 /* InputView.swift in Sources */,
 				A95120242C7D509200CA0759 /* RegistrationView.swift in Sources */,
+				A9F230BA2CA51654007B744B /* Location.swift in Sources */,
 				A9011E6E2CA26C91001D6799 /* VideoViewModel.swift in Sources */,
 				A9011E722CA27F28001D6799 /* Video.swift in Sources */,
 				A92408A22C81CD5200746D9C /* FireStoreClient.swift in Sources */,
@@ -552,6 +595,7 @@
 				A92408B22C81D20900746D9C /* UpdateUserRitualsView.swift in Sources */,
 				A92408982C81982700746D9C /* CardImageView.swift in Sources */,
 				A9F004E52C8F2E8300075B8A /* AboutMagicDetailView.swift in Sources */,
+				A90B56CA2CA56B6500A879AD /* VideoSheetView.swift in Sources */,
 				A951202A2C7D7B7B00CA0759 /* User.swift in Sources */,
 				A92408962C818A9F00746D9C /* RitualsCardView.swift in Sources */,
 				A95120202C7D2E2000CA0759 /* LoginView.swift in Sources */,
