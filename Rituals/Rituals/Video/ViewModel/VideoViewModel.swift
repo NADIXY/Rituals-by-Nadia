@@ -11,6 +11,7 @@ import PhotosUI
 import Firebase
 import FirebaseFirestore
 
+@MainActor
 class VideoViewModel: ObservableObject {
     @Published var videos = [Video]()
     @Published var selectedItem: PhotosPickerItem? {

@@ -55,6 +55,7 @@ struct VideoView: View {
                 VideoSheetView(videoVM: VideoViewModel(), isPresented: $showVideos)
             }
             .padding(.horizontal, 30)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .background(Background())
     }

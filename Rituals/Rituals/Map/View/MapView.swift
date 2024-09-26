@@ -21,8 +21,6 @@ struct MapView: View {
                     }
                 }
                 
-                //            UserAnnotation()
-                
                 if let route = locationManager.route {
                     MapPolyline(route.polyline)
                         .stroke(.green, lineWidth: 10)
@@ -55,6 +53,7 @@ struct MapView: View {
             }
             .opacity(locationManager.loading ? 0.3 : 1.0)
         }
+        
         .navigationTitle("Maps")
     }
 }
