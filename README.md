@@ -62,7 +62,7 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
 - [x] Erstellen, Bearbeiten und Löschen von eigenen Ritualen
 - [x] Erstellen und teilen von eigenen "Video Ritualen" mit Schritt-für-Schritt-Anleitungen zur Durchführung von Ritualen
 - [x] Integration weiterer magischer Inhalte und Ressourcen
-- [x] Benutzerprofile mit individuellen Einstellungen 
+- [x] Benutzerprofile mit individuellen Einstellungen wie z.B. "Dark Mode"
 - [ ] Push-Benachrichtigungen für neue Rituale und Updates  //Teilen Sie Ihre Videos: Teilen Sie Ihre Rituale mit Schritt-für-Schritt-Anleitungen zur Durchführung von Ritualen
 
 
