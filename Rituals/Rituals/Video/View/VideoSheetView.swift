@@ -15,19 +15,40 @@ struct VideoSheetView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Select Video")
+                Image("logo")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 250, height: 250)
+                    .cornerRadius(.maximum(20, 20))
+                    .padding(.vertical, 32)
+                
+                VStack(alignment: .center, spacing: 20) {
+                    Text("Share your Rituals")
+                        .font(.title)
+                        .bold()
+                    
+                    Text("Your step-by-step instructions for performing Rituals")
+                }
+                
+                Spacer()
+                
                     .toolbar {
-                        ToolbarItem(placement: .topBarTrailing) {
+                        ToolbarItem(placement: .status) {
                             // Fotoauswahl und das ausgewählte Element
                             PhotosPicker(selection: $videoVM.selectedItem, matching: .any(of: [.videos, .not(.images)])) {
 
                                 Text("Select your Video")
-                                Image(systemName: "plus.circle")
+                                Image(systemName: "video.badge.plus")
                                     .foregroundColor(.blue)
                             }
+                            .padding([.vertical], 16)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .background(.background.opacity(0.3))
+                            .cornerRadius(10)
+                            .padding([.horizontal], 64)
                         }
-                        
-                    }   
+                    }
+    
             }
             .onChange(of: videoVM.finishUploading) {
                 isPresented = false

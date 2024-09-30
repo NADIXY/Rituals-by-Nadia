@@ -161,11 +161,11 @@ struct RitualsView: View {
                 }
                 
                 ToolbarItem(placement: .status) {
-                    NavigationLink(destination: MapView()) {
+                    NavigationLink(destination: InfoView()) {
                         VStack(alignment: .center, spacing: 1.0) {
-                            Image(systemName: "map.circle")
+                            Image(systemName: "info.circle")
                                 .foregroundColor(.black)
-                            Text("Map")
+                            Text("Info")
                                 .font(.caption2)
                                 .foregroundColor(.black)
                         }
