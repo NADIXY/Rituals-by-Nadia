@@ -23,7 +23,7 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
 <p>
   <img src="https://github.com/user-attachments/assets/45d224de-ff53-461f-99e7-d6fddc4eb90c" width="200">
   <img src="https://github.com/user-attachments/assets/66be34b9-a04b-4822-af51-0f1ceabcb12d" width="200">
-  <img src="https://github.com/user-attachments/assets/55b52543-57d5-454c-9c99-257d2c544b73" width="200">
+  <img src="https://github.com/user-attachments/assets/eb05a97d-9b06-4bd7-bb69-cbbebd10a330" width="200">
 </p>
 
 ### FAVORITES | DETAILS | MAPS
