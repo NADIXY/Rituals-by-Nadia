@@ -27,22 +27,20 @@ struct InfoView: View {
                             .bold()
                             .font(.title)
                         Text("Unlock the power of rituals - Dive into the world of magic!")
-                            .font(.callout)
-                            .fontWeight(.medium)
+                            .font(.custom("Georgia", size: 28))
+                            .bold()
                         
+                        Text("Discover Rituale, favorite your favorite rituals, create your own rituals, share your Rituals step-by-step instructions for performing Rituals...")
+                            .bold()
+                            .italic()
+    
+
                         Text("The Rituals App offers a unique platform to tauchen in the mystical world of magic. Discover carefully ge-gened rituals created by the founder of the app and create your own magical practices. If you're are looking for spiritual arell, protective rituals or just curiosity - the Rituals App has something to provide for everyone.")
-                            .font(.callout)
-                            .fontWeight(.medium)
-                        
-                        Text("Discover Rituale, favorite your favorite rituals, create your own rituals, share your Rituals step-by-step instructions for performing Rituals")
-                            .font(.callout)
-                            .fontWeight(.medium)
                         
                         Text("Developer")
                             .bold()
                             .font(.title)
                         Text("This app was developed by Nadia Baptista. It uses SwiftUI and is written 100% in Swift.")
-                            .font(.callout)
                             .fontWeight(.medium)
                         Text("Project Modul 4 - SwiftUI/Swift")
                         Text("Visit my GitHub 😉")
@@ -63,6 +61,7 @@ struct InfoView: View {
             }
             .navigationTitle("Info")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.all, 30)
             .background(Background())
 
         }

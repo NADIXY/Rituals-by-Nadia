@@ -39,9 +39,9 @@ struct ContentView: View {
                         
                         VStack {
                             Text("RITUALS")
-                                .font(.largeTitle)
+                                .font(.custom("Georgia", size: 48))
                                 .foregroundColor(.black)
-                                .fontWeight(.bold)
+                                .bold()
                                 .scaleEffect(scale)
                             
                             Image("logoT")

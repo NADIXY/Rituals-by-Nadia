@@ -27,7 +27,9 @@ struct VideoSheetView: View {
                         .font(.title)
                         .bold()
                     
-                    Text("Your step-by-step instructions for performing Rituals")
+                    Text("Your step-by-step instructions for performing Rituals...")
+                        .bold()
+                        .italic()
                 }
                 
                 Spacer()
@@ -54,6 +56,7 @@ struct VideoSheetView: View {
                 isPresented = false
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.all, 30)
             .background(Background())
             .navigationBarItems(leading: Button("Cancel") {
             isPresented = false
