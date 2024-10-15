@@ -2,9 +2,9 @@
 
 **Schalte die Kraft der Rituale frei - Tauche ein in die Welt der Magie!**
 
-![Frame](https://github.com/user-attachments/assets/348fcac5-2591-4a78-8b68-77be1ab7efed)
+<!-- ![Frame](https://github.com/user-attachments/assets/348fcac5-2591-4a78-8b68-77be1ab7efed) -->
 
-
+![367599831-348fcac5-2591-4a78-8b68-77be1ab7efed](https://github.com/user-attachments/assets/d4e65d8c-7d95-4056-a720-a63fc3a5b97c)
 
 ## Überblick
 
@@ -20,40 +20,71 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
 - **Benutzerfreundliches Interface:** Ein klar strukturiertes Design mit einfacher Navigation ermöglicht es dir, dich voll und ganz auf die Magie zu konzentrieren.
 
 ## Design
+<!--
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 11 33 09](https://github.com/user-attachments/assets/4fe42f3c-4b2a-4364-a2a9-e17206c233fa)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 11 33 18](https://github.com/user-attachments/assets/cbbb2aa5-4a3d-4c43-a33e-d75817437fa5)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 12 30 08](https://github.com/user-attachments/assets/30a0d1db-a07b-4f2d-8b56-f0459653d460)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 12 10 19](https://github.com/user-attachments/assets/03dab9d3-7656-45a6-9560-204d71d3733c)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 12 26 04](https://github.com/user-attachments/assets/432fb83f-ea79-4f54-8e68-e2aa45a92db3)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 12 09 34](https://github.com/user-attachments/assets/7aed85a2-43fe-436c-9718-84439d268723)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 11 39 02](https://github.com/user-attachments/assets/3b0d2bfa-645b-4f78-8c0c-6093a7e4b423)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 12 11 31](https://github.com/user-attachments/assets/531c73a8-c4b7-4bba-841b-6d3f0b2477d6)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 12 12 30](https://github.com/user-attachments/assets/1b965953-5059-4b9e-a801-9827772223ea)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 12 13 26](https://github.com/user-attachments/assets/a3086849-4b23-48ca-86b5-2662586acfdb)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 11 54 30](https://github.com/user-attachments/assets/74d6d8e4-8c1d-417d-9776-7f536cb8a8e0)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 11 46 56](https://github.com/user-attachments/assets/26339f65-89a8-4957-8ccc-1eddbfe77edf)
+
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 11 53 48](https://github.com/user-attachments/assets/0186a39f-155d-4791-be16-c43a9f109d85) -->
+
+
+
+
 
 ### LOGIN | REGISTER | HOME   
 <p>
-  <img src="https://github.com/user-attachments/assets/45d224de-ff53-461f-99e7-d6fddc4eb90c" width="200">
-  <img src="https://github.com/user-attachments/assets/66be34b9-a04b-4822-af51-0f1ceabcb12d" width="200">
-  <img src="https://github.com/user-attachments/assets/eb05a97d-9b06-4bd7-bb69-cbbebd10a330" width="200">
+  <img src="https://github.com/user-attachments/assets/4fe42f3c-4b2a-4364-a2a9-e17206c233fa" width="200">
+  <img src="https://github.com/user-attachments/assets/cbbb2aa5-4a3d-4c43-a33e-d75817437fa5" width="200">
+  <img src="https://github.com/user-attachments/assets/30a0d1db-a07b-4f2d-8b56-f0459653d460" width="200">
 </p>
 
 ### FAVORITES | DETAILS | MAPS
 <p>
-  <img src="https://github.com/user-attachments/assets/896f7569-f2ea-4e3a-b487-43e6d41f333e" width="200">
-  <img src="https://github.com/user-attachments/assets/44bbe4b6-eb54-444f-b93f-5c7a9b73ff0c" width="200">
-  <img src="https://github.com/user-attachments/assets/1bfd0dda-fea4-4b07-be92-3abc55c98240" width="200">
+  <img src="https://github.com/user-attachments/assets/03dab9d3-7656-45a6-9560-204d71d3733c" width="200">
+  <img src="https://github.com/user-attachments/assets/432fb83f-ea79-4f54-8e68-e2aa45a92db3" width="200">
+  <img src="https://github.com/user-attachments/assets/7aed85a2-43fe-436c-9718-84439d268723" width="200">
 </p>
 
  ### USERS API | Recommended Rituals | DETAILS
 <p>
-  <img src="https://github.com/user-attachments/assets/9e463d13-a96f-4948-ab79-665a91fd72cd" width="200">
+  <img src="https://github.com/user-attachments/assets/3b0d2bfa-645b-4f78-8c0c-6093a7e4b423" width="200">
   <img src="https://github.com/user-attachments/assets/d828e95d-e4c6-4363-be6c-b7fc0862cce3" width="200">
   <img src="https://github.com/user-attachments/assets/ade10119-b410-414c-93dd-8bd3fee4a3cf" width="200"> 
 </p>
 
 ###  COMMUNITY VIDEOS | SHEET TO SELECT VIDEOS | SHEET WITH ALBUMS
 <p>
-  <img src="https://github.com/user-attachments/assets/46c65b0b-6b38-4102-9c93-792a255e8b92" width="200">
-  <img src="https://github.com/user-attachments/assets/794a5f61-63ec-44a3-9454-dd911abba0a8" width="200">
-  <img src="https://github.com/user-attachments/assets/088cf475-b299-4f4e-b858-79dce0194483" width="200">
+  <img src="https://github.com/user-attachments/assets/531c73a8-c4b7-4bba-841b-6d3f0b2477d6" width="200">
+  <img src="https://github.com/user-attachments/assets/1b965953-5059-4b9e-a801-9827772223ea" width="200">
+  <img src="https://github.com/user-attachments/assets/a3086849-4b23-48ca-86b5-2662586acfdb" width="200">
 </p>
 
 ### USERS RITUALS |  SHEET TO ADD USER RITUALS | VIEW TO UPDATE USER RITUALS
 <p>
-  <img src="https://github.com/user-attachments/assets/7c4e86fd-4927-4324-9675-454293758498" width="200">
-  <img src="https://github.com/user-attachments/assets/d98a4a48-fb62-4097-9622-544c838a78d0" width="200">
-  <img src="https://github.com/user-attachments/assets/15eaa6a4-e47b-4edf-872d-74371e24cb09" width="200">
+  <img src="https://github.com/user-attachments/assets/74d6d8e4-8c1d-417d-9776-7f536cb8a8e0" width="200">
+  <img src="https://github.com/user-attachments/assets/26339f65-89a8-4957-8ccc-1eddbfe77edf" width="200">
+  <img src="https://github.com/user-attachments/assets/0186a39f-155d-4791-be16-c43a9f109d85" width="200">
 </p>
 
 
@@ -67,8 +98,9 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
 - [x] Erstellen und teilen von eigenen "Video Ritualen" mit Schritt-für-Schritt-Anleitungen zur Durchführung von Ritualen
 - [x] Integration weiterer magischer Inhalte und Ressourcen
 - [x] Benutzerprofile mit individuellen Einstellungen wie z.B. "Dark Mode"
-- [ ] Push-Benachrichtigungen für neue Rituale und Updates  //Teilen Sie Ihre Videos: Teilen Sie Ihre Rituale mit Schritt-für-Schritt-Anleitungen zur Durchführung von Ritualen
-
+  <!--
+ <!--- [ ] Push-Benachrichtigungen für neue Rituale und Updates  //Teilen Sie Ihre Videos: Teilen Sie Ihre Rituale mit Schritt-für-Schritt-Anleitungen zur Durchführung von Ritualen -->
+--
 
 ## Technischer Aufbau
 
@@ -115,8 +147,5 @@ Die Rituals App ist ein dynamisches Projekt mit einem klaren Fokus auf kontinuie
 
 - **Erweiterung des Ritual-Angebots**: Hinzufügen weiterer Rituale, insbesondere solche, die von der Community erstellt wurden.
 - **Integration von Tutorials**: Schritt-für-Schritt-Video-Anleitungen zur Durchführung von Ritualen.
-- **Social Features**: Möglichkeit, Rituale mit anderen Nutzern zu teilen und Feedback zu geben.
-- **Erweiterte Benutzerprofile**: Benutzer können mehr persönliche Informationen und Einstellungen speichern, die ihre magischen Präferenzen widerspiegeln.
-- **Lokalisierung**: Unterstützung weiterer Sprachen, um eine breitere internationale Nutzerbasis zu erreichen.
 
 Alle geplanten Features und Erweiterungen werden in Form von Issues dokumentiert und in zukünftigen Releases implementiert.
