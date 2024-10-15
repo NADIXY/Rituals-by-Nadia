@@ -33,11 +33,11 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
   <img src="https://github.com/user-attachments/assets/1bfd0dda-fea4-4b07-be92-3abc55c98240" width="200">
 </p>
 
- ### USERS API | ABOUT MAGIC | ABOUT MAGIC DETAILS
+ ### USERS API | Recommended Rituals | DETAILS
 <p>
   <img src="https://github.com/user-attachments/assets/9e463d13-a96f-4948-ab79-665a91fd72cd" width="200">
-  <img src="https://github.com/user-attachments/assets/a5d18a96-188e-4123-9116-49b7462ec3a9" width="200">
-  <img src="https://github.com/user-attachments/assets/bd307e4d-45a1-432a-821d-e60cf7fba38f" width="200"> 
+  <img src="https://github.com/user-attachments/assets/d828e95d-e4c6-4363-be6c-b7fc0862cce3" width="200">
+  <img src="https://github.com/user-attachments/assets/ade10119-b410-414c-93dd-8bd3fee4a3cf" width="200"> 
 </p>
 
 ###  COMMUNITY VIDEOS | SHEET TO SELECT VIDEOS | SHEET WITH ALBUMS
