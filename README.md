@@ -48,10 +48,6 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
 
 ![Simulator Screenshot - iPhone 15 Pro - 2024-09-30 at 11 53 48](https://github.com/user-attachments/assets/0186a39f-155d-4791-be16-c43a9f109d85) -->
 
-
-
-
-
 ### LOGIN | REGISTER | HOME   
 <p>
   <img src="https://github.com/user-attachments/assets/4fe42f3c-4b2a-4364-a2a9-e17206c233fa" width="200">
@@ -66,7 +62,7 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
   <img src="https://github.com/user-attachments/assets/7aed85a2-43fe-436c-9718-84439d268723" width="200">
 </p>
 
- ### USERS API | Recommended Rituals | DETAILS
+ ### USERS API | RECOMMENDED RITUALS | DETAILS
 <p>
   <img src="https://github.com/user-attachments/assets/3b0d2bfa-645b-4f78-8c0c-6093a7e4b423" width="200">
   <img src="https://github.com/user-attachments/assets/d828e95d-e4c6-4363-be6c-b7fc0862cce3" width="200">
@@ -86,7 +82,6 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
   <img src="https://github.com/user-attachments/assets/26339f65-89a8-4957-8ccc-1eddbfe77edf" width="200">
   <img src="https://github.com/user-attachments/assets/0186a39f-155d-4791-be16-c43a9f109d85" width="200">
 </p>
-
 
 
 ## Features
