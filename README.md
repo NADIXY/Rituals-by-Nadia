@@ -4,6 +4,8 @@
 
 ![Frame](https://github.com/user-attachments/assets/348fcac5-2591-4a78-8b68-77be1ab7efed)
 
+
+
 ## Überblick
 
 Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der Magie einzutauchen. Entdecke sorgfältig kuratierte Rituale, die vom Gründer der App erstellt wurden und erstelle deine eigenen magischen Praktiken. Ob du auf der Suche nach spiritueller Erleuchtung, Schutzritualen oder einfach nur Neugier bist – die Rituals App hat für jeden etwas zu bieten.
@@ -53,6 +55,8 @@ Die Rituals App bietet eine einzigartige Plattform, um in die mystische Welt der
   <img src="https://github.com/user-attachments/assets/d98a4a48-fb62-4097-9622-544c838a78d0" width="200">
   <img src="https://github.com/user-attachments/assets/15eaa6a4-e47b-4edf-872d-74371e24cb09" width="200">
 </p>
+
+
 
 ## Features
 
